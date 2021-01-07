@@ -37,7 +37,7 @@ export default () => {
           >
             GitHub
           </A>
-          , and blogging some of my life events here.
+          , and blogging some of my thoughts here.
         </P>
         <br />
         <P lineHeight="medium">
