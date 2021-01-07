@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+// Paragraph
 export const P = styled.p`
   /* font-family: 'system-ui'; */
   margin: ${props => (props.margin ? props.margin : 0)};
@@ -63,14 +64,22 @@ export const P = styled.p`
   /* text-align: ${props => (props.textAlign ? props.textAlign : "left")}; */
 `
 
+// a tag
 export const A = styled.a`
   /* text-decoration: none; */
   text-decoration-thickness: 0.1em;
   text-underline-offset: 1.5px;
   font-weight: bold;
-  color: #FF0080;
-`
+  color: #ff5e62;
 
+  &:hover {
+    color: #357ae8;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 1.5px;
+    text-decoration: none;
+  }
+`
+// Header 1
 export const H1 = styled.h1`
   font-family: ${props => props.theme.H1};
   /* font-weight: bold; */
@@ -207,6 +216,7 @@ export const P6 = styled.span`
  */
 export const NavElement = styled(props => <Link {...props} />)`
   /* font-family: 'system-ui'; */
+  color: #ff5e62;
   margin: ${props => (props.margin ? props.margin : 0)};
   padding: ${props => (props.padding ? props.padding : 0)};
   font-size: ${props => {
@@ -223,26 +233,16 @@ export const NavElement = styled(props => <Link {...props} />)`
   }};
   text-decoration: ${props =>
     props.textDecoration ? props.textDecoration : "none"};
-  font-weight: ${props => {
-    switch (props.weight) {
-      case "normal":
-        return 400
-      case "bold":
-        return 700
-      default:
-        return 400
-    }
-  }};
-  color: black;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-weight: 400;
+
+  font-size: 1.125rem;
+  font-weight: bold;
   text-decoration: none;
   margin: 0 2rem;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #357ae8;
-    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 1.5px;
+    text-decoration: none;
   }
 `

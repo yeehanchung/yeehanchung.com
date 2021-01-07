@@ -68,7 +68,7 @@ export const Nav = () => {
       <Ul>
         <NavElement to={"/blog"}>
           {" "}
-          <P>Blog</P>
+          Blog
         </NavElement>
       </Ul>
     </NavWrapper>

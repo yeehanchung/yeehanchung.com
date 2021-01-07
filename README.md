@@ -1,4 +1,17 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+G-63K8ZD8D7W
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-63K8ZD8D7W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63K8ZD8D7W');
+</script>
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />

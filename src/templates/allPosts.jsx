@@ -17,7 +17,7 @@ const allPosts = ({ pageContext, data }) => {
   const nextPage = `/blog/${currentPage + 1}`
   const posts = data.allMdx.edges
   // Change to true if want to publish all posts
-  const isPostAvailable = true
+  const isPostAvailable = false
 
   return (
     <Container>
@@ -37,12 +37,12 @@ const allPosts = ({ pageContext, data }) => {
             </P>
           ))
         ) : (
-          <Post>
+          <>
             <P6>No posts yet</P6>
-            <P size="small" color="dark4" margin="1rem 0 0 0">
+            <P size="small" color="dark4" margin="1rem 0 0 0" weight="normal">
               Feel free to connect with me
             </P>
-          </Post>
+          </>
         )}
       </Content>
       {/* Pagination */}
