@@ -7,9 +7,9 @@
 module.exports = {
   siteMetadata: {
     title: `Yee Han's Personal Website`,
-    description: `Yee Han's internet profiles, blogs, resume, and more...`,
-    url: "https://www.yeehan.dev",
-    image: "./src/img/yeehanchung.jpeg",
+    description: `Yee Han's internet profile`,
+    url: "https://www.yeehan.me",
+    image: "./src/img/og_image.jpeg",
     facebookUsername: "chungyhan",
     author: "Chung Yee Han",
     social: {

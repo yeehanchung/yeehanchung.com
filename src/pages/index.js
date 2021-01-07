@@ -24,14 +24,14 @@ export default () => {
           I enjoy spending my time on the Internet, doing web development stuff,
           which I keep on{" "}
           <A
-            href="https://github.com/cyeehan"
+            href="https://yeehan.dev/"
             rel="noopener noreferrer"
             target="_blank"
           >
             yeehan.dev
           </A>
           {" "} and my <A
-            href="https://yeehan.dev/"
+            href="https://github.com/cyeehan"
             rel="noopener noreferrer"
             target="_blank"
           >
