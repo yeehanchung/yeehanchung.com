@@ -6,7 +6,7 @@ import { Container, Content, Seo } from "../components"
 export default () => {
   return (
     <Container>
-      <Seo title="YeeHan Chung's Homepage" />
+      <Seo title="YeeHan Chung | Homepage" />
       <Content>
         <H1 textAlign="left" margin=" 0 1rem 0">
           YeeHan Chung

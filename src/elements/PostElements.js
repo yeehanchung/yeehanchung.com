@@ -74,10 +74,9 @@ export const PostWrapper = styled.main`
   }
   p {
     font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 200;
+    line-height: 1.5rem;
+    font-weight: 400;
     color: ${props => props.theme.colors.dark2};
-    /* margin-top: 2rem; */
   }
   a {
     color: ${props => props.theme.colors.main1};
@@ -123,8 +122,8 @@ export const PostWrapper = styled.main`
     border: 0;
     height: 1px;
     background: ${props => props.theme.colors.dark1};
-    opacity: 0.1;
-    margin-top: 2rem;
+    opacity: 0.2;
+    margin: 2rem 0;
   }
   table {
     width: 100%;

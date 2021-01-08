@@ -37,7 +37,8 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
               },
               {
                 property: `og:image`,
-                content: metaImage,
+                content:
+                  "https://avatars2.githubusercontent.com/u/38914065?s=460&u=d24009dcb4fb181de69531ccd9d1c69da2d28881&v=4",
               },
               {
                 property: `og:url`,
@@ -86,6 +87,7 @@ const detailsQuery = graphql`
         description
         author
         image
+        url
       }
     }
   }

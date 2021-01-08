@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Container, Content } from "../components"
-import { CardWrapper, H1, P, P6 } from "../elements"
+import { CardWrapper, H1, P } from "../elements"
 
 const notFound = ({ data }) => {
   return (
     <Container>
       <Content>
-        <P6>Error 404</P6>
+        <P>Error 404</P>
         <P size="small" color="dark4" margin="1rem 0 0 0">
           We could not find what you were looking for
         </P>

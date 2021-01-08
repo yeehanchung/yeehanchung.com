@@ -1,7 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Container, Content, ContentCard, Pagination, Post, Seo } from "../components"
-import { H1, P, P6 } from "../elements"
+import {
+  Container,
+  Content,
+  ContentCard,
+  Pagination,
+  Post,
+  Seo,
+} from "../components"
+import { H1, P } from "../elements"
 // import myPhoto from "../img/yeehanchung.jpeg"
 // Read the values they come in from gatsby-node.js
 // data = data from graphql query
@@ -21,24 +28,22 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
-      <Seo title="YeeHan Chung's Blogs" />
+      <Seo title="YeeHan Chung | Blog"/>
       <Content>
         {isPostAvailable ? (
           posts.map(post => (
-            <P>
-              <ContentCard
-                key={post.node.frontmatter.slug}
-                date={post.node.frontmatter.date}
-                title={post.node.frontmatter.title}
-                excerpt={post.node.frontmatter.excerpt}
-                slug={post.node.frontmatter.slug}
-                readingTime={post.node.fields.readingTime.text}
-              />
-            </P>
+            <ContentCard
+              key={post.node.frontmatter.slug}
+              date={post.node.frontmatter.date}
+              title={post.node.frontmatter.title}
+              excerpt={post.node.frontmatter.excerpt}
+              slug={post.node.frontmatter.slug}
+              readingTime={post.node.fields.readingTime.text}
+            />
           ))
         ) : (
           <>
-            <P6>No posts yet</P6>
+            <P>No posts yet</P>
             <P size="small" color="dark4" margin="1rem 0 0 0" weight="normal">
               Feel free to connect with me
             </P>

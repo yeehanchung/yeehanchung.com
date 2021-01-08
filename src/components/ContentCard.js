@@ -1,5 +1,5 @@
 import React from "react"
-import { CardWrapper, P, H2, H1, P6 } from "../elements"
+import { CardWrapper, P } from "../elements"
 import { Button } from "../components"
 import styled from "styled-components"
 
@@ -20,11 +20,11 @@ export const ContentCard = ({ date, title, excerpt, slug, readingTime }) => {
       <Button href={slug} size="medium">
         {title}
       </Button>
-      <P6 size="xSmall" color="dark2">
+      <P size="xSmall" color="dark2" margin="0 0 18px 0">
         <Span>{date}</Span>
         <Span>{readingTime}</Span>
-      </P6>
-      <P size="small" color="dark4" margin="1rem 0 0 0">
+      </P>
+      <P size="xMedium" color="dark4">
         {excerpt}
       </P>
       <Row>

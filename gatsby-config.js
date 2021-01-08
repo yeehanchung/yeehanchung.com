@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Yee Han's Personal Website`,
+    title: `YeeHan Chung's Personal Website`,
     description: `Yee Han's internet profile`,
     url: "https://www.yeehan.me",
     image: "./src/img/og_image.jpeg",
     facebookUsername: "chungyhan",
-    author: "Chung Yee Han",
+    author: "Yee Han Chung",
     social: {
       githubUrl: "https://github.com/cyeehan",
       linkedInUrl: "https://www.linkedin.com/in/cyeehan/",

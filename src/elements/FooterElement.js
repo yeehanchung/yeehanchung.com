@@ -37,13 +37,13 @@ export const FooterSocialIcons = styled.div`
     margin: 10px;
     height: 30px;
     padding: 0 3rem;
-    transition: filter 0.3s ease;
+    transition: filter 0.3s;
   }
 
   img:hover,
   img:focus {
-    transition: all 0.5s;
+    transition: all 0.3s;
     filter: brightness(40%);
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
   }
 `
