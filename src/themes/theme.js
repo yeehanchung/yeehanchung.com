@@ -9,10 +9,10 @@ export default {
     // main1: "hsl(207, 70%, 59%)",
     main1: "#357ae8",
     main2: "hsl(207, 70%, 94%)",
-    dark1: "hsl(227, 2%, 12%)",
+    dark1: "#bfcde2",
     dark2: "hsl(227, 2%, 26%)",
     dark3: "hsl(227, 2%, 64%)",
-    dark4: "#414244",
+    dark4: "#bfcde2",
     light1: "hsl(0, 0%, 100%)",
     light2: "hsl(0, 0%, 95%)",
   },
@@ -30,10 +30,10 @@ export default {
     x2Large: "3.5rem",
     xxLarge: "3rem",
   },
-  animations: {
-    button: "box-shadow 0.3s ease",
-    link: "color 0.2 ease",
-  },
+  // animations: {
+  //   button: "box-shadow 0.3s ease",
+  //   link: "color 0.2 ease",
+  // },
   shadows: {
     shadow1: "2px 5px 20px rgba(30, 30, 31, 0.05)",
   },

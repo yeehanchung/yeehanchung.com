@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 
 // Paragraph
 export const P = styled.p`
-  /* font-family: 'system-ui'; */
   margin: ${props => (props.margin ? props.margin : 0)};
   font-size: ${props => {
     switch (props.size) {
@@ -88,7 +87,7 @@ export const H1 = styled.h1`
   font-size: 2.25rem;
   /* font-weight: bold; */
   line-height: 60px;
-  color: #495057;
+  color: #e3e9f3;
   /* text-shadow: 1px 1px #444950; */
   /* color: gray; */
   /* color: ${props => {

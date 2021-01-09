@@ -54,7 +54,7 @@ const MyLogoA = styled(Link)`
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: #e3e9f3;
 `
 
 export const Nav = () => {
@@ -69,6 +69,10 @@ export const Nav = () => {
         <NavElement to={"/blog"}>
           {" "}
           Blog
+        </NavElement>
+        <NavElement to={"/my-resume"}>
+          {" "}
+          Resume
         </NavElement>
       </Ul>
     </NavWrapper>

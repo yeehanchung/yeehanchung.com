@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const PostWrapper = styled.main`
   grid-column: 4 / span 8;
   grid-row: 2 / span 6;
-  background-color: ${props => props.theme.colors.light1};
+  /* background-color: ${props => props.theme.colors.light1}; */
   padding: ${props =>
     `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
@@ -35,8 +35,11 @@ export const PostWrapper = styled.main`
   h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
-    font-weight: 400;
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #e3e9f3;
+    /* color: ${props => props.theme.colors.dark4}; */
 
     @media ${props => props.theme.breakpoints.mobile} {
       font-size: 1.8rem;
@@ -76,10 +79,10 @@ export const PostWrapper = styled.main`
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
-    color: ${props => props.theme.colors.dark2};
+    /* color: ${props => props.theme.colors.dark2}; */
   }
   a {
-    color: ${props => props.theme.colors.main1};
+    /* color: ${props => props.theme.colors.main1}; */
     text-decoration: none;
   }
   strong {
@@ -101,10 +104,11 @@ export const PostWrapper = styled.main`
   }
   ul,
   ol {
-    color: ${props => props.theme.colors.dark2};
+    /* color: ${props => props.theme.colors.dark2}; */
     margin: 1rem 0 1rem 2rem;
   }
   li {
+    color: ${props => props.theme.colors.dark1};
     font-size: 0.9rem;
     line-height: 1.3rem;
     font-weight: 400;
@@ -114,14 +118,14 @@ export const PostWrapper = styled.main`
     font-family: ${props => props.theme.fonts.code};
     font-size: 1rem;
     line-height: 1.875rem;
-    color: ${props => props.theme.colors.light1};
-    background-color: ${props => props.theme.colors.dark3};
+    /* color: ${props => props.theme.colors.light1}; */
+    /* background-color: ${props => props.theme.colors.dark3}; */
     padding: 0 0.3rem;
   }
   hr {
     border: 0;
     height: 1px;
-    background: ${props => props.theme.colors.dark1};
+    /* background: ${props => props.theme.colors.dark1}; */
     opacity: 0.2;
     margin: 2rem 0;
   }

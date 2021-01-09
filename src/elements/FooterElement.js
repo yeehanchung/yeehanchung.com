@@ -43,7 +43,7 @@ export const FooterSocialIcons = styled.div`
   img:hover,
   img:focus {
     transition: all 0.3s;
-    filter: brightness(40%);
+    filter: brightness(150%);
     /* transform: translateY(-2px); */
   }
 `

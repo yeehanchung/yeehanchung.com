@@ -21,7 +21,7 @@ export default () => {
         </P>
         <br />
         <P lineHeight="medium">
-          I enjoy spending my time on the Internet, doing web development stuff,
+          I enjoy spending my time on the Internet, and doing web development stuff
           which I keep on{" "}
           <A
             href="https://yeehan.dev/"

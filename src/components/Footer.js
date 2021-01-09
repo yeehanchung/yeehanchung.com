@@ -6,11 +6,12 @@ import {
   FooterSocialWrapper,
   P,
 } from "../elements"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const InnerIcon = styled.a`
   margin: "2rem 1rem";
-  padding: "2rem"
+  padding: "2rem";
+  fill: "white";
 `
 
 export const Footer = () => {
@@ -64,7 +65,7 @@ export const Footer = () => {
             <img src={data.instagram.publicURL} alt="Instagram" />
           </InnerIcon>
         </FooterSocialIcons>
-        <P size="xSmall" color="dark3">
+        <P size="xSmall">
           Built with Gatsby by Yee Han{" "}
           <span role="img" aria-label="Copyright">
             &copy;
