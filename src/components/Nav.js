@@ -66,10 +66,8 @@ export const Nav = () => {
         </MyLogoA>
       </CustomSpan>
       <Ul>
-        <NavElement to={"/blog"}>
-          {" "}
-          Blog
-        </NavElement>
+        <NavElement to={"/blog"}>Blog</NavElement>
+        <NavElement to={"/resume"}>Resume</NavElement>
       </Ul>
     </NavWrapper>
   )
