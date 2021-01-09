@@ -41,7 +41,7 @@ export default () => {
         </P>
         <br />
         <P lineHeight="medium">
-          Video games played a huge part in my life as I was a hardcore gamer before I decided to fully focus on my career which is challenging and fun too. My most favorite game on my <A href="https://steamcommunity.com/profiles/76561198068565447" rel="noopener noreferrer" target="_blank">Steam account</A> would be The Witcher 3.
+          My most favorite game on my <A href="https://steamcommunity.com/profiles/76561198068565447" rel="noopener noreferrer" target="_blank">Steam account</A> would be The Witcher 3.
         </P>
       </Content>
     </Container>
