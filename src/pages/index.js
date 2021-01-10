@@ -35,9 +35,8 @@ export default () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            GitHub
+            GitHub.
           </A>
-          , and blogging some of my thoughts here.
         </P>
         <br />
         <P lineHeight="medium">
