@@ -66,7 +66,7 @@ const singlePost = ({ data }) => {
           Netlify, Heroku, GitHub
         </li>
         <li>Products: (1){" "}<a
-            href="http://www.new.sausagekl.com/"
+            href="http://www.sausagekl.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
