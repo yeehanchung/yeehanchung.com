@@ -28,7 +28,7 @@ const allPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
-      <Seo title="YeeHan Chung | Blog"/>
+      <Seo title="YeeHan Chung | Blog" />
       <Content>
         {isPostAvailable ? (
           posts.map(post => (
@@ -49,18 +49,18 @@ const allPosts = ({ pageContext, data }) => {
             </P>
           </>
         )}
+        {/* Pagination */}
+        {isPostAvailable == true ? (
+          <Pagination
+            isFirst={isFirst}
+            isLast={isLast}
+            prevPage={prevPage}
+            nextPage={nextPage}
+          />
+        ) : (
+          ""
+        )}
       </Content>
-      {/* Pagination */}
-      {isPostAvailable == true ? (
-        <Pagination
-          isFirst={isFirst}
-          isLast={isLast}
-          prevPage={prevPage}
-          nextPage={nextPage}
-        />
-      ) : (
-        ""
-      )}
     </Container>
   )
 }

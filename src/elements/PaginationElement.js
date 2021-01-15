@@ -8,7 +8,7 @@ export const PaginationWrapper = styled.div`
   padding: 0 0rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   /* grid-row-end: 8; */
   grid-row: span 2/9;
 

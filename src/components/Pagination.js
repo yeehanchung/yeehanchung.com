@@ -6,7 +6,7 @@ export const Pagination = ({ isFirst, isLast, prevPage, nextPage }) => {
     <PaginationWrapper isFirst={isFirst} isLast={isLast}>
       <PaginationElement to={prevPage}>
         {/* {isLast ? "← Newer posts" : ""} */}
-        {isLast && "← Newer posts"}
+        {isFirst? "" : (isLast && "← Newer posts")}
       </PaginationElement>
       <PaginationElement to={nextPage}>Older posts →</PaginationElement>
     </PaginationWrapper>
