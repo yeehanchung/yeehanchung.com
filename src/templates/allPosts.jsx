@@ -24,7 +24,7 @@ const allPosts = ({ pageContext, data }) => {
   const nextPage = `/blog/${currentPage + 1}`
   const posts = data.allMdx.edges
   // Change to true if want to publish all posts
-  const isPostAvailable = false
+  const isPostAvailable = true
 
   return (
     <Container>
