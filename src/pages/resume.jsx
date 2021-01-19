@@ -30,12 +30,16 @@ const singlePost = ({ data }) => {
       <Post>
         <P style={{ fontSize: "1.5rem", marginBottom: "1.5rem", fontWeight: 'bold'}}>Resume</P>
         <P size="xSmall" color="dark2">
-          <Span>{"Last updated: 10 January, 2021"}</Span>
+          <Span>{"Last updated: 19 January, 2021"}</Span>
         </P>
         {/* Professional Experience */}
         <h2>Professional Experience</h2>
         <h3>Software Engineer Intern @ Fusionex International</h3>
         <h4>Jan 2021 - Present | Petaling Jaya, Malaysia</h4>
+        <li>Software development</li>
+        <li>Web application development</li>
+        <li>Support SIT (System Integration Testing)</li>
+        <li>Support UAT (User Acceptance Testing)</li>
         {/* Education */}
         <h2>Education</h2>
         <h3>INTI International University + Coventry University, UK</h3>
@@ -136,6 +140,7 @@ const singlePost = ({ data }) => {
         <br />
         <h3>Student Leader Ambassador @ INTI International University</h3>
         <h4>Jul 2018 - Dec 2020 | Negeri Sembilan, Nilai</h4>
+        <li>Interviewer for recruitment of new Student Leader Ambassadors.</li>
         <li>
           Moderated Virtual Hiring Session with Exabytes Group and Din Tai Fung,
           and assisted other sessions during INTI's Virtual Career Fair 2020
