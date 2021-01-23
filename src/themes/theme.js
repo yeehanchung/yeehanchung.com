@@ -1,7 +1,8 @@
 export default {
   fonts: {
     // Go to postElement.js
-    main: 'system-ui',
+    main:
+      "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
     // font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida
     code: "Roboto Mono, monospace",
   },

@@ -50,7 +50,7 @@ const Ul = styled.ul`
 // `
 
 const MyLogoA = styled(Link)`
-  font-family: "system-ui";
+  font-family: ${props => props.theme.fonts.main};
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
