@@ -1,24 +1,67 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { FooterSocialIcons, H1, P } from "../elements"
-import {
-  Container,
-  Post,
-  Seo,
-  Button,
-  InnerIcon,
-  // ContentCard,
-  // Content,
-} from "../components"
-import cocaCola from '../img/coca-cola.jpg';
 import styled from "styled-components"
+import { Container, Post, Seo } from "../components"
+import { P } from "../elements"
+import cocaCola from "../img/coca-cola.jpg"
+import "../styles/styles.css"
 
 const Span = styled.span`
   padding: 0 1rem 0 0rem;
 `
+const InnerIcon = styled.a`
+  text-align: center;
+`
 
-const singlePost = ({ data }) => {
+const FooterSocialIcons = styled.div`
+  flex: 0 0 100%;
+  margin: 2rem 0 2rem 0;
+  transition: all 0.5s;
+  text-align: center;
+
+  /* Targetting individual img */
+  img {
+    margin: 10px;
+    height: 30px;
+    padding: 0 3rem;
+    transition: filter 0.3s;
+  }
+
+  img:hover,
+  img:focus {
+    transition: all 0.3s;
+    filter: brightness(40%);
+    /* transform: translateY(-2px); */
+  }
+`
+
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      hero: file(relativePath: { eq: "hero_img.svg" }) {
+        publicURL
+      }
+      linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+        publicURL
+      }
+      github: file(relativePath: { eq: "github.svg" }) {
+        publicURL
+      }
+      facebook: file(relativePath: { eq: "facebook.svg" }) {
+        publicURL
+      }
+      instagram: file(relativePath: { eq: "instagram.svg" }) {
+        publicURL
+      }
+      whatsapp: file(relativePath: { eq: "whatsapp.svg" }) {
+        publicURL
+      }
+      email: file(relativePath: { eq: "email.svg" }) {
+        publicURL
+      }
+    }
+  `)
+
   return (
     <Container>
       <Seo
@@ -28,18 +71,68 @@ const singlePost = ({ data }) => {
         }
       />
       <Post>
-        <P style={{ fontSize: "1.5rem", marginBottom: "1.5rem", fontWeight: 'bold'}}>Resume</P>
-        <P size="xSmall" color="dark2">
-          <Span>{"Last updated: 19 January, 2021"}</Span>
+        <P
+          style={{
+            fontSize: "1.5rem",
+            marginBottom: "1.5rem",
+            fontWeight: "bold",
+          }}
+        >
+          Resume
         </P>
+        <P size="xSmall" color="dark2">
+          <Span>{"5 February, 2021"}</Span>
+        </P>
+        <FooterSocialIcons>
+          <InnerIcon
+            className="social-icon"
+            href="https://github.com/cyeehan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={data.github.publicURL} alt="GitHub" />
+          </InnerIcon>
+          <InnerIcon
+            className="social-icon"
+            href="https://www.linkedin.com/in/cyeehan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={data.linkedin.publicURL} alt="Linkedin" />
+          </InnerIcon>
+          <InnerIcon
+            className="social-icon"
+            href="https://www.facebook.com/chungyhan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={data.facebook.publicURL} alt="Facebook" />
+          </InnerIcon>
+          <InnerIcon
+            className="social-icon"
+            href="https://www.instagram.com/cyee_han"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={data.instagram.publicURL} alt="Instagram" />
+          </InnerIcon>
+        </FooterSocialIcons>
         {/* Professional Experience */}
         <h2>Professional Experience</h2>
         <h3>Software Engineer Intern @ Fusionex International</h3>
         <h4>Jan 2021 - Present | Petaling Jaya, Malaysia</h4>
-        <li>Software development</li>
-        <li>Web application development</li>
-        <li>Support SIT (System Integration Testing)</li>
-        <li>Support UAT (User Acceptance Testing)</li>
+        <li>Software and web application developments</li>
+        <li>
+          Support SIT (System Integration Testing) and UAT (User Acceptance
+          Testing)
+        </li>
+        <li>
+          API integration, technical documentation, and system optimization
+        </li>
+        <li>
+          Technologies: WordPress (PHP, JavaScript, jQuery/Ajax), Express.js
+          (Node.js), REST API
+        </li>
         {/* Education */}
         <h2>Education</h2>
         <h3>INTI International University + Coventry University, UK</h3>
@@ -69,41 +162,54 @@ const singlePost = ({ data }) => {
           Technologies: React.js, Redux, Gatsby, GraphQL, Firebase, Node.js,
           Netlify, Heroku, GitHub
         </li>
-        <li>Products: (1){" "}<a
+        <li>
+          Products: (1){" "}
+          <a
             href="http://www.sausagekl.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             E-commerce system
-          </a>, (2) <a
+          </a>
+          , (2){" "}
+          <a
             href="https://www.blog.sausagekl.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Blog system
-          </a></li>
+          </a>
+        </li>
         <br />
         {/* 2nd project */}
         <h3>Covid-19 Medicine + QR Code Scanner Android Apps</h3>
         <h4>Team-based Project</h4>
-        <li>Being a team lead, solution architect, full-stack developer and presenter</li>
+        <li>
+          Being a team lead, solution architect, full-stack developer and
+          presenter
+        </li>
         <li>
           Technologies: Java, XML, Firebase, Covid-19 API, Android Studio,
           Microsoft Forms, Microsoft Power Automate, Microsoft Power BI, GitHub
         </li>
-        <li>GitHub repo: (1){" "}<a
+        <li>
+          GitHub repo: (1){" "}
+          <a
             href="https://github.com/cyeehan/medicine-covid-19-health-check"
             rel="noopener noreferrer"
             target="_blank"
           >
             Medicine app
-          </a>, (2) <a
+          </a>
+          , (2){" "}
+          <a
             href="https://github.com/cyeehan/medicine-qr-code-scanner"
             rel="noopener noreferrer"
             target="_blank"
           >
             QR Code Scanner app
-          </a></li>
+          </a>
+        </li>
         <br />
         {/* Publication */}
         <h2>Publication</h2>
@@ -183,10 +289,7 @@ const singlePost = ({ data }) => {
             </td>
             <td>
               <li>1st Runner Up - Coca-Cola Automation Employer Project</li>
-              <li>
-                Being a team lead, full-stack developer and
-                presenter
-              </li>
+              <li>Being a team lead, full-stack developer and presenter</li>
               <li>Digitised at least 20 physical registration forms</li>
               <li>
                 Developed a login system and an administrative dashboard with
@@ -200,7 +303,11 @@ const singlePost = ({ data }) => {
                 Technologies: HTML, CSS, SQL, PHP, Bootstrap, phpMyAdmin, and
                 PhpStorm
               </li>
-              <img src={cocaCola} alt="Girl in a jacket"/>
+              <img
+                className="resume-img"
+                src={cocaCola}
+                alt="Girl in a jacket"
+              />
             </td>
           </tr>
         </table>
@@ -208,5 +315,3 @@ const singlePost = ({ data }) => {
     </Container>
   )
 }
-
-export default singlePost

@@ -18,12 +18,12 @@ const notFound = ({ data }) => {
 
 export default notFound
 
-// export const notFoundQuery = graphql`
-//   query NotFoundQuery {
-//     imageSharp(fixed: { originalName: { eq: "404-error.jpg" } }) {
-//       fixed(width: 1200, height: 480) {
-//         ...GatsbyImageSharpFixed
-//       }
-//     }
-//   }
-// `
+export const notFoundQuery = graphql`
+  query NotFoundQuery {
+    imageSharp(fixed: { originalName: { eq: "404-error.jpg" } }) {
+      fixed(width: 1200, height: 480) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+`

@@ -168,11 +168,11 @@ export const PostWrapper = styled.main`
     }
   }
 
-  img {
+  /* img {
     margin: 15px 0 0 15px;
     width: 70%;
     height: auto;
-  }
+  } */
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
