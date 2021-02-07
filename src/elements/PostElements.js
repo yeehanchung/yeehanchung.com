@@ -108,7 +108,7 @@ export const PostWrapper = styled.main`
     font-size: 0.9rem;
     line-height: 1.3rem;
     font-weight: 400;
-    margin: 0.35rem 0 0 1rem;
+    margin: 0.35rem 0 0 0rem;
   }
   code {
     font-family: ${props => props.theme.fonts.code};
