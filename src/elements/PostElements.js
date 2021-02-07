@@ -46,7 +46,7 @@ export const PostWrapper = styled.main`
     font-size: 1.4rem;
     line-height: 1.75rem;
     font-weight: bold;
-    margin: 4rem 0 1rem 0;
+    margin: 0rem 0 1rem 0;
   }
   h3 {
     font-size: 1.1rem;
