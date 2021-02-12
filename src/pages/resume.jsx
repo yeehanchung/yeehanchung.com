@@ -13,8 +13,8 @@ const InnerIcon = styled.a`
   text-align: center;
 `
 
-const FooterSocialIcons = styled.div`
-  flex: 0 0 100%;
+const SocialIcons = styled.div`
+  /* flex: 0 0 100%; */
   margin: 2rem 0 2rem 0;
   transition: all 0.5s;
   text-align: center;
@@ -68,7 +68,7 @@ export default () => {
       <Post>
         <P style={{fontSize: "1.5rem", marginBottom: "1.5rem", fontWeight: "bold",}}>Resume</P>
         {/* <P size="xSmall" color="dark2"><Span>{"7 February, 2021"}</Span></P> */}
-        <FooterSocialIcons>
+        <SocialIcons>
           <InnerIcon className="social-icon" href="https://github.com/cyeehan" target="_blank" rel="noopener noreferrer">
             <img src={data.github.publicURL} alt="GitHub" />
           </InnerIcon>
@@ -81,8 +81,7 @@ export default () => {
           <InnerIcon className="social-icon" href="https://www.instagram.com/cyee_han" target="_blank" rel="noopener noreferrer">
             <img src={data.instagram.publicURL} alt="Instagram" />
           </InnerIcon>
-        </FooterSocialIcons>
-        <br />
+        </SocialIcons>
         {/* Professional Experience */}
         <h2>Professional Experience</h2>
         <h3>Software Engineer Intern @ Fusionex International</h3>
@@ -93,14 +92,13 @@ export default () => {
         <li>Assisted team members to solve challenging coding problems.</li>
         <li>Written detailed technical/non-technical documentation using Markdown for core team members.</li>
         <li>Tech stack: WordPress (PHP, JavaScript, jQuery/Ajax), Express.js (Node.js), REST API.</li>
-        <br /><br /><br />
         {/* Education */}
         <h2>Education</h2>
         <h3>INTI International University + Coventry University, UK</h3>
         <h4>Apr 2018 - May 2021 | Negeri Sembilan, Nilai, Malaysia</h4>
         <li>Bachelor of Computer Science, majoring in Software Engineering.</li>
         <li>CGPA: 3.85/4.00 (First Class Honours).</li>
-        <br /><br /><br />
+
         {/* Projects */}
         <h2>Projects</h2>
         {/* 1st project */}
@@ -118,7 +116,7 @@ export default () => {
           , (2){" "}
           <a href="https://www.blog.sausagekl.com/" rel="noopener noreferrer" target="_blank">blog.sausagekl.com</a>
         </li>
-        <br />
+
         {/* 2nd project */}
         <h3>Covid-19 Medicine + QR Code Scanner Android Apps</h3>
         <h4>Team-based Project</h4>
@@ -129,13 +127,13 @@ export default () => {
           , (2){" "}
           <a href="https://github.com/cyeehan/medicine-qr-code-scanner" rel="noopener noreferrer" target="_blank">QR Code Scanner app</a>
         </li>
-        <br /><br /><br />
+
         {/* Publication */}
         <h2>Publication</h2>
         <h3>A Study of Software Quality Assurance Perspective on E-commerce System Development</h3>
         <li>Main author. Paper is under review by a publisher from USA.</li>
         <li>Expected to be published in SCOPUS indexed journal in 2021.</li>
-        <br /><br /><br />
+
         {/* Leadership experience */}
         <h2>Leadership Experience</h2>
         <h3>Modern Workplace Ambassador @ Microsoft Malaysia</h3>
@@ -146,7 +144,7 @@ export default () => {
         <li>Increased over 700 Microsoft Teams account activation, and helped Microsoft Malaysia won an award.</li>
         <li>Organized 3-day Virtual Training & Recruitment Sessions for 170+ students and received 4.68/5 avg. rating.</li>
         <li>Provided Microsoft Office 365 training to 150+ students across campuses (virtually and physically).</li>
-        <br />
+
         <h3>Student Leader Ambassador @ INTI International University</h3>
         <h4>Jul 2018 - Present | Negeri Sembilan, Nilai, Malaysia</h4>
         <li>Interviewed 30+ undergraduate and graduate students during recruitment of new Leader Ambassadors.</li>
@@ -163,20 +161,20 @@ export default () => {
           {" "}using Photoshop.
         </li>
         <li>Facilitated 5 Industry Advisory Board events and INTI’s Partnership Appreciation Dinner.</li>
-        <br />
+
         <h3>Program Master @ INTI International University IT Club</h3>
         <h4>Jan 2019 - Nov 2019 | Negeri Sembilan, Nilai, Malaysia</h4>
         <li>Coordinator of Microsoft Office 365 Training with over 60 INTI students.</li>
         <li>Chair-organized Python Programming Workshop for 20 INTI students.</li>
         <li>Program Master of Arduino Programming Workshop for 80 INTI students.</li>
-        <br /><br /><br />
+
         {/* Awards and Achievements */}
         <h2>Awards and Achievements</h2>
         <table>
           {/* Add new here */}
           <tr>
             <td>
-              <h3>2020</h3>
+              <span>2020</span>
             </td>
             <td>
               <li>1st Runner Up - Coca-Cola Automation Employer Project.</li>

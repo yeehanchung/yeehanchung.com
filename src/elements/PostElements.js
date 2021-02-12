@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const PostWrapper = styled.main`
+
   grid-column: 4 / span 8;
   grid-row: 2 / span 6;
   background-color: ${props => props.theme.colors.light1};
@@ -46,9 +47,10 @@ export const PostWrapper = styled.main`
     font-size: 1.4rem;
     line-height: 1.75rem;
     font-weight: bold;
-    margin: 0rem 0 1rem 0;
+    margin: 3rem 0 1rem 0;
   }
   h3 {
+    margin: 0.5rem 0 0 0;
     font-size: 1.1rem;
     line-height: 2rem;
     font-weight: bold;
@@ -108,7 +110,7 @@ export const PostWrapper = styled.main`
     font-size: 0.9rem;
     line-height: 1.3rem;
     font-weight: 400;
-    margin: 0.35rem 0 0 0rem;
+    margin: 0.35rem 0 0 0.8rem;
   }
   code {
     font-family: ${props => props.theme.fonts.code};
@@ -167,7 +169,12 @@ export const PostWrapper = styled.main`
         `${props.theme.spacings.small} 0 0 ${props.theme.spacings.x2Large}`};
     }
   }
-
+  span {
+    margin: 0rem 0 0 0;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
   /* img {
     margin: 15px 0 0 15px;
     width: 70%;
