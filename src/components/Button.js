@@ -4,7 +4,7 @@ import { ButtonWrapper } from "../elements"
 export const Button = ({ children, href, size }) => {
   return (
     
-    <ButtonWrapper to={`/blog/${href}`} size={size}>
+    <ButtonWrapper to={`/${href}`} size={size}>
       {children}
     </ButtonWrapper>
   )

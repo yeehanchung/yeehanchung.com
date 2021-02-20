@@ -32,23 +32,18 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   `)
   // Create paginated pages for posts
-  const postsPerPage = 4
   // Round up number
-  const numPages = Math.ceil(data.allMdx.edges.length / postsPerPage)
+  // const numPages = Math.ceil(data.allMdx.edges.length / postsPerPage)
   // comma to ignore (1st) and index (2nd)
-  Array.from({ length: numPages }).forEach((_, i) => {
+  data.allMdx.edges.forEach((edge) => {
+    const slug = edge.node.frontmatter.slug
+    const id = edge.node.id
+    // const previousPostId = index === 0 ? null : edge[index - 1].id
+    // const readingTime = edge.node.fields.readingTime.text
     actions.createPage({
-      // Fist item in array (page becomes 2 if exist)
-      path: i === 0 ? `/blog/` : `/blog/${i + 1}/`,
+      path: `/blog`,
       component: require.resolve(`./src/templates/allPosts.jsx`),
-      context: {
-        // Only return 3 items
-        limit: postsPerPage,
-        // if i = 2, 2 * 3 = 6 and skip the first 3 due to "limit"
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-      },
+      context: { id },
     })
   })
 
@@ -61,7 +56,7 @@ exports.createPages = async function ({ actions, graphql }) {
     // const previousPostId = index === 0 ? null : edge[index - 1].id
     // const readingTime = edge.node.fields.readingTime.text
     actions.createPage({
-      path: `/blog/${slug}`,
+      path: `/${slug}`,
       component: require.resolve(`./src/templates/singlePost.js`),
       context: { id },
     })

@@ -13,7 +13,7 @@ export default () => {
         </H1>
         <br />
         <P lineHeight="medium">
-          Hello there, I'm a software engineer intern at Fusionex International. Passionate in bringing my ideas to life to make things easier. Currently located at Petaling Jaya, Selangor, Malaysia, and originally from East Malaysia, Sandakan, Sabah.
+          Hello there, I'm a software engineer intern at Fusionex International. Passionate in bringing my ideas to life to make things easier. Currently located at Petaling Jaya, Selangor, Malaysia.
         </P>
         <br/>
         <P lineHeight="medium">

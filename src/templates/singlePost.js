@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { P } from "../elements"
+import { P, H2 } from "../elements"
 import {
   Container,
   Post,
@@ -13,6 +13,7 @@ import {
 import styled from "styled-components"
 
 const Span = styled.span`
+  font-size: 12px;
   padding: 0 1rem 0 0rem;
 `
 
@@ -28,13 +29,11 @@ const singlePost = ({ data }) => {
         description={data.mdx.frontmatter.excerpt}
       />
       <Post>
-        <Button href={data.mdx.frontmatter.slug} size="medium">
-          {data.mdx.frontmatter.title}
-        </Button>
-        <P size="xSmall" color="dark2">
-          <Span>{data.mdx.frontmatter.date}</Span>
-          <Span>{readingTime}</Span>
-        </P>
+        <H2>{data.mdx.frontmatter.title}</H2>
+        <p>
+          <span>{data.mdx.frontmatter.date}</span>
+          <span>{readingTime}</span>
+        </p>
         <br/>
         <p>
           <Span>{excerpt}</Span>

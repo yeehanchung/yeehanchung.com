@@ -1,17 +1,16 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const PostWrapper = styled.main`
-
   grid-column: 4 / span 8;
   grid-row: 2 / span 6;
-  background-color: ${props => props.theme.colors.light1};
-  padding: ${props =>
+  background-color: ${(props) => props.theme.colors.light1};
+  padding: ${(props) =>
     `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
   z-index: 10;
   /* border-radius: 50px; */
   margin: 0px 0 60px 0;
-  font-family: ${props => props.theme.fonts.main};
+  font-family: ${(props) => props.theme.fonts.main};
   display: flex;
   /* by default is left to right */
   /* now is top to bottom */
@@ -23,7 +22,7 @@ export const PostWrapper = styled.main`
   h4,
   h5,
   h6 {
-    color: ${props => props.theme.colors.dark1};
+    color: ${(props) => props.theme.colors.dark1};
   }
   /* h1:not(:first-child),
   h2,
@@ -39,7 +38,7 @@ export const PostWrapper = styled.main`
     font-weight: 400;
     text-align: center;
 
-    @media ${props => props.theme.breakpoints.mobile} {
+    @media ${(props) => props.theme.breakpoints.mobile} {
       font-size: 1.8rem;
     }
   }
@@ -47,10 +46,10 @@ export const PostWrapper = styled.main`
     font-size: 1.4rem;
     line-height: 1.75rem;
     font-weight: bold;
-    margin: 3rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
   }
   h3 {
-    margin: 0.5rem 0 0 0;
+    margin: 0rem 0 0 0;
     font-size: 1.1rem;
     line-height: 2rem;
     font-weight: bold;
@@ -75,13 +74,13 @@ export const PostWrapper = styled.main`
     text-align: center;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
-    color: ${props => props.theme.colors.dark2};
+    color: ${(props) => props.theme.colors.dark2};
   }
   a {
-    color: ${props => props.theme.colors.main1};
+    color: ${(props) => props.theme.colors.main1};
     text-decoration: none;
   }
   strong {
@@ -103,27 +102,30 @@ export const PostWrapper = styled.main`
   }
   ul,
   ol {
-    color: ${props => props.theme.colors.dark2};
-    margin: 1rem 0 1rem 2rem;
+    color: ${(props) => props.theme.colors.dark2};
+    margin: 0.5rem 0 1rem 1rem;
+  }
+  li:first-child {
+    margin: 0rem 0 0 0rem;
   }
   li {
     font-size: 0.9rem;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     font-weight: 400;
-    margin: 0.35rem 0 0 0.8rem;
+    margin: 0rem 0 0 0rem;
   }
   code {
-    font-family: ${props => props.theme.fonts.code};
+    font-family: ${(props) => props.theme.fonts.code};
     font-size: 1rem;
     line-height: 1.875rem;
-    color: ${props => props.theme.colors.light1};
-    background-color: ${props => props.theme.colors.dark3};
+    color: ${(props) => props.theme.colors.light1};
+    background-color: ${(props) => props.theme.colors.dark3};
     padding: 0 0.3rem;
   }
   hr {
     border: 0;
     height: 1px;
-    background: ${props => props.theme.colors.dark1};
+    background: ${(props) => props.theme.colors.dark1};
     opacity: 0.2;
     margin: 2rem 0;
   }
@@ -141,7 +143,7 @@ export const PostWrapper = styled.main`
   table,
   th,
   td {
-    /* border: 1px solid ${props => props.theme.colors.dark3}; */
+    /* border: 1px solid ${(props) => props.theme.colors.dark3}; */
   }
 
   th,
@@ -156,49 +158,56 @@ export const PostWrapper = styled.main`
     position: absolute;
   }
   td:nth-last-child(1) {
-    padding: ${props =>
+    padding: ${(props) =>
       `${props.theme.spacings.small} 0 0 ${props.theme.spacings.xLarge}`};
     margin-left: 10px;
-    @media ${props => props.theme.breakpoints.tablet} {
-      padding: ${props =>
+    @media ${(props) => props.theme.breakpoints.tablet} {
+      padding: ${(props) =>
         `${props.theme.spacings.small} 0 0 ${props.theme.spacings.xLarge}`};
     }
 
-    @media ${props => props.theme.breakpoints.mobile} {
-      padding: ${props =>
+    @media ${(props) => props.theme.breakpoints.mobile} {
+      padding: ${(props) =>
         `${props.theme.spacings.small} 0 0 ${props.theme.spacings.x2Large}`};
     }
   }
   span {
-    margin: 0rem 0 0 0;
-    font-size: 1.1rem;
-    line-height: 2rem;
-    font-weight: bold;
+    padding: 0 1rem 0 0rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: ${(props) => props.theme.colors.dark2};
   }
-  /* img {
+  img {
     margin: 15px 0 0 15px;
-    width: 70%;
-    height: auto;
-  } */
+    width: 20%;
+    /* height: auto; */
+  }
 
-  @media ${props => props.theme.breakpoints.tablet} {
+  span[class="gatsby-resp-image-wrapper"] {
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+  @media ${(props) => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
   }
 
-  @media ${props => props.theme.breakpoints.mobile} {
-    padding: ${props =>
+  @media ${(props) => props.theme.breakpoints.mobile} {
+    padding: ${(props) =>
       `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   }
-`
+`;
 
 export const DateLi = styled.li`
-  @media ${props => props.theme.breakpoints.tablet} {
-    padding: ${props =>
+  @media ${(props) => props.theme.breakpoints.tablet} {
+    padding: ${(props) =>
       `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   }
 
-  @media ${props => props.theme.breakpoints.mobile} {
-    padding: ${props =>
+  @media ${(props) => props.theme.breakpoints.mobile} {
+    padding: ${(props) =>
       `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   }
-`
+`;

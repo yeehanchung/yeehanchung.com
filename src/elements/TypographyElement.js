@@ -11,11 +11,13 @@ export const P = styled.p`
       case "medium":
         return "1.125rem"
       case "xMedium":
-        return "1rem"
+        return "0.9rem"
       case "small":
         return "0.9rem"
       case "xSmall":
-        return "14px !important";
+        return "14px";
+      case "xxSmall":
+        return "10px";
       default:
         return "1.125rem"
     }

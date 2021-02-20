@@ -6,6 +6,9 @@ export default {
     // font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida
     code: "Roboto Mono, monospace",
   },
+  size: {
+    xxSmall: '0.25rem',
+  },
   colors: {
     // main1: "hsl(207, 70%, 59%)",
     main1: "#357ae8",

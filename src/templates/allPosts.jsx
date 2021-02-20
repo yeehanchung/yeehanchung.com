@@ -16,12 +16,6 @@ import { H1, P } from "../elements"
 //
 
 const allPosts = ({ pageContext, data }) => {
-  const { currentPage, numPages } = pageContext
-  const isFirst = currentPage === 1
-  const isLast = currentPage === numPages
-  // if page 2 - 1 = 1
-  const prevPage = currentPage - 1 === 1 ? "/blog" : `/blog/${currentPage - 1}`
-  const nextPage = `/blog/${currentPage + 1}`
   const posts = data.allMdx.edges
   // Change to true if want to publish all posts
   const isPostAvailable = false
@@ -50,7 +44,7 @@ const allPosts = ({ pageContext, data }) => {
           </>
         )}
         {/* Pagination */}
-        {isPostAvailable == true ? (
+        {/* {isPostAvailable == true ? (
           <Pagination
             isFirst={isFirst}
             isLast={isLast}
@@ -59,7 +53,7 @@ const allPosts = ({ pageContext, data }) => {
           />
         ) : (
           ""
-        )}
+        )} */}
       </Content>
     </Container>
   )
@@ -69,11 +63,10 @@ export default allPosts
 
 // graphql query
 export const pageQuery = graphql`
-  query AllPostsQuery($skip: Int!, $limit: Int!) {
+  query AllPostsQuery {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
-      skip: $skip
-      limit: $limit
+      filter: { frontmatter: { tag: { eq: "blog" } } }
     ) {
       edges {
         node {
