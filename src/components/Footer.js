@@ -69,7 +69,7 @@ export const Footer = () => {
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{" "}
-          {new Date().getFullYear()}
+          2020 - {new Date().getFullYear()}
         </P>
       </FooterSocialWrapper>
     </FooterWrapper>

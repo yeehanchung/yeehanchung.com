@@ -35,13 +35,15 @@ export default () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            GitHub.
-          </A>
+            GitHub
+          </A>.{" "}
+          My favorite game on my <A href="https://steamcommunity.com/profiles/76561198068565447" rel="noopener noreferrer" target="_blank">Steam</A> would be The Witcher 3.
         </P>
-        <br />
+        <br/>
         <P lineHeight="medium">
-          My most favorite game on my <A href="https://steamcommunity.com/profiles/76561198068565447" rel="noopener noreferrer" target="_blank">Steam account</A> would be The Witcher 3.
+          My door is always open for discussing stuff: 
         </P>
+        <P>Email me @ cyh0011215@gmail.com</P>
       </Content>
     </Container>
   )
