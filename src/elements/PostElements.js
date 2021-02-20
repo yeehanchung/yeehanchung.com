@@ -49,9 +49,9 @@ export const PostWrapper = styled.main`
     margin: 2rem 0 1rem 0;
   }
   h3 {
-    margin: 0rem 0 0 0;
+    margin: 0rem 0px 0.5rem;
     font-size: 1.1rem;
-    line-height: 2rem;
+    /* line-height: 2rem; */
     font-weight: bold;
   }
   h4 {
