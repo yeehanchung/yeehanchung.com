@@ -43,7 +43,7 @@ export default () => {
         <P lineHeight="medium">
           My door is always open for discussing stuff: 
         </P>
-        <P>Email me @ cyh0011215@gmail.com</P>
+        <P>Email me @ <A href="mailto:cyh0011215@gmail.com">cyh0011215@gmail.com</A></P>
       </Content>
     </Container>
   )
