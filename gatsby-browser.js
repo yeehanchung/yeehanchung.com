@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  body, html {
+  body {
     font-family: ${props => props.theme.fonts.main};
     height: 100%;
     background-color: ${props => props.theme.colors.light1};
