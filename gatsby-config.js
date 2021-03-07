@@ -7,16 +7,16 @@
 module.exports = {
   siteMetadata: {
     title: `YeeHan Chung's Personal Website`,
-    description: `Yee Han's internet profile`,
-    url: "https://www.yeehan.me",
-    image: "./src/img/og_image.jpeg",
-    facebookUsername: "chungyhan",
-    author: "Yee Han Chung",
+    description: `YeeHan Chung's Internet Profile`,
+    url: 'https://www.yeehan.me',
+    image: './src/img/og_image.jpeg',
+    facebookUsername: 'chungyhan',
+    author: 'YeeHan Chung',
     social: {
-      githubUrl: "https://github.com/cyeehan",
-      linkedInUrl: "https://www.linkedin.com/in/cyeehan/",
-      facebookUrl: "https://www.facebook.com/chungyhan/",
-      twitterUrl: "https://twitter.com/cyee_han",
+      githubUrl: 'https://github.com/cyeehan',
+      linkedInUrl: 'https://www.linkedin.com/in/cyeehan/',
+      facebookUrl: 'https://www.facebook.com/chungyhan/',
+      twitterUrl: 'https://twitter.com/cyee_han',
     },
   },
   /* Your site config here */
@@ -30,13 +30,6 @@ module.exports = {
         name: `pages`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/posts`,
-    //     name: `posts`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -59,11 +52,10 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 1200,
+              maxWidth: 480,
               quality: 100,
             },
           },
-          // Reading time
           `gatsby-remark-reading-time`,
         ],
       },
@@ -77,7 +69,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             // Make sure image served is maximum 1200px; For Optimization.
             options: {
-              maxWidth: 1200,
+              maxWidth: 480,
+              maxHeight: 400,
               quality: 100,
             },
           },
@@ -86,4 +79,4 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
   ],
-}
+};

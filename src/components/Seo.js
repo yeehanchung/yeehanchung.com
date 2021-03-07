@@ -1,6 +1,6 @@
+import { graphql, StaticQuery } from "gatsby"
 import React from "react"
 import { Helmet } from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
 
 export const Seo = ({ description, keywords, title, image, url, author }) => {
   return (
@@ -13,7 +13,7 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
         const metaAuthor = author || data.site.siteMetadata.author
         const metaUrl = url || data.site.siteMetadata.url
         const metaImage = image || data.site.siteMetadata.image
-        const metaKeywords = keywords || ["gatsby blog", "gatsby MDX blog"]
+        const metaKeywords = keywords || ["yeehanchung", "yeehan", "chungyeehan"]
 
         return (
           <Helmet
@@ -37,8 +37,7 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
               },
               {
                 property: `og:image`,
-                content:
-                  "https://avatars2.githubusercontent.com/u/38914065?s=460&u=d24009dcb4fb181de69531ccd9d1c69da2d28881&v=4",
+                content: metaImage,
               },
               {
                 property: `og:url`,

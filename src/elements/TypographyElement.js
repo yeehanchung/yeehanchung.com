@@ -1,6 +1,6 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 // Paragraph
 export const P = styled.p`
@@ -71,6 +71,7 @@ export const P = styled.p`
 // a tag
 export const A = styled.a`
   /* text-decoration: none; */
+  font-size: 0.9rem;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 1.5px;
   font-weight: bold;

@@ -30,7 +30,7 @@ export default {
     small: "0rem",
     medium: "2rem",
     large: "8rem",
-    xLarge: "5rem",
+    xLarge: "3rem",
     x2Large: "3.5rem",
     xxLarge: "3rem",
   },

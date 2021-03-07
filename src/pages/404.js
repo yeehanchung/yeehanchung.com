@@ -1,7 +1,7 @@
-import React from "react"
 import { graphql } from "gatsby"
+import React from "react"
 import { Container, Content } from "../components"
-import { CardWrapper, H1, P } from "../elements"
+import { P } from "../elements"
 
 const notFound = ({ data }) => {
   return (

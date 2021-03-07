@@ -1,12 +1,10 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import {
-  FooterWrapper,
-  FooterSocialIcons,
-  FooterSocialWrapper,
-  P,
-} from "../elements"
 import styled from "styled-components"
+import {
+  FooterSocialIcons,
+  FooterSocialWrapper, FooterWrapper, P
+} from "../elements"
 
 export const InnerIcon = styled.a`
   margin: "2rem 1rem";
@@ -65,7 +63,7 @@ export const Footer = () => {
           </InnerIcon>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          Built with Gatsby by Yee Han{" "}
+          All rights reserved. Yee Han{" "}
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{" "}

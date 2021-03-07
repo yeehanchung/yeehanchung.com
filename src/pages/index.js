@@ -1,50 +1,54 @@
-import React from "react"
-import { H1, P, A } from "../elements"
-import { Container, Content, Seo } from "../components"
-// import myPhoto from "../img/yeehanchung-casual.jpg"
+import { graphql } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import React from 'react';
+import styled from 'styled-components';
+import { Container, Post, Seo } from '../components';
+import { Author } from '../components/Author.js';
+import { H2 } from '../elements';
+import OG_image from '../img/og_image.jpeg';
 
-export default () => {
+const Span = styled.span`
+  font-size: 12px;
+  padding: 0 1rem 0 0rem;
+`;
+
+export const mainPageQuery = graphql`
+  query ResumeQuery {
+    mdx(frontmatter: {tag: {eq: "resume"}}) {
+      body
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        slug
+        excerpt
+      }
+      fields {
+        readingTime {
+          text
+        }
+      }
+    }
+  }
+`;
+
+export default ({data}) => {
   return (
     <Container>
-      <Seo title="YeeHan Chung | Homepage" />
-      <Content>
-        <H1 textAlign="left" margin=" 0 1rem 0">
-          YeeHan Chung
-        </H1>
-        <br />
-        <P lineHeight="medium">
-          Hello there, I'm a software engineer intern at Fusionex International. Passionate in bringing my ideas to life to make things easier. Currently located at Petaling Jaya, Selangor, Malaysia.
-        </P>
-        <br/>
-        <P lineHeight="medium">
-          If you're curious about my Chinese name, here you go, 钟易翰 (zhōng yī hàn).
-        </P>
-        <br />
-        <P lineHeight="medium">
-          I enjoy spending my time on the Internet, and doing web development stuff
-          which I keep on{" "}
-          <A
-            href="https://yeehan.dev/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            yeehan.dev
-          </A>
-          {" "} and my <A
-            href="https://github.com/cyeehan"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </A>.{" "}
-          My favorite game on my <A href="https://steamcommunity.com/profiles/76561198068565447" rel="noopener noreferrer" target="_blank">Steam</A> would be The Witcher 3.
-        </P>
-        <br/>
-        <P lineHeight="medium">
-          My door is always open for discussing stuff: 
-        </P>
-        <P>Email me @ <A href="mailto:cyh0011215@gmail.com">cyh0011215@gmail.com</A></P>
-      </Content>
+      <Seo image={OG_image} />
+      <Post>
+        <blockquote>
+          <p>
+            Nothing lights up Advocates like creating a solution that changes
+            people’s lives.
+          </p>
+        </blockquote>
+        <Author/>
+        <H2>{data.mdx.frontmatter.title}</H2>
+        <p style={{marginBottom: '0.8rem'}}>
+          <span>⏳</span>{data.mdx.frontmatter.date}
+        </p>
+        <MDXRenderer>{data.mdx.body}</MDXRenderer>
+      </Post>
     </Container>
-  )
-}
+  );
+};

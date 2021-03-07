@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
 // Hook
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { NavElement, NavWrapper, PaginationElement, P } from "../elements"
+import { Link } from "gatsby"
+import React from "react"
 import styled from "styled-components"
+import { NavWrapper } from "../elements"
 // import logoSVG from "../img/logo.svg"
 
 const OfficialWebpage = styled.a`
@@ -65,10 +65,10 @@ export const Nav = () => {
           YeeHan
         </MyLogoA>
       </CustomSpan>
-      <Ul>
-        <NavElement to={"/blog"}>Blog</NavElement>
+      {/* <Ul>
+        <NaElement to={"/blog"}>Blog</NaElement>
         <NavElement to={"/resume"}>Resume</NavElement>
-      </Ul>
+      </Ul> */}
     </NavWrapper>
   )
 }

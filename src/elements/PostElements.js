@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const PostWrapper = styled.main`
   grid-column: 4 / span 8;
-  grid-row: 2 / span 6;
-  background-color: ${(props) => props.theme.colors.light1};
-  padding: ${(props) =>
-    `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
+  grid-row: 1 / span 6;
+  /* background-color: ${(props) => props.theme.colors.light1}; */
+  padding: 0rem 0 0 0;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
   z-index: 10;
   /* border-radius: 50px; */
-  margin: 0px 0 60px 0;
+  margin: 0px 0 1rem 0;
   font-family: ${(props) => props.theme.fonts.main};
   display: flex;
   /* by default is left to right */
@@ -33,13 +32,17 @@ export const PostWrapper = styled.main`
     margin-top: 2rem;
   } */
   h1 {
+    font-family: ${(props) => props.theme.H1};
+    /* font-weight: bold; */
     font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-    text-align: center;
+    font-weight: 700;
+    line-height: 60px;
+    color: #495057;
+    text-align: ${(props) => (props.textAlign ? props.textAlign : 'left')};
+    margin: ${(props) => (props.margin ? props.margin : 0)};
 
     @media ${(props) => props.theme.breakpoints.mobile} {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
   }
   h2 {
@@ -58,7 +61,7 @@ export const PostWrapper = styled.main`
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
   }
   h5 {
     font-size: 1.125rem;
@@ -78,6 +81,7 @@ export const PostWrapper = styled.main`
     line-height: 1.5rem;
     font-weight: 400;
     color: ${(props) => props.theme.colors.dark2};
+    /* display: flex; */
   }
   a {
     color: ${(props) => props.theme.colors.main1};
@@ -98,13 +102,19 @@ export const PostWrapper = styled.main`
     line-height: 2.125rem;
     text-align: center;
     max-width: 36rem;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   ul,
   ol {
     color: ${(props) => props.theme.colors.dark2};
     margin: 0.5rem 0 1rem 1rem;
   }
+  /* ol {
+    color: ${(props) =>
+    props.theme.colors.dark2};
+    margin: 1rem 0 0.25rem 1rem;
+  } */
+
   li:first-child {
     margin: 0rem 0 0 0rem;
   }
@@ -179,16 +189,28 @@ export const PostWrapper = styled.main`
     color: ${(props) => props.theme.colors.dark2};
   }
   img {
-    margin: 15px 0 0 15px;
-    width: 20%;
+    /* margin: 15px 0 0 15px; */
+    /* width: 20%; */
     /* height: auto; */
   }
 
-  span[class="gatsby-resp-image-wrapper"] {
+  span[class='gatsby-resp-image-wrapper'] {
     float: left;
     width: 250px;
     height: auto;
-}
+  }
+
+  span[class='gatsby-resp-image-wrapper']:last-child {
+    margin-bottom: 1.25rem;
+    /* display: flex !important; */
+    @media ${(props) => props.theme.breakpoints.tablet} {
+      margin-bottom: 1.25rem;
+    }
+
+    @media ${(props) => props.theme.breakpoints.mobile} {
+      margin-bottom: 1.25rem;
+    }
+  }
 
   @media ${(props) => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
@@ -198,6 +220,8 @@ export const PostWrapper = styled.main`
     padding: ${(props) =>
       `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
   }
+
+  padding: 3rem 0;
 `;
 
 export const DateLi = styled.li`
