@@ -37,11 +37,11 @@ module.exports = {
         name: `img`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-sharp`,
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -64,6 +64,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extension: [`.md`, `.mdx`],
+        plugins: [`gatsby-remark-images`, `gatsby-remark-images-medium-zoom`],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -72,7 +73,12 @@ module.exports = {
               maxWidth: 480,
               maxHeight: 400,
               quality: 100,
+              linkImagesToOriginal: false,
             },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {},
           },
         ],
       },

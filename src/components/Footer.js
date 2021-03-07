@@ -63,7 +63,7 @@ export const Footer = () => {
           </InnerIcon>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          All rights reserved. Yee Han{" "}
+          All rights reserved. Yee Han CHUNG{" "}
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{" "}

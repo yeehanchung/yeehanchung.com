@@ -6,10 +6,10 @@ import styles from '../styles/author.module.css';
 export function Author() {
   return (
     <div className={styles.person}>
-      <img src={YeeHanChung} alt={'Yee Han Chung'} className={styles.img} />
+      <img src={YeeHanChung} alt={'Yee Han CHUNG'} className={styles.img} />
       <div className={styles.intro}>
         <div className={styles.subtitle}>
-          <h3 className={styles.name}>{'Yee Han'}</h3>
+          <h3 className={styles.name}>{'Yee Han CHUNG'}</h3>
           <p style={{marginBottom: '0.5rem'}}>
             My web development stuff is kept on{' '}
             <A
