@@ -9,7 +9,7 @@ const notFound = ({ data }) => {
       <Content>
         <P>Error 404</P>
         <P size="small" color="dark4" margin="1rem 0 0 0">
-          We could not find what you were looking for
+          We could not find what you are looking for...
         </P>
       </Content>
     </Container>
