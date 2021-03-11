@@ -34,7 +34,7 @@ export const mainPageQuery = graphql`
 export default ({data}) => {
   return (
     <Container>
-      <Seo image={OG_image} title={"YeeHan CHung's Personal Website"} />
+      <Seo image={OG_image} title={"YeeHan Chung's Personal Website"} />
       <Post>
         <blockquote>
           <p>
