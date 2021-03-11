@@ -1,5 +1,5 @@
 import React from 'react';
-import { A } from '../elements';
+import {A} from '../elements';
 import YeeHanChung from '../img/yee-han-chung.jpeg';
 import styles from '../styles/author.module.css';
 
@@ -20,19 +20,22 @@ export function Author() {
             </A>
             .
           </p>
-          <A
-            href="https://github.com/cyeehan"
-            rel="noopener noreferrer"
-            target="">
-            GitHub
-          </A>{' '}
-          |{' '}
-          <A
-            href="https://www.linkedin.com/in/cyeehan/"
-            rel="noopener noreferrer"
-            target="">
-            LinkedIn
-          </A>
+          <div style={{marginBottom: '0.5rem'}}>
+            <A
+              href="https://github.com/cyeehan"
+              rel="noopener noreferrer"
+              target="">
+              GitHub
+            </A>{' '}
+            |{' '}
+            <A
+              href="https://www.linkedin.com/in/cyeehan/"
+              rel="noopener noreferrer"
+              target="">
+              LinkedIn
+            </A>
+          </div>
+          <p>+6 017 857 8815</p>
         </div>
       </div>
     </div>
