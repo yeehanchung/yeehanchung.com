@@ -1,3 +1,8 @@
+/**
+ * Hydrate styling when page is first loaded
+ */
+import '../styles/main.module.css'
+
 export default {
   fonts: {
     // Go to postElement.js
