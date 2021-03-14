@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
   grid-column: 2 / span 12;
@@ -10,10 +10,10 @@ export const FooterWrapper = styled.footer`
   align-items: flex-start;
   grid-row: span 2/11;
 
-  @media ${props => props.theme.breakpoints.tablet} {
+  @media ${(props) => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
   }
-`
+`;
 
 export const FooterSocialWrapper = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ export const FooterSocialWrapper = styled.div`
     text-align: center;
     flex: 0 0 100%;
   }
-`
+`;
 
 export const FooterSocialIcons = styled.div`
   flex: 0 0 100%;
@@ -35,7 +35,7 @@ export const FooterSocialIcons = styled.div`
 
   /* Targetting individual img */
   img {
-    margin: 10px;
+    margin: 10px 0;
     height: 30px;
     padding: 0 3rem;
     transition: filter 0.3s;
@@ -47,4 +47,4 @@ export const FooterSocialIcons = styled.div`
     filter: brightness(40%);
     /* transform: translateY(-2px); */
   }
-`
+`;
