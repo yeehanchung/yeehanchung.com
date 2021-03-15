@@ -6,7 +6,12 @@ import styles from '../styles/author.module.css';
 export function Author() {
   return (
     <div className={styles.person}>
-      <img src={YeeHanChung} alt={'Yee Han CHUNG'} className={styles.img} />
+      <img
+        src={YeeHanChung}
+        alt={'Yee Han Chung'}
+        className={styles.img}
+        loading="lazy"
+      />
       <div className={styles.intro}>
         <div className={styles.subtitle}>
           <h3 className={styles.name}>{'Yee Han CHUNG'}</h3>
