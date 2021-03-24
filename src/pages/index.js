@@ -7,11 +7,6 @@ import { Author } from '../components/Author.js';
 import { H2 } from '../elements';
 import OG_image from '../img/og_image.jpeg';
 
-const Span = styled.span`
-  font-size: 12px;
-  padding: 0 1rem 0 0rem;
-`;
-
 export const mainPageQuery = graphql`
   query ResumeQuery {
     mdx(frontmatter: {tag: {eq: "resume"}}) {
