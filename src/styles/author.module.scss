@@ -1,10 +1,8 @@
 .person {
   display: flex;
   margin: 1rem 0 1.5rem 0 !important;
-}
 
-@media only screen and (max-width: 600px) {
-  .person {
+  @media only screen and (max-width: 600px) {
     display: block;
     margin: 1rem 0 0 0 !important;
   }
@@ -16,10 +14,8 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
-}
 
-@media only screen and (max-width: 600px) {
-  .intro {
+  @media only screen and (max-width: 600px) {
     display: block;
     margin: 1rem 0 0 0 !important;
   }
@@ -30,10 +26,10 @@
   width: 125px;
   border-radius: 50%;
   max-width: 100%;
-}
 
-.img__link {
-  height: 3rem;
+  &__link {
+    height: 3rem;
+  }
 }
 
 .name {

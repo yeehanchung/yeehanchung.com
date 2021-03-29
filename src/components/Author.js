@@ -1,7 +1,7 @@
 import React from 'react';
 import {A} from '../elements';
 import YeeHanChung from '../img/yee-han-chung.jpeg';
-import styles from '../styles/author.module.css';
+import styles from '../styles/author.module.scss';
 
 export function Author() {
   return (
