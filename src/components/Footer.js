@@ -54,7 +54,7 @@ export const Footer = () => {
             <img src={data.facebook.publicURL} alt="Facebook" />
           </InnerIcon> */}
           <InnerIcon
-            href="https://www.instagram.com/cyee_han"
+            href="https://www.instagram.com/cyeehannn/"
             target="_blank"
             rel="noopener noreferrer">
             <img src={data.instagram.publicURL} alt="Instagram" />
