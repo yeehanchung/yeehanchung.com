@@ -20,7 +20,7 @@ export function Author() {
             <A
               href="https://yeehan.dev/"
               rel="noopener noreferrer"
-              target="_blank">
+              target="">
               yeehan.dev
             </A>
             .

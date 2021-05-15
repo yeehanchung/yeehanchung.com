@@ -61,11 +61,11 @@ export const Footer = () => {
           </InnerIcon>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          All Rights Reserved. Yee Han{' '}
+          Yee Han{' '}
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{' '}
-          2020 - {new Date().getFullYear()}
+          2020 - {new Date().getFullYear()}. All Rights Reserved.
         </P>
       </FooterSocialWrapper>
     </FooterWrapper>
