@@ -1,19 +1,24 @@
-import { graphql, StaticQuery } from "gatsby"
-import React from "react"
-import { Helmet } from "react-helmet"
+import {graphql, StaticQuery} from 'gatsby';
+import React from 'react';
+import {Helmet} from 'react-helmet';
 
-export const Seo = ({ description, keywords, title, image, url, author }) => {
+export const Seo = ({description, keywords, title, image, url, author}) => {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription =
-          description || data.site.siteMetadata.description
-        const metaTitle = title || data.site.siteMetadata.title
-        const metaAuthor = author || data.site.siteMetadata.author
-        const metaUrl = url || data.site.siteMetadata.url
-        const metaImage = image || data.site.siteMetadata.image
-        const metaKeywords = keywords || ["yeehanchung", "yeehan", "chungyeehan"]
+          description || data.site.siteMetadata.description;
+        const metaTitle = title || data.site.siteMetadata.title;
+        const metaAuthor = author || data.site.siteMetadata.author;
+        const metaUrl = url || data.site.siteMetadata.url;
+        const metaImage = image || data.site.siteMetadata.image;
+        const metaKeywords = keywords || [
+          'yeehanchung',
+          'yeehan',
+          'chungyeehan',
+          'yee han',
+        ];
 
         return (
           <Helmet
@@ -69,14 +74,13 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
                     name: `keywords`,
                     content: metaKeywords.join(`,`),
                   }
-                : []
+                : [],
             )}
           />
-        )
-      }}
-    ></StaticQuery>
-  )
-}
+        );
+      }}></StaticQuery>
+  );
+};
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -90,4 +94,4 @@ const detailsQuery = graphql`
       }
     }
   }
-`
+`;
