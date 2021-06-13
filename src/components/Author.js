@@ -14,8 +14,9 @@ export function Author() {
       />
       <div className={styles.intro}>
         <div className={styles.subtitle}>
-          <h3 className={styles.name}>{'Yee Han CHUNG'}</h3>
-          <p style={{marginBottom: '0.5rem'}}>
+          <h3 className={styles.name}>{'Yee Han Chung'}</h3>
+          <p style={{marginBottom: '0.5rem'}}>{'Software Engineer'}</p>
+          {/* <p style={{marginBottom: '0.5rem'}}>
             My web development stuff is kept on{' '}
             <A
               href="https://yeehan.dev/"
@@ -24,7 +25,7 @@ export function Author() {
               yeehan.dev
             </A>
             .
-          </p>
+          </p> */}
           <div style={{marginBottom: '0.5rem'}}>
             <A
               href="https://github.com/cyeehan"
@@ -38,9 +39,14 @@ export function Author() {
               rel="noopener noreferrer"
               target="">
               LinkedIn
+            </A>{' '}
+            |{' '}
+            <A href="https://yeehan.dev/" rel="noopener noreferrer" target="">
+              yeehan.dev
             </A>
           </div>
-          <p>+6 017 857 8815</p>
+          {/* <p>🇲🇾 +6 017 857 8815</p>
+          <p>🇸🇬 +65 8790 8815</p> */}
         </div>
       </div>
     </div>
