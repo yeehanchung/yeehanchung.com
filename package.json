@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "yeehan-me-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Yee Han's Internet Profile - Resume Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Yee Han <cyh0011215@gmail.com> (http://yeehan.me/)",
+  "homepage": "http://yeehan.me/",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.21",
     "@mdx-js/react": "^1.6.21",
@@ -34,10 +35,8 @@
   "devDependencies": {
     "prettier": "2.1.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "0BSD",
+  "keywords": ["gatsby", "resume website", "portfolio website", "personal website"],
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -49,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/cyeehan/yeehan-me-website"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
