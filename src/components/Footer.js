@@ -1,4 +1,4 @@
-import {graphql, useStaticQuery} from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import {
@@ -6,7 +6,7 @@ import {
   FooterSocialWrapper,
   FooterWrapper,
   P,
-} from '../elements';
+} from '../styled';
 
 export const InnerIcon = styled.a`
   margin: '2rem 1rem';
@@ -14,38 +14,65 @@ export const InnerIcon = styled.a`
 `;
 
 export const Footer = () => {
-  const data = useStaticQuery(graphql`
+  const {
+    linkedin,
+    github,
+    facebook,
+    instagram,
+    site,
+  } = useStaticQuery(graphql`
     query {
-      linkedin: file(relativePath: {eq: "linkedin.svg"}) {
+      linkedin: file(relativePath: { eq: "linkedin.svg" }) {
         publicURL
       }
-      github: file(relativePath: {eq: "github.svg"}) {
+      github: file(relativePath: { eq: "github.svg" }) {
         publicURL
       }
-      facebook: file(relativePath: {eq: "facebook.svg"}) {
+      facebook: file(relativePath: { eq: "facebook.svg" }) {
         publicURL
       }
-      instagram: file(relativePath: {eq: "instagram.svg"}) {
+      instagram: file(relativePath: { eq: "instagram.svg" }) {
         publicURL
+      }
+      site {
+        siteMetadata {
+          author
+          shortName
+          title
+          description
+          occupation
+          url
+          image
+          social {
+            githubUrl
+            linkedInUrl
+            facebookUrl
+            twitterUrl
+            instagramUrl
+            devUrl
+          }
+          keywords
+        }
       }
     }
   `);
+  let data = site.siteMetadata;
 
   return (
     <FooterWrapper>
       <FooterSocialWrapper>
         <FooterSocialIcons>
           <InnerIcon
-            href="https://github.com/cyeehan"
+            href={data.social.githubUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={data.github.publicURL} alt="GitHub" />
+            <img src={github.publicURL} alt="GitHub" />
           </InnerIcon>
           <InnerIcon
-            href="https://www.linkedin.com/in/cyeehan/"
+            href={data.social.linkedInUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={data.linkedin.publicURL} alt="Linkedin" />
+            <img src={linkedin.publicURL} alt="LinkedIn" />
           </InnerIcon>
           {/* <InnerIcon
             href="https://www.facebook.com/chungyhan/"
@@ -54,14 +81,14 @@ export const Footer = () => {
             <img src={data.facebook.publicURL} alt="Facebook" />
           </InnerIcon> */}
           <InnerIcon
-            href="https://www.instagram.com/cyeehannn/"
+            href={data.social.instagramUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={data.instagram.publicURL} alt="Instagram" />
+            <img src={instagram.publicURL} alt="Instagram" />
           </InnerIcon>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          Yee Han{' '}
+          {data.shortName}{' '}
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{' '}

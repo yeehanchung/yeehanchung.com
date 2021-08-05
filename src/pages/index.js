@@ -1,35 +1,43 @@
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
-import styled from 'styled-components';
 import { Container, Post, Seo } from '../components';
 import { Author } from '../components/Author.js';
-import { H2 } from '../elements';
-import OG_image from '../img/og_image.jpeg';
+import * as Typography from '../styled/Typography';
+import OG_IMAGE from '../img/og_image.jpeg';
 
 export const mainPageQuery = graphql`
   query ResumeQuery {
-    mdx(frontmatter: {tag: {eq: "resume"}}) {
+    mdx(frontmatter: { tag: { eq: "resume" } }) {
       body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
         slug
-        excerpt
+        author
+        description
+        keywords
       }
-      fields {
-        readingTime {
-          text
-        }
-      }
+      # fields {
+      #   readingTime {
+      #     text
+      #   }
+      # }
     }
   }
 `;
 
-export default ({data}) => {
+export default ({ data }) => {
+  let metadata = data.mdx.frontmatter;
+
   return (
     <Container>
-      <Seo image={OG_image} title={"Yee Han's Internet Profile"} />
+      <Seo
+        image={OG_IMAGE}
+        title={metadata.title}
+        author={metadata.author}
+        keywords={metadata.keywords}
+      />
       <Post>
         <blockquote>
           <p>
@@ -37,10 +45,11 @@ export default ({data}) => {
             people’s lives.
           </p>
         </blockquote>
-        <Author/>
-        <H2>{data.mdx.frontmatter.title}</H2>
-        <p style={{marginBottom: '0.8rem'}}>
-          <span>⏳</span>{data.mdx.frontmatter.date}
+        <Author />
+        <Typography.H2>{data.mdx.frontmatter.description}</Typography.H2>
+        <p style={{ marginBottom: '0.8rem' }}>
+          <span>⏳</span>
+          {data.mdx.frontmatter.date}
         </p>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>

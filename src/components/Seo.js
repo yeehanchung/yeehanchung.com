@@ -1,24 +1,19 @@
-import {graphql, StaticQuery} from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
-export const Seo = ({description, keywords, title, image, url, author}) => {
+export const Seo = ({ title, description, keywords, image, url, author }) => {
   return (
     <StaticQuery
       query={detailsQuery}
       render={(data) => {
+        const metaTitle = title || data.site.siteMetadata.title;
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const metaTitle = title || data.site.siteMetadata.title;
         const metaAuthor = author || data.site.siteMetadata.author;
         const metaUrl = url || data.site.siteMetadata.url;
         const metaImage = image || data.site.siteMetadata.image;
-        const metaKeywords = keywords || [
-          'yeehanchung',
-          'yeehan',
-          'chungyeehan',
-          'yee han',
-        ];
+        const metaKeywords = keywords || data.site.siteMetadata.keywords;
 
         return (
           <Helmet
@@ -91,6 +86,7 @@ const detailsQuery = graphql`
         author
         image
         url
+        keywords
       }
     }
   }
