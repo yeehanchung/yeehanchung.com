@@ -6,23 +6,38 @@
 
 module.exports = {
   siteMetadata: {
+    author: 'Yee Han Chung',
+    shortName: 'Yee Han',
     title: `Yee Han's Internet Profile`,
     description: `Yee Han's Internet Profile`,
+    occupation: 'Software Engineer',
     url: 'https://www.yeehan.me',
     image: './src/img/og_image.jpeg',
-    facebookUsername: 'chungyhan',
-    author: 'Yee Han Chung',
+    keywords: [
+      'yeehanchung',
+      'yeehan',
+      'chungyehan',
+      'yee han',
+      'yee han chung',
+    ],
     social: {
       githubUrl: 'https://github.com/cyeehan',
       linkedInUrl: 'https://www.linkedin.com/in/cyeehan/',
-      facebookUrl: 'https://www.facebook.com/chungyhan/',
-      twitterUrl: 'https://twitter.com/cyee_han',
+      facebookUrl: 'https://www.facebook.com/cyeehannn',
+      twitterUrl: 'https://twitter.com/cyeehannn',
+      instagramUrl: 'https://www.instagram.com/cyeehannn/',
+      devUrl: 'https://yeehan.dev/',
     },
   },
   /* Your site config here */
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,11 +52,6 @@ module.exports = {
         name: `img`,
       },
     },
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-transformer-sharp`,
-    },
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -77,12 +87,11 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            resolve: `gatsby-remark-images-medium-zoom`,
             options: {},
           },
         ],
       },
     },
-    `gatsby-plugin-styled-components`,
   ],
 };

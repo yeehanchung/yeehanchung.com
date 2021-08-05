@@ -7,23 +7,28 @@
 // You can delete this file if you're not using it
 
 import React from 'react';
-import {createGlobalStyle, ThemeProvider} from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Theme from './src/themes/theme';
+import './src/styles/main.module.scss';
 
-const GlobalStyles = createGlobalStyle`
-  * {
-    /* box-sizing: border-box;
-    margin: 0;
-    padding: 0; */
-  }
+// const GlobalStyles = createGlobalStyle`
+//   * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//   }
 
-  body {
-  }
-`;
+//   body {
+//   }
+// `;
 
-export const wrapRootElement = ({element}) => (
-  <ThemeProvider theme={Theme}>
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider theme={Theme}>{element}</ThemeProvider>
+);
+
+export const wrapPageElement = ({ element }) => (
+  <>
     {/* <GlobalStyles /> */}
     {element}
-  </ThemeProvider>
+  </>
 );
