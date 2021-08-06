@@ -7,9 +7,13 @@
 </p>
 <h1 align="center">
   Markdown Resume Website
+  <p align="center">
+  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
+</p>
 </h1>
 
-### Pre-requisite
+
+## Pre-requisite
 
 - Installed Gatsby CLI `npm install -g gatsby-cli`
 
