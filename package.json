@@ -1,7 +1,7 @@
 {
-  "name": "yeehan-me-website",
+  "name": "gatsby-resume-website",
   "private": true,
-  "description": "Yee Han's Internet Profile - Resume Website",
+  "description": "Markdown resume website, built with Gatsby.",
   "version": "0.1.0",
   "author": "Yee Han <cyh0011215@gmail.com> (http://yeehan.me/)",
   "homepage": "http://yeehan.me/",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "prettier": "2.1.1"
   },
-  "keywords": ["gatsby", "resume website", "portfolio website", "personal website"],
+  "keywords": ["gatsby", "react", "resume", "template", "reactjs", "gatsbyjs", "resume website", "portfolio website"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
