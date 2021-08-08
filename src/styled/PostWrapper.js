@@ -74,6 +74,19 @@ export const PostWrapper = styled.main`
     /* display: flex; */
   }
 
+  details {
+    margin: 1rem 0;
+  }
+
+  summary {
+    font-size: 0.9rem;
+    color: #357ae8;
+
+    &::marker {
+      color: black;
+    }
+  }
+
   a {
     color: ${(props) => props.theme.colors.main1};
     text-decoration: none;
