@@ -8,10 +8,12 @@
 <h1 align="center">
   Markdown Resume Website
   <p align="center">
-  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
+  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)" height="25"></a>
+  <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" height="25" />
 </p>
+<br/>
+<img alt="Gatsby" src="./img/lighthouse-results.png" width="700px" />
 </h1>
-
 
 ## Pre-requisite
 
@@ -37,8 +39,8 @@ Can find out more in `package.json`.
 1. **Git clone**
 
    ```shell
-   $ git clone https://github.com/cyeehan/yeehan-me-website.git
-   $ cd yeehan-me-website
+   $ git clone https://github.com/cyeehan/gatsby-resume-website.git
+   $ cd gatsby-resume-website
    ```
 
 2. **Install dependencies**
