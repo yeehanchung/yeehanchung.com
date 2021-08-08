@@ -8,8 +8,8 @@
 <h1 align="center">
   Markdown Resume Website
   <p align="center">
-  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)" height="25"></a>
-  <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" height="25" />
+  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
+  <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
 </p>
 <br/>
 <img alt="Gatsby" src="./img/lighthouse-results.png" width="700px" />
