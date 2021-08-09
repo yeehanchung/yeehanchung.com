@@ -9,9 +9,6 @@
   <h1>
     Markdown Resume Website
   </h1>
-  <h5>
-    ⭐ If you like it, give it a star! ⭐
-  </h5>
   <p>
     <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
