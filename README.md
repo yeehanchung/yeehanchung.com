@@ -15,6 +15,7 @@
   <p>
     <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
+    <img alt="Star if helpful" src="https://img.shields.io/badge/⭐-If Useful-blueviolet?style=flat" />
   </p>
 
   <br/>
