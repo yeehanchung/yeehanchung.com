@@ -5,15 +5,21 @@
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Markdown Resume Website
-  <p align="center">
-  <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
-  <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
-</p>
-<br/>
-<img alt="Gatsby" src="./img/lighthouse-results.png" width="700px" />
-</h1>
+<div align="center">
+  <h1>
+    Markdown Resume Website
+  </h1>
+  <h5>
+    ⭐ If you like it, give it a star! ⭐
+  </h5>
+  <p>
+    <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
+    <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
+  </p>
+
+  <br/>
+  <img alt="Gatsby" src="./img/lighthouse-results.png" width="700px" />
+</div>
 
 ## Pre-requisite
 
