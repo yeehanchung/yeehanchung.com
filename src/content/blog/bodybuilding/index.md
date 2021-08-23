@@ -12,9 +12,9 @@ lastEdited:
 
 ## A little context
 
-People especially my friends were curious about me on how to achieve this body. At one time, it's funny that one of my friends thought I took steroids. It took me 7 months and a lot of sweat and blood.
+People especially my friends were curious about me on how to achieve this body. Even one of my friends thought I took steroids, but it was merely hard work. It took me 7 months and a lot of sweat and blood.
 
-A little context, the selfie was taken in the gym room at an early morning when I was studying at Xiamen University Malaysia. I'm courage enough to took off my shirt at the time because no one is around, obviously.
+A little context, the selfie was taken in the gym room at an early morning when I was studying at Xiamen University Malaysia. I was courageous enough to take off my shirt at that time because no one is around.
 
 ## What were the strategies?
 
@@ -24,6 +24,6 @@ During my leisure time, I'll be listening to workout advice by [Hany Rambod](htt
 
 ## What pushed me further?
 
-It was the pressure I put on myself, such as to achieve excellent academic results during my foundation studies in Xiamen University Malaysia. Obviously, it was not healthy to be living like that, but I have no regrets up until now as I have nothing to lose, therefore I was so committed on mainly two things: **body reinvention** & **academic excellence**.
+It was the pressure I put on myself, such as to achieve excellent academic results during my foundation studies in 2017. Obviously, it was not healthy to be living like that, but I have no regrets up until now as I have nothing to lose. Therefore I was so committed on mainly two things: **body reinvention** & **academic excellence**.
 
 Also, don't forget the chicken rice. Definitely needed the protein.
