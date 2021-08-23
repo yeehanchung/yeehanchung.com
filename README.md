@@ -10,7 +10,7 @@
     Markdown Resume Website
   </h1>
   <p>
-    <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
+    <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.3891401)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
   </p>
 
@@ -31,6 +31,11 @@
 - Markdown (mainly `.md`)
 
 Can find out more in `package.json`.
+
+## 📝 To-do
+
+- [ ] Refactor for reusability
+- [ ] Clean up codes
 
 ## 🗺 A little journey
 
