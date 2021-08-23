@@ -1,0 +1,17 @@
+/* Digging deeper accordingly */
+
+.my-h1 {
+  /* margin-bottom: 0; */
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.tag-emoji {
+  height: 1.35rem;
+  padding: 0 0.6rem 0.15rem 0;
+  margin: 0px;
+}
+
+.inner-tag-emoji {
+  display: flex;
+}

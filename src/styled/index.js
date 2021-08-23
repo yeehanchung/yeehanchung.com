@@ -3,3 +3,7 @@ export * from './Content';
 export * from './Footer';
 export * from './PostWrapper';
 export * from './Typography';
+export * from './TopicTag';
+export * from './ButtonWrapper';
+export * from './UnorderedList';
+export * from './NavWrapper';
