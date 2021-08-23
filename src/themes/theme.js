@@ -3,11 +3,16 @@
  */
 
 export default {
+  background: {
+    // main: "#212121",
+    main: 'var(--body-bg)',
+  },
   fonts: {
     // Used in styled/Post.js
-    main:
-      'system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol',
-    code: 'Roboto Mono, monospace',
+    // main: 'system-ui',
+    main: 'Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif',
+    // code: 'Roboto Mono, monospace',
+    code: 'Monaco, Menlo, monospace',
   },
   size: {
     xxSmall: '0.25rem',
@@ -21,6 +26,11 @@ export default {
     dark4: '#414244',
     light1: 'hsl(0, 0%, 100%)',
     light2: 'hsl(0, 0%, 95%)',
+    font: '#d2d2d2',
+    link: '#3fa4e1',
+    // Codes
+    codefont: 'white',
+    codebg: '#ffffff',
   },
   breakpoints: {
     mobile: 'only screen and (max-width: 50rem)',
