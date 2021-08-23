@@ -12,7 +12,6 @@
   <p>
     <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.38914065)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
-    <img alt="Star if helpful" src="https://img.shields.io/badge/⭐-If Useful-blueviolet?style=flat" />
   </p>
 
   <br/>
@@ -25,12 +24,11 @@
 
 ## 🥞 Technologies
 
-- Gatsby.js (React-framework)
+- Gatsby
 - JavaScript
-- Node.js (NPM)
 - styled-components
 - SCSS
-- Markdown (mainly [`.mdx`](https://mdxjs.com/#:~:text=MDX%20is%20an%20authorable%20format,with%20components%20a%20blast%20%F0%9F%9A%80.))
+- Markdown (mainly `.md`)
 
 Can find out more in `package.json`.
 
@@ -43,14 +41,14 @@ Can find out more in `package.json`.
 1. **Git clone**
 
    ```shell
-   $ git clone https://github.com/cyeehan/gatsby-resume-website.git
-   $ cd gatsby-resume-website
+   $ git clone https://github.com/cyeehan/yeehan-me.git
+   $ cd yeehan-me
    ```
 
 2. **Install dependencies**
 
    ```shell
-   $ npm install
+   $ yarn install
    ```
 
 3. **Start developing**
@@ -60,14 +58,12 @@ Can find out more in `package.json`.
    ```shell
    $ gatsby develop
    or
-   $ npm start
+   $ yarn start
    ```
 
-   Your site is now running at `http://localhost:8000`!
+   Your site is now running at `http://localhost:8000`
 
    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
-
-   Edit `src/pages/resume.mdx`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside? (Optional)
 
