@@ -9,17 +9,17 @@ lastEdited: 2021-02-03
 
 It's based on Linux Shell or "Terminal".
 
-Before started, what Unix-like OS command brings? A good example is that `find *.js` is able to grab all the files end with **js** in the current directory we are working with.
+Before started, what Unix-like OS command brings? A good example is that `find *.js` is able to grab all the files end with **.js** in the current directory we are working with.
 
 ![find: Unix-like OS command](basic-but-useful-commands/find-unix-like-os-command.png)
 
 `ls | grep .js`
 
-Time saving command that search and list out files end with **.js** which is awesome!
+Time-saving command that search and list out files end with **.js** which is quite similar to `find`, but with highlighting this time.
 
 ![Listing with searching](basic-but-useful-commands/listing-and-searching.png)
 
-Another thing to view file content with syntax highlighting. It is achieved by `brew install bat`.
+Another useful stuff is that viewing file content with syntax highlighting. It is achieved by `brew install bat`.
 
 ![Cat file after installing bat](basic-but-useful-commands/cat-view-content-via-bat.png)
 
