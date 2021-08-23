@@ -1,12 +1,12 @@
-import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import * as Typography from '../styled/Typography';
-import styles from '../styles/author.module.scss';
+import React from 'react';
 import yeehan_img from '../img/yee-han-chung.jpeg';
+import * as Typography from '../styled/Typography';
+import * as styles from '../styles/author.module.scss';
 
-export function Author() {
+export function Author({ ogImage }) {
   // Data from gatsby-config.js
-  const { site } = useStaticQuery(graphql`
+  const { site, linkedin, github } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -21,18 +21,32 @@ export function Author() {
             linkedInUrl
             facebookUrl
             twitterUrl
-            devUrl
+          }
+          socialImage {
+            githubUrl
           }
         }
+      }
+      linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+        publicURL
+      }
+      github: file(relativePath: { eq: "github.svg" }) {
+        publicURL
+      }
+      facebook: file(relativePath: { eq: "facebook.svg" }) {
+        publicURL
+      }
+      instagram: file(relativePath: { eq: "instagram.svg" }) {
+        publicURL
       }
     }
   `);
   let data = site.siteMetadata;
-
+  // console.log(ogImage);
   return (
     <div className={styles.person}>
       <img
-        src={yeehan_img}
+        src={ogImage ? ogImage : yeehan_img}
         alt={data.author}
         className={styles.img}
         loading="lazy"
@@ -46,22 +60,20 @@ export function Author() {
               href={data.social.githubUrl}
               rel="noopener noreferrer"
               target="">
-              GitHub
+              <img src={github.publicURL} alt="github" height="25px" />
             </Typography.A>
-            |
             <Typography.A
               href={data.social.linkedInUrl}
               rel="noopener noreferrer"
               target="">
-              LinkedIn
+              <img src={linkedin.publicURL} alt="linkedIn" height="25px" />
             </Typography.A>
-            |
-            <Typography.A
+            {/* <Typography.A
               href={data.social.devUrl}
               rel="noopener noreferrer"
               target="">
               yeehan.dev
-            </Typography.A>
+            </Typography.A> */}
           </div>
           {/* <p>🇲🇾 +6 017 857 8815</p>
           <p>🇸🇬 +65 8790 8815</p> */}

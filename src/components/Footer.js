@@ -5,7 +5,7 @@ import {
   FooterSocialIcons,
   FooterSocialWrapper,
   FooterWrapper,
-  P,
+  P
 } from '../styled';
 
 export const InnerIcon = styled.a`
@@ -14,13 +14,7 @@ export const InnerIcon = styled.a`
 `;
 
 export const Footer = () => {
-  const {
-    linkedin,
-    github,
-    facebook,
-    instagram,
-    site,
-  } = useStaticQuery(graphql`
+  const { linkedin, github, instagram, site } = useStaticQuery(graphql`
     query {
       linkedin: file(relativePath: { eq: "linkedin.svg" }) {
         publicURL
@@ -66,13 +60,13 @@ export const Footer = () => {
             href={data.social.githubUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={github.publicURL} alt="GitHub" />
+            <img src={github.publicURL} alt="GitHub" height="25px" />
           </InnerIcon>
           <InnerIcon
             href={data.social.linkedInUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={linkedin.publicURL} alt="LinkedIn" />
+            <img src={linkedin.publicURL} alt="LinkedIn" height="25px" />
           </InnerIcon>
           {/* <InnerIcon
             href="https://www.facebook.com/chungyhan/"
@@ -84,11 +78,11 @@ export const Footer = () => {
             href={data.social.instagramUrl}
             target="_blank"
             rel="noopener noreferrer">
-            <img src={instagram.publicURL} alt="Instagram" />
+            <img src={instagram.publicURL} alt="Instagram" height="25px" />
           </InnerIcon>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          {data.shortName}{' '}
+          Built by {data.shortName}{' '}
           <span role="img" aria-label="Copyright">
             &copy;
           </span>{' '}
