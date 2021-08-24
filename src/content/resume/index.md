@@ -352,8 +352,32 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 - [**AlgoExpert**](https://www.algoexpert.io/product) - In Progress
 - [**Go: The Complete Developer's Guide (Golang)**](https://www.udemy.com/certificate/UC-f77f74ca-b8b6-4336-8575-f547073eb4e3/) - Udemy (Apr 2021)
 - [**Modern JavaScript from the Beginning**](https://www.udemy.com/certificate/UC-5605d11a-5ab7-44b1-add9-048b9eda994e/) - Udemy (May 2020)
-- **Introduction to Business Analytics** - IBM (May 2019)
-- **IT Infrastructure Landscape** - IBM (Dec 2018)
+
+<!-- Introduction to Business Analytics - IBM (May 2019) -->
+<details className="details-q">
+  <summary className="details-css">
+    Introduction to Business Analytics - IBM (May 2019)
+  </summary>
+  <ul>
+    <img
+      src="../../img/certificate-ibm-introduction-to-business-analytics.png"
+      alt="Introduction to Business Analytics"
+    />
+  </ul>
+</details>
+
+<!-- IT Infrastructure Landscape -->
+<details className="details-q">
+  <summary className="details-css">
+    IT Infrastructure Landscape - IBM (Dec 2018)
+  </summary>
+  <ul>
+    <img
+      src="../../img/certificate-ibm-it-infrastructure-landscape.png"
+      alt="IT Infrastructure Landscape"
+    />
+  </ul>
+</details>
 
 ## ✈️ Study Tours
 
