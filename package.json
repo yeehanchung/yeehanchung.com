@@ -17,6 +17,7 @@
     "gatsby-plugin-sass": "^4.12.0",
     "gatsby-plugin-sharp": "^3.12.0",
     "gatsby-plugin-styled-components": "^4.12.0",
+    "gatsby-remark-autolink-headers": "^4.9.0",
     "gatsby-remark-figure-caption": "^2.0.0",
     "gatsby-remark-images": "^5.9.0",
     "gatsby-remark-images-medium-zoom": "^1.7.0",
