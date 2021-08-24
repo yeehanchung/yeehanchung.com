@@ -328,10 +328,24 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 - As the **team lead**, **full-stack developer**, and **presenter**.
 - Developed 2 attractive landing pages and digitised 20+ physical registration forms.
 - Developed a login system and an administrative dashboard with CRUD operations.
-- Pitched final system to Coca-Cola Malaysia Managing Director and employers.
-- Tech stack: **HTML**, **CSS**, **SQL**, **PHP**, **Bootstrap**, **phpMyAdmin**, **PhpStorm**.
 
-![Coca-Cola Employer Project Presentation](../../img/tccc-presentation.jpg) ![Receiving 2nd Place Award](../../img/tccc-team-picture.jpg)
+<details className="details-q">
+  <summary className="details-css">
+    Pitched final system to Coca-Cola Malaysia Managing Director and employers.
+  </summary>
+  <ul>
+    <img
+      src="../../img/tccc-presentation.jpg"
+      alt="Coca-Cola Employer Project Presentation"
+    />
+    <img
+      src="../../img/tccc-team-picture.jpg"
+      alt="Receiving 2nd Place Award"
+    />
+  </ul>
+</details>
+
+- Tech stack: **HTML**, **CSS**, **SQL**, **PHP**, **Bootstrap**, **phpMyAdmin**, **PhpStorm**.
 
 ## 📃 Certifications
 
@@ -340,8 +354,6 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 - [**Modern JavaScript from the Beginning**](https://www.udemy.com/certificate/UC-5605d11a-5ab7-44b1-add9-048b9eda994e/) - Udemy (May 2020)
 - **Introduction to Business Analytics** - IBM (May 2019)
 - **IT Infrastructure Landscape** - IBM (Dec 2018)
-
-![Go: The Complete Develper's Guide (Golang)](../../img/certificate-udemy-go-the-complete-developer-guide.png) ![Introduction to Business Analytics Certificate](../../img/certificate-ibm-introduction-to-business-analytics.png) ![IT Infrastructure Landscape Certificate](../../img/certificate-ibm-it-infrastructure-landscape.png)
 
 ## ✈️ Study Tours
 
@@ -406,7 +418,17 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 #### Oct 2018 @ Singapore 🇸🇬
 
-- Visited the two-day expo at **Marina Bay Sands Expo and Convention Centre**.
-- Learned about **Cloud & Cyber Security**, **Big Data**, **Smart IoT**, **Software as a service**, and more.
+<details className="details-q">
+  <summary className="details-css">
+    Visited the two-day expo at Marina Bay Sands Expo and Convention Centre</b>.
+  </summary>
+  <ul>
+    <img
+      src="../../img/sg-cloud-expo-1.jpg"
+      alt="Cloud Expo Asia Entrance"
+    />
+    <img src="../../img/sg-cloud-expo-2.jpg" alt="Cloud Expo Asia Talk" />
+  </ul>
+</details>
 
-![Cloud Expo Asia Entrance](../../img/sg-cloud-expo-1.jpg) ![Cloud Expo Asia Talk](../../img/sg-cloud-expo-2.jpg) ![Cloud Expo Asia People](../../img/sg-cloud-expo-3.jpg)
+- Learned about **Cloud & Cyber Security**, **Big Data**, **Smart IoT**, **Software as a service**, and more.
