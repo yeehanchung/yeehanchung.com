@@ -1,34 +1,9 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { TopicTag } from '../../styled';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 import './styles/styles.css';
-
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
-//
-export const Topic = styled.div`
-  margin: 20px 0 0 0;
-  break-inside: avoid;
-`;
-
-export const Ul = styled.ul`
-  list-style: none;
-  margin: 0;
-
-  /* padding: 1rem; */
-  border-radius: var(--border-radius, 2px);
-`;
 
 export const NoteListing = styled.div`
   margin-top: 4rem;
@@ -71,9 +46,7 @@ export const WordPressNotes = () => {
   `);
   let newData = data.allMarkdownRemark.edges;
   let wordpressSVG = data.wordpress.publicURL;
-  // console.log(data.allMdx.edges)
-  // console.log(typeof newData)
-
+  // console.log('Hello');
   return (
     <Topic>
       <TopicTag>
@@ -82,7 +55,7 @@ export const WordPressNotes = () => {
         </div>
         WordPress
       </TopicTag>
-      <Ul>
+      <UnorderedList>
         {newData.map((data) => {
           return (
             <TopicListing
@@ -96,7 +69,9 @@ export const WordPressNotes = () => {
             />
           );
         })}
-      </Ul>
+      </UnorderedList>
     </Topic>
   );
 };
+
+// <TopicContainer data={newData} svg={wordpressSVG}></TopicContainer>

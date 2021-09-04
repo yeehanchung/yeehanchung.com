@@ -1,7 +1,7 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { TopicTag } from '../../styled';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Topic, TopicTag } from '../../styled';
 import { TopicListing } from './index';
 
 // const Row = styled.div`
@@ -14,11 +14,6 @@ import { TopicListing } from './index';
 // const Span = styled.span`
 //   padding: 0 1rem 0 0rem;
 // `;
-
-export const Topic = styled.div`
-  margin: 20px 0 0 0;
-  break-inside: avoid;
-`;
 
 export const Ul = styled.ul`
   list-style: none;

@@ -1,13 +1,7 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { TopicTag, UnorderedList } from '../../styled';
-import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
-
-export const Topic = styled.div`
-  margin: 0 0 0 0;
-  break-inside: avoid;
-`;
 
 export const CliNotes = () => {
   const data = useStaticQuery(graphql`

@@ -1,7 +1,7 @@
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import { TopicTag } from '../../styled';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 
 // const Row = styled.div`
@@ -14,20 +14,6 @@ import { TopicListing } from './index';
 // const Span = styled.span`
 //   padding: 0 1rem 0 0rem;
 // `;
-
-//
-export const Topic = styled.div`
-  /* max-width: 40ch; */
-  margin: 20px 0 0 0;
-  break-inside: avoid;
-`;
-
-export const Ul = styled.ul`
-  list-style: none;
-  margin: 0;
-  /* padding: 1rem; */
-  border-radius: var(--border-radius, 2px);
-`;
 
 export const NoteListing = styled.div`
   margin-top: 4rem;
@@ -82,7 +68,7 @@ export const GitNotes = () => {
         </span>
         Git
       </TopicTag>
-      <Ul>
+      <UnorderedList>
         {/* <Listing newData={newData} /> */}
         {newData.map((data) => {
           return (
@@ -97,7 +83,7 @@ export const GitNotes = () => {
             />
           );
         })}
-      </Ul>
+      </UnorderedList>
       {/* <Ul> */}
       {/* <TopicDecision
           title={title}
