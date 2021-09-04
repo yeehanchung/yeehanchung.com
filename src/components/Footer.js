@@ -43,7 +43,6 @@ export const Footer = () => {
             facebookUrl
             twitterUrl
             instagramUrl
-            devUrl
           }
           keywords
         }
