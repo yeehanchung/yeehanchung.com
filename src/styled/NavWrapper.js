@@ -15,21 +15,17 @@ export const NavWrapper = styled.nav`
   }
 
   @media ${(props) => props.theme.breakpoints.mobile} {
-    /* grid-column: 2 / span 6; */
-    /* padding: 1rem; */
     padding: 3rem 0rem 0 0rem;
     margin-left: 0;
     margin-right: auto;
-    line-height: 2rem;
     /* Grid */
     display: grid;
     justify-items: center;
     align-items: center;
     align-content: center;
-    /*  */
     grid-row: auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    grid-template-columns: 50px 100px 50px;
+    grid-template-columns: 25px 100px 25px;
   }
 `;
