@@ -14,16 +14,10 @@ const Tag = styled.span`
   font-weight: 700;
 `;
 
-// const Spanner = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
 const StyledPostContent = styled.div`
   code {
     background-color: var(--lightest-navy);
     color: var(--lightest-slate);
-    /* border-radius: var(--border-radius); */
-    /* font-size: var(--fz-sm); */
     padding: 0.2em 0.4em;
   }
 
@@ -39,14 +33,11 @@ const StyledPostContent = styled.div`
  * @returns
  */
 const BackToNotes = styled(Link)`
-  /* padding: 2rem 0; */
   max-width: 90ch;
-  /* padding: 2rem 0rem 3rem; */
   margin: 3.5rem auto 2rem;
   display: block;
   color: ${(props) => props.theme.colors.link};
   text-decoration: none;
-  /* font-size: var(--font-size-base); */
 `;
 
 export default ({ data }) => {
@@ -73,20 +64,9 @@ export default ({ data }) => {
             {tag}
           </Tag>
         </p>
-        {/* <p>
-          <Span>{excerpt}</Span>
-        </p> */}
-        {/* <MDXRenderer>{data.mdx.body}</MDXRenderer> */}
         <StyledPostContent
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
-        {/* <li>
-          {
-            <Link to={data.mdx.frontmatter.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
-          }
-        </li> */}
         <p style={{ marginTop: '70px', marginBottom: '0' }}>
           Last edited: {lastEdited}
         </p>

@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container, Seo } from '../components';
 import { MuscleBuildingBlog } from '../components/blog-topics';
-// import myPhoto from "../img/yeehanchung-casual.jpg"
 import OG_image from '../img/og_image.jpeg';
 import './blog.css';
 
@@ -20,11 +19,6 @@ export const NoteListing = styled.div`
   @media ${(props) => props.theme.breakpoints.mobile} {
     column-width: 15rem;
   }
-
-  /* column-width: 14rem; 
-  column-gap: 1.5rem; 
-  margin-top: 4rem;
-  max-width: 120ch; */
 
   @media ${(props) => props.theme.breakpoints.tablet} {
     column-width: 15rem;
@@ -61,22 +55,14 @@ export const Ul = styled.ul`
 `;
 
 export default ({ location }) => {
-  // console.log(location);
   return (
     <>
       <Container location={location}>
         <Seo image={OG_image} title={"Yee Han's Personal Blog"} />
         <NoteListing>
           <MuscleBuildingBlog />
-          {/* <SoftwareEngineeringBlog /> */}
-          {/* <SoftwareEngineeringBlog />
-          <SoftwareEngineeringBlog />
-          <SoftwareEngineeringBlog />
-          <SoftwareEngineeringBlog />
-          <SoftwareEngineeringBlog /> */}
         </NoteListing>
       </Container>
-      {/* <Footer /> */}
     </>
   );
 };

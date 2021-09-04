@@ -4,17 +4,6 @@ import styled from 'styled-components';
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
 export const NoteListing = styled.div`
   margin-top: 4rem;
   margin-bottom: 6rem;
@@ -49,8 +38,8 @@ export const MuscleBuildingBlog = () => {
           }
         }
       }
-      # SVG by Gordon Johnson
-      infinity: file(relativePath: { eq: "topic-svg/infinity.svg" }) {
+      # SVG by https://creativemarket.com/Becris
+      infinity: file(relativePath: { eq: "topic-svg/biography.svg" }) {
         publicURL
       }
     }
@@ -59,7 +48,6 @@ export const MuscleBuildingBlog = () => {
   let infinitySVG = data.infinity.publicURL;
 
   return (
-    // <NoteWrapper>
     <Topic>
       <TopicTag>
         <span className="inner-tag-emoji">
@@ -75,8 +63,6 @@ export const MuscleBuildingBlog = () => {
       </TopicTag>
       <UnorderedList>
         {newData.map((data) => {
-          // console.log(data.node.frontmatter.lastEdited);
-          // console.log(data.node.frontmatter.excerpt);
           return (
             <TopicListing
               key={data.node.frontmatter.slug}

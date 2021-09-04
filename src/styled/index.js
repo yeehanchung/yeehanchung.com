@@ -1,6 +1,5 @@
 export * from './ButtonWrapper';
 export * from './Container';
-export * from './Content';
 export * from './Footer';
 export * from './NavWrapper';
 export * from './PostWrapper';

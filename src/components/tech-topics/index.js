@@ -1,6 +1,4 @@
-export * from './topic-listing';
-// export * from './topic-decision';
-export * from './topic-wordpress';
+export * from './Button';
 // export * from './topic-redux';
 export * from './topic-cli';
 // export * from './topic-css';
@@ -9,7 +7,8 @@ export * from './topic-docusaurus';
 // export * from './topic-javascript';
 // export * from './topic-react';
 export * from './topic-git';
+export * from './topic-listing';
 // export * from './topic-api';
 export * from './topic-misc';
-export * from './code';
-export * from './Button';
+// export * from './topic-decision';
+export * from './topic-wordpress';

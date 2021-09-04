@@ -8,7 +8,6 @@ import {
   MiscNotes,
   WordPressNotes,
 } from '../components/tech-topics';
-// import myPhoto from "../img/yeehanchung-casual.jpg"
 import OG_image from '../img/og_image.jpeg';
 import './tech.css';
 
@@ -67,7 +66,6 @@ export const Ul = styled.ul`
 `;
 
 export default ({ location }) => {
-  // console.log(location);
   return (
     <>
       <Container location={location}>
@@ -86,7 +84,6 @@ export default ({ location }) => {
           <MiscNotes />
         </NoteListing>
       </Container>
-      {/* <Footer /> */}
     </>
   );
 };

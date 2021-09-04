@@ -42,7 +42,7 @@ export function Author({ ogImage }) {
     }
   `);
   let data = site.siteMetadata;
-  // console.log(ogImage);
+
   return (
     <div className={styles.person}>
       <img
@@ -68,12 +68,6 @@ export function Author({ ogImage }) {
               target="">
               <img src={linkedin.publicURL} alt="linkedIn" height="25px" />
             </Typography.A>
-            {/* <Typography.A
-              href={data.social.devUrl}
-              rel="noopener noreferrer"
-              target="">
-              yeehan.dev
-            </Typography.A> */}
           </div>
           {/* <p>🇲🇾 +6 017 857 8815</p>
           <p>🇸🇬 +65 8790 8815</p> */}

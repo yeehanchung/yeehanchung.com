@@ -4,17 +4,6 @@ import styled from 'styled-components';
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
 export const NoteListing = styled.div`
   margin-top: 4rem;
   margin-bottom: 6rem;
@@ -56,11 +45,8 @@ export const DocusaurusNotes = () => {
   `);
   let newData = data.allMarkdownRemark.edges;
   let docusaurusSVG = data.docusaurus.publicURL;
-  // console.log(data.allMdx.edges)
-  // console.log(typeof newData)
 
   return (
-    // <NoteWrapper>
     <Topic>
       <TopicTag>
         <span className="inner-tag-emoji">
@@ -73,7 +59,6 @@ export const DocusaurusNotes = () => {
         Docusaurus
       </TopicTag>
       <UnorderedList>
-        {/* <Listing newData={newData} /> */}
         {newData.map((data) => {
           return (
             <TopicListing
@@ -88,32 +73,6 @@ export const DocusaurusNotes = () => {
           );
         })}
       </UnorderedList>
-      {/* <Ul> */}
-      {/* <TopicDecision
-          title={title}
-          slug={slug}
-          excerpt={excerpt}
-          readingTime={readingTime}
-          date={date}
-        /> */}
-      {/* </Ul> */}
-      {/* <Topics title={title} slug={slug}></Topics> */}
-      {/* <Button href={slug} size="medium">
-        {title}
-      </Button> */}
-      {/* <P size="xSmall" color="dark2" margin="0 0 18px 0">
-        <Span>{date}</Span>
-        <Span>{readingTime}</Span>
-      </P>
-      <P size="xMedium" color="dark4">
-        {excerpt}
-      </P>
-      <Row>
-        <Button href={slug} size="small">
-          Read more
-        </Button>
-      </Row> */}
-      {/* </NoteWrapper> */}
     </Topic>
   );
 };

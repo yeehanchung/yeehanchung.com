@@ -1,19 +1,6 @@
 import React from 'react';
-// import { CardWrapper, P, NoteWrapper, H2 } from "../../styled"
-import { Button } from './index';
 import styled from 'styled-components';
-// import { WordPressTopic } from "./index"
-
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
+import { Button } from './index';
 
 const TopicListingLi = styled.li`
   color: ${(props) => props.theme.colors.font};

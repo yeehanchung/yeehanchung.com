@@ -1,17 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import styled from 'styled-components';
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 import './styles/styles.css';
-
-export const NoteListing = styled.div`
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-  padding: 1rem;
-  column-width: 25rem;
-  column-gap: 2rem;
-`;
 
 export const WordPressNotes = () => {
   const data = useStaticQuery(graphql`
@@ -46,7 +37,7 @@ export const WordPressNotes = () => {
   `);
   let newData = data.allMarkdownRemark.edges;
   let wordpressSVG = data.wordpress.publicURL;
-  // console.log('Hello');
+
   return (
     <Topic>
       <TopicTag>
@@ -73,5 +64,3 @@ export const WordPressNotes = () => {
     </Topic>
   );
 };
-
-// <TopicContainer data={newData} svg={wordpressSVG}></TopicContainer>

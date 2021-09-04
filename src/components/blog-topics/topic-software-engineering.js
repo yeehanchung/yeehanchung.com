@@ -4,17 +4,6 @@ import styled from 'styled-components';
 import { Topic, TopicTag } from '../../styled';
 import { TopicListing } from './index';
 
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
 export const Ul = styled.ul`
   list-style: none;
   margin: 0;
@@ -67,7 +56,6 @@ export const SoftwareEngineeringBlog = () => {
   let softwareEngineeringSVG = data.softwareEngineering.publicURL;
 
   return (
-    // <NoteWrapper>
     <Topic>
       <TopicTag>
         <span className="inner-tag-emoji">
@@ -81,8 +69,6 @@ export const SoftwareEngineeringBlog = () => {
       </TopicTag>
       <Ul>
         {newData.map((data) => {
-          // console.log(data.node.frontmatter.lastEdited);
-          // console.log(data.node.frontmatter.excerpt);
           return (
             <TopicListing
               key={data.node.frontmatter.slug}

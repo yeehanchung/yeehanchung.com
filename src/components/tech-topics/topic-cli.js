@@ -46,7 +46,6 @@ export const CliNotes = () => {
         CLI
       </TopicTag>
       <UnorderedList>
-        {/* <Listing newData={newData} /> */}
         {newData.map((data) => {
           return (
             <TopicListing
@@ -61,23 +60,6 @@ export const CliNotes = () => {
           );
         })}
       </UnorderedList>
-      {/* <Topics title={title} slug={slug}></Topics> */}
-      {/* <Button href={slug} size="medium">
-        {title}
-      </Button> */}
-      {/* <P size="xSmall" color="dark2" margin="0 0 18px 0">
-        <Span>{date}</Span>
-        <Span>{readingTime}</Span>
-      </P>
-      <P size="xMedium" color="dark4">
-        {excerpt}
-      </P>
-      <Row>
-        <Button href={slug} size="small">
-          Read more
-        </Button>
-      </Row> */}
-      {/* </NoteWrapper> */}
     </Topic>
   );
 };

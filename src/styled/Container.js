@@ -9,24 +9,7 @@ export const ContainerWrapper = styled.div`
   gap: 0 2rem;
   grid-template-columns: 1fr repeat(12, minmax(auto, 4.2rem)) 1fr;
   grid-template-rows: 7.8rem 20rem 5rem auto;
-  height: 100%;
-
-  @media ${(
-    props,
-  ) =>
-    props.theme.breakpoints
-      .tablet} {
-    grid-template-columns: 2rem repeat(6, 1fr) 2rem;
-    grid-gap: 0 1rem;
-  }
-
-  @media ${(
-    props,
-  ) =>
-    props.theme.breakpoints
-      .mobile} {
-    grid-template-columns: 1rem repeat(6, 1fr) 1rem;
-  } */
+  height: 100%; */
 
   @font-face {
     font-family: 'Dosis, sans-serif';
@@ -34,26 +17,10 @@ export const ContainerWrapper = styled.div`
     font-style: normal;
   }
   * {
-    /* font-family: 'Merriweather, sans-serif'; */
   }
-  /* font-family: 'Dosis'; */
   display: block;
   height: 100%;
   margin: 1rem;
-
-  /* @media ${(props) => props.theme.breakpoints.tablet} { */
-  /* padding: ${(props) =>
-    `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`}; */
-  /* padding: 2rem 1rem; */
-  /* margin: 1rem; */
-  /* } */
-
-  /* @media ${(props) => props.theme.breakpoints.mobile} { */
-  /* padding: ${(props) =>
-    `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`}; */
-  /* padding: 2rem 1rem; */
-  /* margin: 1rem; */
-  /* } */
 
   /* https://github.com/JimmyBeldone/gatsby-plugin-breakpoints */
 `;

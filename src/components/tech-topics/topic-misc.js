@@ -5,17 +5,6 @@ import styled from 'styled-components';
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 
-// const Row = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   /* justify-content: space-between; */
-//   align-self: flex-end;
-// `;
-
-// const Span = styled.span`
-//   padding: 0 1rem 0 0rem;
-// `;
-
 export const NoteListing = styled.div`
   margin-top: 4rem;
   margin-bottom: 6rem;
@@ -59,7 +48,6 @@ export const MiscNotes = () => {
   let docusaurusSVG = data.docusaurus.publicURL;
 
   return (
-    // <NoteWrapper>
     <Topic>
       <TopicTag>
         <span className="inner-tag-emoji">
@@ -68,7 +56,6 @@ export const MiscNotes = () => {
         Misc
       </TopicTag>
       <UnorderedList>
-        {/* <Listing newData={newData} /> */}
         {newData.map((data) => {
           return (
             <TopicListing

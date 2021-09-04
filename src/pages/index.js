@@ -20,7 +20,6 @@ export const HomeWrapper = styled.div`
     font-size: 1rem;
     font-weight: bold;
     margin: 2rem 0 1rem 0;
-    /* line-height: 1.5rem; */
     font-size: 1.1rem;
     font-weight: bold;
     margin: 0.8rem 0 0.25rem 0;
@@ -65,12 +64,8 @@ export default () => {
     }
   `);
   let queryData = data.markdownRemark.frontmatter;
-  // let gitSVG = data.git.publicURL
-  // console.log(queryData.keywords);
-  // console.log(typeof newData)
 
   return (
-    // <NoteWrapper>
     <Container>
       <Seo
         image={OG_IMAGE}
@@ -79,23 +74,8 @@ export default () => {
         keywords={queryData.keywords}
       />
       <HomeWrapper>
-        {/* <blockquote>
-          <p>
-            Nothing lights up Advocates like creating a solution that changes
-            people’s lives.
-          </p>
-        </blockquote> */}
         <Author ogImage={OG_IMAGE} />
       </HomeWrapper>
-      {/* <Typography.H2>{queryData.description}</Typography.H2>
-        <p style={{ marginBottom: '0.8rem' }}>
-          <span role="img">⏳</span> {queryData.date}
-        </p> */}
-      {/* <MDXRenderer>{data.mdx.body}</MDXRenderer> */}
     </Container>
   );
 };
-
-// 55549520-64fd-5e35-af32-edc323fc88ec
-// b3e047f9-306c-5f21-a77b-f03e1ab7f0b4
-// resume: 9aa40867-12c2-5628-921d-2eaf8e3caa6e
