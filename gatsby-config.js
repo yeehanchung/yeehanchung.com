@@ -25,12 +25,11 @@ module.exports = {
       'yee han chung',
     ],
     social: {
-      githubUrl: 'https://github.com/cyeehan',
-      linkedInUrl: 'https://www.linkedin.com/in/cyeehan/',
+      githubUrl: 'https://github.com/yeehanchung',
+      linkedInUrl: 'https://linkedin.com/in/yeehanchung',
       facebookUrl: 'https://www.facebook.com/cyeehannn',
-      twitterUrl: 'https://twitter.com/cyeehannn',
+      twitterUrl: 'https://twitter.com/yeehanchung',
       instagramUrl: 'https://www.instagram.com/cyeehannn/',
-      devUrl: 'https://yeehan.dev/',
     },
     socialImage: {
       githubUrl: './src/img/github.svg',
