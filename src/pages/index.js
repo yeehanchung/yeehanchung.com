@@ -42,36 +42,26 @@ export const HomeWrapper = styled.div`
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { tag: { eq: "resume" } }) {
-        html
-        fields {
-          readingTime {
-            text
-          }
-        }
-        frontmatter {
-          author
-          date(formatString: "MMM DD, YYYY")
-          description
-          keywords
-          slug
-          excerpt
-          tag
+      site {
+        siteMetadata {
           title
-          lastEdited(formatString: "MMMM DD, YYYY")
+          description
+          author
+          image
+          url
+          keywords
         }
       }
     }
   `);
-  let queryData = data.markdownRemark.frontmatter;
 
   return (
     <Container>
       <Seo
         image={OG_IMAGE}
-        title={queryData.title}
-        author={queryData.author}
-        keywords={queryData.keywords}
+        title={data.site.siteMetadata.title}
+        author={data.site.siteMetadata.author}
+        keywords={data.site.siteMetadata.keywords}
       />
       <HomeWrapper>
         <Author ogImage={OG_IMAGE} />
