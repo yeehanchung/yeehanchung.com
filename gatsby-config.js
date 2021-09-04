@@ -65,13 +65,6 @@ module.exports = {
         name: `blog`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/content/resume`,
-    //     name: `resume`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -171,29 +164,5 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-mdx`,
-    //   options: {
-    //     extension: [`.md`, `.mdx`],
-    //     plugins: [`gatsby-remark-images`, `gatsby-remark-images-medium-zoom`],
-    //     gatsbyRemarkPlugins: [
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         // Make sure image served is maximum 1200px; For Optimization.
-    //         options: {
-    //           maxWidth: 1000,
-    //           // maxHeight: 600,
-    //           quality: 100,
-    //           linkImagesToOriginal: false,
-    //           loading: 'lazy',
-    //         },
-    //       },
-    //       {
-    //         resolve: `gatsby-remark-images-medium-zoom`,
-    //         options: {},
-    //       },
-    //     ],
-    //   },
-    // },
   ],
 };

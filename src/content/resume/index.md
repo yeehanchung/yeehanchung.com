@@ -1,5 +1,5 @@
 ---
-title: Yee Han's Internet Profile
+title: Yee Han's Resume
 author: Yee Han Chung
 slug: resume
 date: 2021-08-09

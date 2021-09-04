@@ -4,14 +4,10 @@
 
 export default {
   background: {
-    // main: "#212121",
     main: 'var(--body-bg)',
   },
   fonts: {
-    // Used in styled/Post.js
-    // main: 'system-ui',
     main: 'Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif',
-    // code: 'Roboto Mono, monospace',
     code: 'Monaco, Menlo, monospace',
   },
   size: {
@@ -28,7 +24,6 @@ export default {
     light2: 'hsl(0, 0%, 95%)',
     font: '#d2d2d2',
     link: '#3fa4e1',
-    // Codes
     codefont: 'white',
     codebg: '#ffffff',
   },

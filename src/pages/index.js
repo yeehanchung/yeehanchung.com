@@ -39,7 +39,7 @@ export const HomeWrapper = styled.div`
   }
 `;
 
-export default () => {
+const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { tag: { eq: "resume" } }) {
@@ -79,3 +79,5 @@ export default () => {
     </Container>
   );
 };
+
+export default IndexPage;
