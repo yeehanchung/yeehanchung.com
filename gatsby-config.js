@@ -83,10 +83,10 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          // {
-          //   resolve: `gatsby-remark-figure-caption`,
-          //   options: { figureClassName: 'md-figure' },
-          // },
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: { figureClassName: 'md-figure' },
+          },
           `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-images`,
