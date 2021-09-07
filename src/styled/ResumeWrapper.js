@@ -143,6 +143,9 @@ export const ResumeWrapper = styled.main`
   /* --------- summary --------- */
   summary {
     cursor: pointer;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
   }
 
   .summary-second {
