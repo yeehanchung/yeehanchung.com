@@ -12,7 +12,7 @@ lastEdited:
 
 ## A little context
 
-People especially my friends were curious about me on how to achieve this body. Even one of my friends thought I took steroids, but it was merely hard work. It took me 7 months and a lot of sweat and blood.
+In September 2017, people especially my friends were curious about me on how to achieve this body. Even one of my friends thought I took steroids, but it was merely hard work. It took me 7 months and a lot of sweat and blood.
 
 A little context, the selfie was taken in the gym room at an early morning when I was studying at Xiamen University Malaysia. I was courageous enough to take off my shirt at that time because no one is around.
 
