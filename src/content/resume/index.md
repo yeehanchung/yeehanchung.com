@@ -19,7 +19,9 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 <!--
 - Automate test cases of both external and internal platforms to improve site-reliability, and visibility for stakeholders.
-- Tech stack: Next.js (TypeScript), Node.js (Express.js), JavaScript, CSS/XPATH, Jest, Puppeteer, UI-licious
+- Tech stack: Node.js (Express.js), JavaScript, CSS/XPATH, Jest, Puppeteer, UI-licious
+- Documentation onboarding,
+- Developed image comparison tool for detecting UI changes on Eezee pages.
 -->
 
 ### Software Engineer Intern @ Fusionex International
@@ -27,41 +29,24 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 #### Jan 2021 - Apr 2021 @ Malaysia
 
 <details className="view-contributions">
-  <summary>View contributions</summary>
+  <summary>Received a Return Offer.</summary>
   <ul>
-    <li>Received a Return Offer.</li>
-    <li>Involved in E-commerce web app development in the core team.</li>
-    <li>Conducted code review and documentation review.</li>
-    <li>Integrated API and libraries for services, and data visualization.</li>
-    <li>
-      Built RESTful services to generate developed customizable financial
-      reports.
-    </li>
-    <li>
-      Supported UAT (User Acceptance Testing) & SIT (System Integration
-      Testing).
-    </li>
-    <li>
-      Documented data visualization manual for users, and self-learned D3 with
-      React.js.
-    </li>
-    <li>
-      Documentation (database schema, RESTful services, and new PHP
-      implementations).
-    </li>
-    <li>
-      Created SQL queries (join, views, when-case, JSON, files, etc.) for data
-      analysis dashboard.
-    </li>
-    <li>
-      Tech stack: <b>Node.js</b>, <b>PHP</b>, <b>JavaScript</b>,
-      <b>jQuery/Ajax</b>, <b>RESTful API</b>, <b>MySQL</b>, <b>Git</b>,
-      <b>.Net Core</b>, <b>Bootstrap</b>.
-    </li>
+    <img
+      src="../../img/fusionex-and-yeehan.png"
+      alt="MWS Astro Excitement Day"
+      className="ul-img"
+    />
   </ul>
 </details>
 
-![Internship at Fusionex International](../../img/fusionex-and-yeehan.png)
+- Involved in E-commerce web app development in the core team.
+- Conducted code review and documentation review.
+- Integrated API and libraries for services, and data visualization.
+- Built RESTful services to generate developed customizable financial reports.
+- Documented data visualization manual for users, and [self-learned D3 with React.js](https://vizhub.com/cyeehan).
+- Documentation (database schema, RESTful services, and new PHP implementations).
+- Created SQL queries (join, views, when-case, JSON, files, etc.) for data analysis dashboard.
+- Tech stack: **Node.js**, **PHP**, **JavaScript**, **jQuery/Ajax**, **RESTful API**, **MySQL**, **Git**, **.Net Core**, **Bootstrap**.
 
 <!-- Education -->
 
@@ -98,11 +83,6 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 - Tools: **Docusaurus**, **VSCode**, **Trello**.
 - [Website](https://modern-workplace-squad.netlify.app/) | [GitHub repository](https://github.com/cyeehan/modern-workplace-squad)
 
-### Developer's blog website
-
-- Share technical/non-technical knowledge.
-- Tech stack of [Blog](https://yeehan.dev/): **Gatsby**, **GraphQL**, **Git**, **CSS/SCSS**, **Markdown**, **Netlify**.
-
 ### Covid-19 medicine & QR code scanner android apps
 
 - Led a team of 3. Architected, developed, documented, and pitched final products.
@@ -122,11 +102,11 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 <details className="details-q">
   <summary className="details-css">
-    Currently acting the web developer role to maintain our educational
+    Currently acting the web developer role to maintain our
     <a
       href="https://modern-workplace-squad.netlify.app/"
       rel="noopener noreferrer">
-      website.
+      educational website.
     </a>
   </summary>
   <ul>
@@ -141,7 +121,18 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
   </ul>
 </details>
 
-- Started as a good subordinate, and gradually a **campus squad leader** for 3 months.
+<details className="details-q">
+  <summary className="details-css">
+    Started as a good subordinate, and gradually a <b>campus squad leader</b> for 3 months.
+  </summary>
+  <ul>
+    <img
+      src="../../img/mws-cny.jpg"
+      className="MWS Chinese New Year 2020"
+    />
+  </ul>
+</details>
+
 - Led a team of 7 using Kanban boards to scale our [educational website](https://modern-workplace-squad.netlify.app/) to provide O365 Tips & Tricks.
 
 <details className="details-q">
@@ -194,8 +185,6 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
     />
   </ul>
 </details>
-
-![MWS Chinese New Year 2020](../../img/mws-cny.jpg)
 
 <!-- 2nd -->
 
@@ -317,11 +306,22 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 ### Published a paper as the main author (2020)
 
-- Title: **A Study of Software Quality Assurance Perspective on E-commerce System Development**.
+<details className="details-q">
+  <summary className="details-css">
+    Title: <b>A Study of Software Quality Assurance Perspective on E-commerce System Development</b>.
+  </summary>
+  <ul>
+    <img
+      src="../../img/yeehan-icosah-2020.png"
+      alt="YeeHan's ICOSAH Certificate"
+    />
+  </ul>
+</details>
+
 - Summarized recent studies about Scrum, Kanban, XP, and ISO/IEC 25010 for E-commerce systems.
 - Suggested good practices of Scrum software development methodology and ISO/IEC 25010 for system development.
 
-![YeeHan's ICOSAH Certificate](../../img/yeehan-icosah-2020.png)
+<!-- ![YeeHan's ICOSAH Certificate](../../img/yeehan-icosah-2020.png) -->
 
 ### 1st Runner Up in Coca-Cola Automation Employer Project (2020)
 
