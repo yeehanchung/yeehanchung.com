@@ -3,9 +3,6 @@ import styled from 'styled-components';
 export const PostWrapper = styled.main`
   display: flex;
   flex-direction: column;
-  font-family: ${(props) => props.theme.fonts.main};
-  /* grid-column: 4 / span 8; */
-  /* grid-row: 1 / span 6; */
   margin: 0px 0 1rem 0;
   padding: 3rem 0;
   z-index: 10;
@@ -17,8 +14,6 @@ export const PostWrapper = styled.main`
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica, Arial,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  /* main: */
-  /* 'system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol', */
   display: block;
   font-size: var(--font-size-base);
 
@@ -63,7 +58,6 @@ export const PostWrapper = styled.main`
     font-size: 1rem;
     font-weight: bold;
     margin: 2rem 0 1rem 0;
-    /* line-height: 1.5rem; */
   }
 
   h4 {
@@ -91,7 +85,6 @@ export const PostWrapper = styled.main`
     line-height: 1.5rem;
     font-weight: 400;
     color: ${(props) => props.theme.colors.dark2};
-    /* display: flex; */
     margin: 1rem 0;
   }
 
@@ -129,9 +122,8 @@ export const PostWrapper = styled.main`
     font-style: italic;
     border-left: 4px solid #ff5e62;
     font-size: 0.85rem;
-    line-height: 1.5; /* 1.8rem */
+    line-height: 1.5;
     text-align: left;
-    /* max-width: 36rem; */
     margin: 1rem 0;
     padding: 1rem;
     background: #ffffff;
@@ -170,56 +162,10 @@ export const PostWrapper = styled.main`
   li > ol {
     margin-top: 0;
   }
-  /* ul,
-  ol {
-    margin-left: var(--spacing-0);
-    margin-right: var(--spacing-0);
-    padding: var(--spacing-0);
-    margin-bottom: var(--spacing-8);
-    list-style-position: outside;
-    list-style-image: none;
-  }
-
-  ul li,
-  ol li {
-    padding-left: var(--spacing-0);
-    margin-bottom: calc(var(--spacing-8) / 2);
-  }
-
-  li > p {
-    margin-bottom: calc(var(--spacing-8) / 2);
-  }
-
-  li *:last-child {
-    margin-bottom: var(--spacing-0);
-  }
-
-  li > ul {
-    margin-left: var(--spacing-8);
-    margin-top: calc(var(--spacing-8) / 2);
-  } */
 
   code {
-    /* font-family: ${(props) =>
-      props.theme.fonts
-        .code};
-    font-size: 1rem;
-    line-height: 1.875rem;
-    color: ${(
-      props,
-    ) => props.theme.colors.light1};
-    background-color: ${(props) =>
-      props.theme.colors.dark3};
-    padding: 0 0.3rem; */
     font-family: ${(props) => props.theme.fonts.code};
-    /* font-size: 0.8rem; */
-    /* line-height: 1.875rem; */
     color: ${(props) => props.theme.colors.codefont};
-    /* background-color: ${(props) => props.theme.colors.codebg}; */
-    /* padding: 0.05em 0.4em 0.05em; */
-    /* border-radius: 5px; */
-
-    /* font-size: 85%; */
     line-height: 1.7;
     background: #efedf0;
     padding: 0.25rem;
@@ -282,22 +228,6 @@ export const PostWrapper = styled.main`
     }
   }
 
-  /* span {
-    padding: 0 1rem 0 0rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-
-    color: ${(
-    props,
-  ) => props.theme.colors.code};
-  } */
-
-  /* img {
-    margin: 15px 0 0 15px;
-    width: 20%;
-    height: auto;
-  } */
   figcaption {
     text-align: center;
     margin-top: 0.5rem;
@@ -308,13 +238,6 @@ export const PostWrapper = styled.main`
   img {
     margin: 5rem 0;
     border-radius: 2px;
-  }
-
-  /* For resume page only - to display pictures in appropriate size and position */
-  span[class='gatsby-resp-image-wrapper'] {
-    /* float: left;
-    width: 250px;
-    height: auto; */
   }
 
   span[class='gatsby-resp-image-wrapper']:last-child {
@@ -332,10 +255,4 @@ export const PostWrapper = styled.main`
   @media ${(props) => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
   }
-
-  /* @media ${(props) => props.theme.breakpoints.mobile} {
-    padding: ${(
-    props,
-  ) => `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
-  } */
 `;

@@ -1,27 +1,19 @@
 import styled from 'styled-components';
-import '../styles/global.css';
-// import '../styles/main.module.css';
 
 export const ResumeWrapper = styled.main`
   color: #d2d2d2;
   display: flex;
   flex-direction: column;
   font-family: ${(props) => props.theme.fonts.main};
-  /* font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica, Arial,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; */
   padding: 3rem 0;
   max-width: 40rem;
   max-width: 90ch;
   padding: 2rem 0rem 3rem;
   margin: 0 auto 2rem;
-
-  /* ---------------- main font ---------------- */
-  /* 'system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol', */
-  /* display: block; */
   padding: 2rem 0rem;
   z-index: 10;
-  /* To style post elements */
+
+  /* ---------------- Headers: start ---------------- */
   h1,
   h2,
   h3,
@@ -49,7 +41,6 @@ export const ResumeWrapper = styled.main`
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.75rem;
-    /* margin: 1rem 0 1rem 0; */
     margin: 1.25rem 0 0.5rem 0;
   }
 
@@ -79,6 +70,7 @@ export const ResumeWrapper = styled.main`
     text-align: center;
     text-decoration: none;
   }
+  /* ---------------- Headers: end ---------------- */
 
   p {
     font-size: 0.9rem;
@@ -87,11 +79,9 @@ export const ResumeWrapper = styled.main`
     color: ${(props) => props.theme.colors.dark2};
     display: inline-flex;
     margin-bottom: 1.25rem;
-    /* display: block; */
   }
 
   details {
-    /* margin: 0.2rem 0; */
   }
 
   .view-contributions > summary {
@@ -99,21 +89,12 @@ export const ResumeWrapper = styled.main`
   }
 
   summary {
-    /* padding-bottom: 0.5rem; */
     font-size: var(--font-size-list);
-    /* color: #357ae8; */
     color: #414244;
     line-height: 1.3rem;
     text-align: -webkit-match-parent;
-    /* display: list-item; */
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
-    /* text-transform: none; */
-    /* text-indent: 0px !important; */
-    /* text-align: start !important; */
-    /* text-align-last: start !important; */
-    /* text-indent: -1.5em; */
-    /* list-style-position: outside; */
 
     &::marker {
       color: black;
@@ -121,7 +102,7 @@ export const ResumeWrapper = styled.main`
     }
   }
 
-  /* --------- details --------- */
+  /* --------- Details: start --------- */
   details {
     margin: 0 0 0 0rem;
   }
@@ -138,9 +119,9 @@ export const ResumeWrapper = styled.main`
   .details-css > ul {
     padding-top: 0.5rem;
   }
-  /* --------------------------- */
+  /* --------- Details: end --------- */
 
-  /* --------- summary --------- */
+  /* --------- Summary: start --------- */
   summary {
     cursor: pointer;
     list-style-position: inside;
@@ -156,7 +137,7 @@ export const ResumeWrapper = styled.main`
     color: red !important;
     margin-top: 0.5rem;
   }
-  /* --------------------------- */
+  /* --------- Summary: end --------- */
 
   .resume.img {
     float: left;
@@ -164,11 +145,6 @@ export const ResumeWrapper = styled.main`
     height: 100%;
   }
 
-  /* .details-q > ul > span {
-    margin-bottom: 0rem;
-  } */
-
-  /* Link */
   a {
     color: ${(props) => props.theme.colors.main1};
     text-decoration: none;
@@ -192,11 +168,17 @@ export const ResumeWrapper = styled.main`
     font-size: 1.1rem;
     line-height: 1.8rem;
     text-align: left;
-    /* max-width: 36rem; */
     padding: 1rem;
   }
 
-  /* -------------------- ul, ol, li -------------------- */
+  span {
+    padding: 0 0.5rem 0 0rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+
+  /* ----------------- ul, ol, li: start ----------------- */
   ul,
   ol {
     color: ${(props) => props.theme.colors.dark2};
@@ -214,6 +196,7 @@ export const ResumeWrapper = styled.main`
   li:first-child {
     margin: 0rem 0 0 0rem;
   }
+  /* ----------------- ul, ol, li: end ----------------- */
 
   code {
     background-color: ${(props) => props.theme.colors.codebg};
@@ -232,7 +215,7 @@ export const ResumeWrapper = styled.main`
     margin: 2rem 0;
   }
 
-  /* ------- table, th, td,   */
+  /* -------------- table, th, td: start --------------  */
   table {
     width: 100%;
     border-spacing: 0.25rem;
@@ -240,10 +223,6 @@ export const ResumeWrapper = styled.main`
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
-  }
-
-  th {
-    font-weight: 700;
   }
 
   table,
@@ -280,25 +259,10 @@ export const ResumeWrapper = styled.main`
         `${props.theme.spacings.small} 0 0 ${props.theme.spacings.x2Large}`};
     }
   }
+  /* -------------- table, th, td: end --------------  */
 
-  span {
-    padding: 0 0.5rem 0 0rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 400;
+  /* ---------------- gatsby image wrapper: start ---------------- */
 
-    /* color: ${(props) => props.theme.colors.code}; */
-  }
-
-  /* img {
-    margin: 15px 0 0 15px;
-    width: 20%;
-    height: auto;
-  } */
-
-  /* ---------------- gatsby image wrapper: Start ---------------- */
-
-  /* For resume page only - to display pictures in appropriate size and position */
   span[class='gatsby-resp-image-wrapper'] {
     margin-top: 0.25rem;
     float: left;
@@ -314,41 +278,5 @@ export const ResumeWrapper = styled.main`
     margin-bottom: 0.5rem;
   }
 
-  /* @media ${(props) =>
-    props.theme.breakpoints
-      .mobile} {
-    p > span[class='gatsby-resp-image-wrapper']:nth-child(2) {
-      margin-top: 0rem;
-    }
-    p > span[class='gatsby-resp-image-wrapper']:last-child {
-      margin-top: 0rem;
-    }
-  } */
-
-  /* span[class='gatsby-resp-image-wrapper']:last-child {
-    margin-bottom: 1.25rem;
-    @media ${(
-    props,
-  ) =>
-    props.theme.breakpoints
-      .tablet} {
-      margin-bottom: 1.25rem;
-    }
-
-    @media ${(props) =>
-    props.theme.breakpoints.mobile} {
-      margin-bottom: 1.25rem;
-    }
-  } */
-
-  /* @media ${(props) =>
-    props.theme.breakpoints.tablet} {
-    grid-column: 2 / span 6;
-  } */
-
-  /* @media ${(props) => props.theme.breakpoints.mobile} {
-    padding: ${(
-    props,
-  ) => `${props.theme.spacings.xLarge} ${props.theme.spacings.small}`};
-  } */
+  /* ---------------- gatsby image wrapper: end ---------------- */
 `;
