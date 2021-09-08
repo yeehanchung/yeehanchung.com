@@ -17,7 +17,7 @@ export const PostWrapper = styled.main`
   font-family: Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif;
   display: block;
 
-  /* To style post elements */
+  /* ---------- Headers: start ---------- */
   h1,
   h2,
   h3,
@@ -72,6 +72,7 @@ export const PostWrapper = styled.main`
     text-align: center;
     text-decoration: none;
   }
+  /* ---------- Headers: end ---------- */
 
   p {
     font-size: 0.9rem;
@@ -209,12 +210,6 @@ export const PostWrapper = styled.main`
     font-weight: 400;
     color: ${(props) => props.theme.colors.dark2};
   }
-
-  /* img {
-    margin: 15px 0 0 15px;
-    width: 20%;
-    height: auto;
-  } */
 
   span[class='gatsby-resp-image-wrapper'] {
     float: left;

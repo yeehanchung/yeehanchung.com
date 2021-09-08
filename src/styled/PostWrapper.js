@@ -17,7 +17,7 @@ export const PostWrapper = styled.main`
   display: block;
   font-size: var(--font-size-base);
 
-  /* --------------- Headers: Start --------------- */
+  /* --------------- Headers: start --------------- */
   h1,
   h2,
   h3,
@@ -78,7 +78,7 @@ export const PostWrapper = styled.main`
     text-align: center;
     text-decoration: none;
   }
-  /* --------------- Headers: End --------------- */
+  /* --------------- Headers: end --------------- */
 
   p {
     font-size: 0.9rem;

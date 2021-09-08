@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const NavWrapper = styled.nav`
-  /* max-width: 40rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,15 +9,10 @@ export const NavWrapper = styled.nav`
   max-width: 70rem;
   text-align: center;
 
-  & img {
-    /* height: 100px; */
-  }
-
   @media ${(props) => props.theme.breakpoints.mobile} {
     padding: 3rem 0rem 0 0rem;
     margin-left: 0;
     margin-right: auto;
-    /* Grid */
     display: grid;
     justify-items: center;
     align-items: center;
