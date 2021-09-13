@@ -80,7 +80,7 @@ function test_plugin($test)
 
 4. Go to your working php file in the `themes` folder, try the code as follows:
 
-Notice that the 1st argument is the same as the 1st argument in `add_action('my_plugin_tag', 'test_plugin')`.
+Notice that the 1st argument from `add_action` is the same as the 1st argument in `do_action` below?
 
 ```php
 // 1st argument: built-in from WordPress.
@@ -88,7 +88,7 @@ Notice that the 1st argument is the same as the 1st argument in `add_action('my_
 do_action('my_plugin_tag', 'You are in the plugin file');
 ```
 
-5. Login into your `../wordpress/wp-admin` to activate the plugin.
+1. Login into your `../wordpress/wp-admin` to activate the plugin.
 
 ![Activate WordPress Plugin](/img-quick-guide-for-creating-action-and-filter-hooks/activate-wordpress-plugin.png)
 
@@ -102,7 +102,7 @@ Notice that the plugin name reflects the name specified below.
  */
 ```
 
-1. Your `php page` is now able to communicate with the `plugin` you just have created. Now the parameter is being `console.log()` in the console.
+6. Your `php page` is now able to communicate with the `plugin` you just have created. Now the parameter is being `console.log()` in the console.
 
 ![Console output](/img-quick-guide-for-creating-action-and-filter-hooks/console-output.png)
 
