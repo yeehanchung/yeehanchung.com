@@ -35,7 +35,7 @@ Can find out more in `package.json`.
 ## 📝 To-do
 
 - [ ] Refactor for reusability
-- [ ] Clean up codes
+- [x] Clean up codes
 
 ## 🗺 A little journey
 
