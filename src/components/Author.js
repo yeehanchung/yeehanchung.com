@@ -69,10 +69,13 @@ export function Author({ ogImage }) {
               <img src={linkedin.publicURL} alt="linkedIn" height="25px" />
             </Typography.A>
           </div>
-          {/* <p>🇲🇾 +6 017 857 8815</p>
-          <p>🇸🇬 +65 8790 8815</p> */}
+          {/* <p>🇲🇾 +6 017 857 8815</p> */}
+          <p style={{ margin: "0" }}>+65 8790 8815</p>
+          <br/>
+          <p><a href="mailto:yeehanchung@gmail.com">yeehanchung@gmail.com</a></p>
         </div>
       </div>
+     
     </div>
   );
 }
