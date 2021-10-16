@@ -37,6 +37,11 @@ export const HomeWrapper = styled.div`
     margin-bottom: 1.25rem;
     margin-bottom: 0.5rem;
   }
+
+  a {
+    color: ${(props) => props.theme.colors.main1};
+    text-decoration: none;
+  }
 `;
 
 const IndexPage = () => {
