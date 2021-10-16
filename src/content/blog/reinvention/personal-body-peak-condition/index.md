@@ -1,10 +1,10 @@
 ---
 title: Personal body peak condition
-slug: blog/bodybuilding/personal-body-peak-condition
+slug: blog/reinvention/personal-body-peak-condition
 date: 2021-08-16
 excerpt: 🚀
-keywords: [reinvention, physique, bodybuilding, muscle building]
-tag: bodybuilding
+keywords: [reinvention, physique, bodybuilding]
+tag: reinvention
 lastEdited:
 ---
 

@@ -12,12 +12,12 @@ export const NoteListing = styled.div`
   column-gap: 2rem;
 `;
 
-export const MuscleBuildingBlog = () => {
+export const ReinventionBlog = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
         sort: { fields: frontmatter___date, order: DESC }
-        filter: { frontmatter: { tag: { eq: "bodybuilding" } } }
+        filter: { frontmatter: { tag: { eq: "reinvention" } } }
       ) {
         edges {
           node {
