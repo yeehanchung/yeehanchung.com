@@ -7,6 +7,7 @@ import {
   GitNotes,
   MiscNotes,
   WordPressNotes,
+  JavaScriptNotes
 } from '../components/tech-topics';
 import OG_image from '../img/og_image.jpeg';
 import './tech.css';
@@ -47,7 +48,7 @@ export default ({ location }) => {
           <DocusaurusNotes />
           {/* <GatsbyNotes /> */}
           <GitNotes />
-          {/* <JavascriptNotes /> */}
+          <JavaScriptNotes />
           {/* <ReactNotes /> */}
           {/* <ReduxNotes /> */}
           <WordPressNotes />
