@@ -8,7 +8,6 @@ export const PostWrapper = styled.main`
   z-index: 10;
   max-width: 40rem;
   color: #d2d2d2;
-  max-width: 90ch;
   padding: 2rem 0rem 3rem;
   margin: 0 auto 2rem;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
