@@ -22,6 +22,6 @@ The reason I put having siblings working in Singapore as the last because only t
 
 > I went so far started from my small hometown, and sought everything I'd strived for which is **acceptance**, **affirmation** and **respect** from the world.
 
-After graduating, kickstart my professional career by taking a leap of faith to join a young and energetic startup company, namely [Eezee Pte. Ltd.](https://eezee.sg/) is like having a risk appetite, and I embrace all of it.
+After graduating in May 2021, kickstart my professional career by taking a leap of faith to join a young and energetic startup company, namely [**Eezee Pte. Ltd.**](https://eezee.sg/) is like having a **risk appetite**, and I embrace all of it.
 
 Look forward to more eye-opening opportunities in Singapore. Learn and explore! 🗺 🧐
