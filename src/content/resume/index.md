@@ -350,6 +350,19 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 ## 📃 Certifications
 
 - [**AlgoExpert**](https://www.algoexpert.io/product) - In Progress
+
+<details className="details-q">
+  <summary className="details-css">
+    <strong><a href="https://www.yeehan.me/tech/just-javascript-course-by-dan-abramov" rel="noreferrer noopener">Just JavaScript</a></strong> - Dan Abramov (Oct 2021): Deep dived into JavaScript Universe especially mental models.
+  </summary>
+  <ul>
+    <img
+      src="../../img/yeehanchung-justjavascript.com-certificate.png"
+      alt="Yeehan's Just JavaScript Certificate"
+    />
+  </ul>
+</details>
+
 - [**Go: The Complete Developer's Guide (Golang)**](https://www.udemy.com/certificate/UC-f77f74ca-b8b6-4336-8575-f547073eb4e3/) - Udemy (Apr 2021)
 - [**Modern JavaScript from the Beginning**](https://www.udemy.com/certificate/UC-5605d11a-5ab7-44b1-add9-048b9eda994e/) - Udemy (May 2020)
 
