@@ -25,4 +25,4 @@ Learning from the best is always eye-opening!
 
 Currently striving and committed to be one of the many that people can learn from!
 
-![Just JavaScript Credits](../javascript/crucial-notes-from-jjs-by-dan/just-javascript-credits.png)
+![Just JavaScript Credits](./just-javascript-course-by-dan-abramov/just-javascript-credits.png)
