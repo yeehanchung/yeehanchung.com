@@ -6,7 +6,7 @@ excerpt: 🧩
 tag: javascript
 ---
 
-Wellworthy JavaScript course. Thankfully I came across [Dan Abramov](https://twitter.com/dan_abramov)'s curated content on [JavaScript Universe](https://justjavascript.com/), learning his mental models.
+Wellworthy JavaScript course. Thankfully I came across [Dan Abramov](https://twitter.com/dan_abramov)'s curated content on [JavaScript Universe](https://justjavascript.com/), learning his mental models. Learning from the best is always eye-opening.
 
 Learning or understanding JavaScript **Under the Hood** is certainly amazing! The course composed of the things below:
 
@@ -21,8 +21,6 @@ Learning or understanding JavaScript **Under the Hood** is certainly amazing! Th
 9. Mutation
 10. Prototypes
 
-Learning from the best is always eye-opening!
-
-Currently striving and committed to be one of the many that people can learn from!
+Currently striving and committed to be one of the many that people can learn from.
 
 ![Just JavaScript Credits](./just-javascript-course-by-dan-abramov/just-javascript-credits.png)
