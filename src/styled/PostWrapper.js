@@ -158,6 +158,10 @@ export const PostWrapper = styled.main`
     margin: 0rem 0 0 0rem;
   }
 
+  li:nth-child(10) {
+    margin-left: 9px;
+  }
+
   li > ol {
     margin-top: 0;
   }
