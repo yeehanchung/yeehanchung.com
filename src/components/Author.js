@@ -6,7 +6,7 @@ import * as styles from '../styles/author.module.scss';
 
 export function Author({ ogImage }) {
   // Data from gatsby-config.js
-  const { site, linkedin, github } = useStaticQuery(graphql`
+  const { site, linkedin, github, twitter } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -39,6 +39,9 @@ export function Author({ ogImage }) {
       instagram: file(relativePath: { eq: "instagram.svg" }) {
         publicURL
       }
+      twitter: file(relativePath: { eq: "twitter.svg" }) {
+        publicURL
+      }
     }
   `);
   let data = site.siteMetadata;
@@ -67,6 +70,12 @@ export function Author({ ogImage }) {
               rel="noopener noreferrer"
               target="">
               <img src={linkedin.publicURL} alt="linkedIn" height="25px" />
+            </Typography.A>
+            <Typography.A
+              href={data.social.twitterUrl}
+              rel="noopener noreferrer"
+              target="">
+              <img src={twitter.publicURL} alt="twitter" height="25px" />
             </Typography.A>
           </div>
           {/* <p>🇲🇾 +6 017 857 8815</p> */}
