@@ -135,7 +135,7 @@ export const PostWrapper = styled.main`
   ul,
   ol {
     color: ${(props) => props.theme.colors.dark2};
-    margin: 0.5rem 0 1rem 1rem;
+    margin: 0.5rem 0 1rem 1.5rem;
     line-height: 1.5rem;
   }
 
@@ -158,9 +158,9 @@ export const PostWrapper = styled.main`
     margin: 0rem 0 0 0rem;
   }
 
-  li:nth-child(10) {
+  /* li:nth-child(10) {
     margin-left: 9px;
-  }
+  } */
 
   li > ol {
     margin-top: 0;
