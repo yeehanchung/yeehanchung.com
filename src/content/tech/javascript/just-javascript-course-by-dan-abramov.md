@@ -6,9 +6,9 @@ excerpt: 🧩
 tag: javascript
 ---
 
-Wellworthy JavaScript course. Thankfully I came across [Dan Abramov](https://twitter.com/dan_abramov)'s curated content on [JavaScript Universe](https://justjavascript.com/), learning JavaScript Under the Hood and his mental models really make more sense for me when I look at my codes now.
+Wellworthy JavaScript course. Thankfully I came across [Dan Abramov](https://twitter.com/dan_abramov)'s curated content on [JavaScript Universe](https://justjavascript.com/), learning JavaScript Under the Hood and his mental models really make more sense to me when I look at the codes now.
 
-What more to say? Money well spent 🙂 
+What more to say? Money well spent 🙂
 
 The course composed of the things below:
 
