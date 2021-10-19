@@ -54,7 +54,7 @@ export const Footer = () => {
   return (
     <FooterWrapper>
       <FooterSocialWrapper>
-        <FooterSocialIcons>
+        {/* <FooterSocialIcons>
           <InnerIcon
             href={data.social.githubUrl}
             target="_blank"
@@ -67,19 +67,19 @@ export const Footer = () => {
             rel="noopener noreferrer">
             <img src={linkedin.publicURL} alt="LinkedIn" height="25px" />
           </InnerIcon>
-          {/* <InnerIcon
+          <InnerIcon
             href="https://www.facebook.com/chungyhan/"
             target="_blank"
             rel="noopener noreferrer">
             <img src={data.facebook.publicURL} alt="Facebook" />
-          </InnerIcon> */}
+          </InnerIcon>
           <InnerIcon
             href={data.social.instagramUrl}
             target="_blank"
             rel="noopener noreferrer">
             <img src={instagram.publicURL} alt="Instagram" height="25px" />
           </InnerIcon>
-        </FooterSocialIcons>
+        </FooterSocialIcons> */}
         <P size="xSmall" color="dark3">
           Built by {data.shortName}{' '}
           <span role="img" aria-label="Copyright">
