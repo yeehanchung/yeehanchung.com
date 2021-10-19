@@ -13,14 +13,10 @@ import OG_image from '../img/og_image.jpeg';
 import './tech.css';
 
 export const NoteListing = styled.div`
-  margin-top: 4rem;
-  margin-bottom: 3rem;
   column-width: 20rem;
   column-gap: 2rem;
-  margin-top: 4rem;
   max-width: 120ch;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 4rem auto;
 
   /* column-width: 14rem; 
   column-gap: 1.5rem; 
