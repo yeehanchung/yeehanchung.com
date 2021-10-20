@@ -20,35 +20,6 @@ export const NoteListing = styled.div`
   }
 `;
 
-export const Topic = styled.div`
-  break-inside: avoid;
-`;
-
-export const H2Tag = styled.h2`
-  border-bottom: 0.5px solid #222;
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.3em;
-  line-height: 1.4;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 1.6rem;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-`;
-
-export const Ul = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 1rem;
-  border-radius: var(--border-radius, 2px);
-`;
-
 export default ({ location }) => {
   return (
     <>
