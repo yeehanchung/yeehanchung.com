@@ -18,15 +18,6 @@ export const NoteListing = styled.div`
   max-width: 120ch;
   margin: 4rem auto;
 
-  /* column-width: 14rem; 
-  column-gap: 1.5rem; 
-  margin-top: 4rem;
-  max-width: 120ch; */
-
-  /* @media ${(props) =>
-    props.theme.breakpoints.tablet} {
-    max-width: 40%;
-  } */
   @media ${(props) => props.theme.breakpoints.mobile} {
     column-width: 15rem;
   }
