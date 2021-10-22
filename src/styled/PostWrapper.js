@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const PostWrapper = styled.main`
   display: flex;
   flex-direction: column;
-  margin: 0px 0 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 3rem 0;
   z-index: 10;
   max-width: 40rem;
   color: #d2d2d2;
-  padding: 2rem 0rem 3rem;
+  padding: 2rem 0 3rem;
   margin: 0 auto 2rem;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
     Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica, Arial,
@@ -143,7 +143,7 @@ export const PostWrapper = styled.main`
     font-size: 0.9rem;
     line-height: 1.6rem;
     font-weight: 400;
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   li > p {
@@ -155,7 +155,7 @@ export const PostWrapper = styled.main`
   }
 
   li:first-child {
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   /* li:nth-child(10) {

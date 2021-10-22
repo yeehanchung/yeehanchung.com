@@ -8,9 +8,9 @@ export const ResumeWrapper = styled.main`
   padding: 3rem 0;
   max-width: 40rem;
   max-width: 90ch;
-  padding: 2rem 0rem 3rem;
+  padding: 2rem 0 3rem;
   margin: 0 auto 2rem;
-  padding: 2rem 0rem;
+  padding: 2rem 0;
   z-index: 10;
 
   /* ---------------- Headers: start ---------------- */
@@ -104,7 +104,7 @@ export const ResumeWrapper = styled.main`
 
   /* --------- Details: start --------- */
   details {
-    margin: 0 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   .details-q > ul {
@@ -172,7 +172,7 @@ export const ResumeWrapper = styled.main`
   }
 
   span {
-    padding: 0 0.5rem 0 0rem;
+    padding: 0 0.5rem 0 0;
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -182,7 +182,7 @@ export const ResumeWrapper = styled.main`
   ul,
   ol {
     color: ${(props) => props.theme.colors.dark2};
-    margin: 0rem 0 0rem 1rem;
+    margin: 0 0 0rem 1rem;
     display: inline-block;
   }
 
@@ -190,11 +190,11 @@ export const ResumeWrapper = styled.main`
     font-size: 0.85rem;
     line-height: 1.3rem;
     font-weight: 400;
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   li:first-child {
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
   /* ----------------- ul, ol, li: end ----------------- */
 

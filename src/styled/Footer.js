@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
   grid-column: 2 / span 12;
   min-height: 11.25rem;
-  padding: 0rem 0;
+  padding: 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;

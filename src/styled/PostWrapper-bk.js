@@ -6,13 +6,13 @@ export const PostWrapper = styled.main`
   font-family: ${(props) => props.theme.fonts.main};
   grid-column: 4 / span 8;
   grid-row: 1 / span 6;
-  margin: 0px 0 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 3rem 0;
   z-index: 10;
   max-width: 40rem;
   color: #d2d2d2;
   max-width: 40rem;
-  padding: 2rem 0rem 3rem;
+  padding: 2rem 0 3rem;
   margin: 0 auto 2rem;
   font-family: Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif;
   display: block;
@@ -131,11 +131,11 @@ export const PostWrapper = styled.main`
     font-size: 0.9rem;
     line-height: 1.4rem;
     font-weight: 400;
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   li:first-child {
-    margin: 0rem 0 0 0rem;
+    margin: 0 0 0 0;
   }
 
   code {
@@ -204,7 +204,7 @@ export const PostWrapper = styled.main`
   }
 
   span {
-    padding: 0 1rem 0 0rem;
+    padding: 0 1rem 0 0;
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;

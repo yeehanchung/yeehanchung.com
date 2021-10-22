@@ -12,7 +12,7 @@ export const HomeWrapper = styled.div`
   font-family: ${(props) => props.theme.fonts.main};
   padding: 3rem 0;
   max-width: 90ch;
-  padding: 2rem 0rem 3rem;
+  padding: 2rem 0 3rem;
   margin: 0 auto 2rem;
   align-items: center;
 

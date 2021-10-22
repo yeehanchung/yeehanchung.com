@@ -5,12 +5,12 @@ import styled from 'styled-components';
 import { Container, Post, Seo } from '../components';
 
 const Span = styled.span`
-  padding: 0 1rem 0 0rem;
+  padding: 0 1rem 0 0;
 `;
 
 const Tag = styled.span`
   color: #ff5e62;
-  padding: 0 1rem 0 0rem;
+  padding: 0 1rem 0 0;
   font-weight: 700;
 `;
 
