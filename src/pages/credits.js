@@ -27,11 +27,6 @@ const StyledPostContent = styled.div`
   }
 `;
 
-/**
- *
- * @param {*} param0
- * @returns
- */
 const BackToNotes = styled(Link)`
   max-width: 90ch;
   margin: 3.5rem auto 2rem;
