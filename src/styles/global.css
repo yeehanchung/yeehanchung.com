@@ -1,12 +1,12 @@
 :root {
-  /* --body-bg: #212121;
+    /* --body-bg: #212121;
   --font-family: 'Source Sans Pro, Helvatica Neue, Helvetica, Arial', sans-serif; */
-  --font-size-list: 0.85rem;
-  --font-size-base: 0.8rem;
-  --font-color-topic-header: #495057;
-  --font-color-topic-date: hsl(227, 2%, 64%);
+    --font-size-list: 0.85rem;
+    --font-size-base: 0.8rem;
+    --font-color-topic-header: #495057;
+    --font-color-topic-date: hsl(227, 2%, 64%);
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }

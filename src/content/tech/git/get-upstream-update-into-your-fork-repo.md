@@ -23,7 +23,7 @@ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 
 ## Let's get started
 
-On your terminal, check your local branches `git branch -l` or all available branches `git branch -a`. 
+On your terminal, check your local branches `git branch -l` or all available branches `git branch -a`.
 
 Now, we have to check out the branch you want to merge to, which is usually your working branch.
 
@@ -47,4 +47,4 @@ Now your current working branch is up to date with the original repository, aka 
 
 ## References
 
-- [Merging an upstream repository into your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-an-upstream-repository-into-your-fork)
+-   [Merging an upstream repository into your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-an-upstream-repository-into-your-fork)

@@ -38,9 +38,9 @@ git commit -m "refactor: rename a variable"
 git push
 ```
 
-- To learn more about [git-add](https://git-scm.com/docs/git-add)
-- To learn more about [git-commit](https://git-scm.com/docs/git-commit)
-- To learn more about [git-push](https://git-scm.com/docs/git-push)
+-   To learn more about [git-add](https://git-scm.com/docs/git-add)
+-   To learn more about [git-commit](https://git-scm.com/docs/git-commit)
+-   To learn more about [git-push](https://git-scm.com/docs/git-push)
 
 ---
 
@@ -117,5 +117,5 @@ git drop 0
 git stash clear
 ```
 
-- To learn more about [git-stash](https://git-scm.com/docs/git-stash)
-- To learn more about [Stashing and Cleaning](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
+-   To learn more about [git-stash](https://git-scm.com/docs/git-stash)
+-   To learn more about [Stashing and Cleaning](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)

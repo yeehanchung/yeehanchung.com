@@ -9,10 +9,10 @@ lastEdited: 2021-06-22
 
 ## Keywords
 
-- MWS (Modern Workplace Squad)
-- SMP (Social Media Programme)
-- OKS (O365 Knowledgable Session)
-- TKS (Tech Knowledgable Session)
+-   MWS (Modern Workplace Squad)
+-   SMP (Social Media Programme)
+-   OKS (O365 Knowledgable Session)
+-   TKS (Tech Knowledgable Session)
 
 ## TL;DR
 

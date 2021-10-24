@@ -4,11 +4,11 @@ import { Footer } from './index';
 import { Nav } from './Nav';
 
 export const Container = ({ children }) => {
-  return (
-    <ContainerWrapper>
-      <Nav />
-      {children}
-      <Footer />
-    </ContainerWrapper>
-  );
+    return (
+        <ContainerWrapper>
+            <Nav />
+            {children}
+            <Footer />
+        </ContainerWrapper>
+    );
 };
