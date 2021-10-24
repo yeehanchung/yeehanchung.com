@@ -25,4 +25,4 @@ The course composed of the things below:
 
 He is a great author by the way. Hope in the future, I can be one of the many that people can learn from too.
 
-![Just JavaScript Credits](./just-javascript-course-by-dan-abramov/just-javascript-credits.png)
+![Just JavaScript Credits](./just-javascript-course/just-javascript-credits.png)
