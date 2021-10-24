@@ -1,6 +1,6 @@
 ---
 title: Just JavaScript course - my thoughts
-slug: tech/javascript/just-javascript-course-by-dan-abramov
+slug: tech/javascript/just-javascript-course
 date: 2021-09-26
 excerpt: 🧩
 tag: javascript

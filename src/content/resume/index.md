@@ -2,7 +2,7 @@
 title: Yee Han's Resume
 author: Yee Han Chung
 slug: resume
-date: 2021-08-09
+date: 2021-10-16
 tag: resume
 description: Resume
 keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
@@ -14,15 +14,13 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 #### Jun 2021 - Present @ Singapore
 
-- [Eezee.sg](https://eezee.sg/about-us) is Singapore's largest B2B marketplace for industrial and business supplies.
-- We are committed to providing a customer-centric eCommerce experience that is easy, transparent and secure.
-
-<!--
-- Automate test cases of both external and internal platforms to improve site-reliability, and visibility for stakeholders.
-- Tech stack: Node.js (Express.js), JavaScript, CSS/XPATH, Jest, Puppeteer, UI-licious
-- Documentation onboarding,
-- Developed image comparison tool for detecting UI changes on Eezee pages.
--->
+<!-- - [Eezee.sg](https://eezee.sg/about-us) is Singapore's largest B2B marketplace for industrial and business supplies. We are committed to providing a customer-centric eCommerce experience that is easy, transparent and secure.
+- Build mobile reusable components based on system design from Figma.
+- Strategic planning and decision-making for driving successful hires.
+- Automate test cases for improving site-reliability.
+- Documentation for onboarding Software Engineer and Quality Assurance Test Engineer.
+- Developed internal CLI tooling for detecting UI difference on each build process.
+- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **JSX/CSS/XPATH**, **DOM manipulation** -->
 
 ### Software Engineer Intern @ Fusionex International
 
@@ -353,7 +351,7 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 <details className="details-q">
   <summary className="details-css">
-    <strong><a href="https://www.yeehan.me/tech/just-javascript-course-by-dan-abramov" rel="noreferrer noopener">Just JavaScript</a></strong> - Dan Abramov (Oct 2021): Deep dived into JavaScript Universe especially mental models.
+    <strong><a href="https://www.yeehan.me/tech/javascript/just-javascript-course" rel="noreferrer noopener">Just JavaScript</a></strong> - Dan Abramov (Oct 2021): Deep dived into JavaScript Universe especially mental models.
   </summary>
   <ul>
     <img
