@@ -43,8 +43,6 @@ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
 
 Now your current working branch is up to date with the original repository, aka the upstream repository.
 
----
-
 ## References
 
 -   [Merging an upstream repository into your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-an-upstream-repository-into-your-fork)

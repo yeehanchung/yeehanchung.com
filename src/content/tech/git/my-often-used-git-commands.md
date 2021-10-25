@@ -42,8 +42,6 @@ git push
 -   To learn more about [git-commit](https://git-scm.com/docs/git-commit)
 -   To learn more about [git-push](https://git-scm.com/docs/git-push)
 
----
-
 ## 2. Amending the latest commit message
 
 To amend a message of the latest pushed commit. Ensure you are in the correct repository and branch, which the latest commit belongs to.
@@ -55,8 +53,6 @@ git commit --amend -m "Your new desired commit message"
 git push --force branch-name
 ```
 
----
-
 ## 3. Amending older commit messages
 
 `git rebase -i HEAD~5` will help to achieve that. It's not necessarily to be `5`, and it could be the 3rd or higher latest commits.
@@ -65,8 +61,6 @@ git push --force branch-name
 git rebase -i HEAD~10 # 10th or higher latest commits
 git rebase -i HEAD~2 # 1st and 2nd latest commits
 ```
-
----
 
 ## 4. Renaming a Git branch
 
@@ -93,8 +87,6 @@ Lastly, delete the old remote branch.
 ```shell
 git push origin --delete old_name
 ```
-
----
 
 ## 5. Stashing and Cleaning
 

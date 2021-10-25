@@ -23,8 +23,6 @@ Another useful stuff is that viewing file content with syntax highlighting. It i
 
 ![Cat file after installing bat](basic-but-useful-commands/cat-view-content-via-bat.png)
 
----
-
 ## Resources
 
 -   [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen): He has posted a lot of videos messing around `VIM`.
