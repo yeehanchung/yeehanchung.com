@@ -56,7 +56,8 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 - Bachelor of Computer Science (Hons).
 - Majored in **Software Engineering**.
-- CGPA: 3.85/4.00 (First Class Honours).
+- 1st Class Honours (CGPA: 3.85/4.00).
+- Valedictorian Finalist, selected as one of the 2 candidates from IT Faculty.
 
 <!-- Projects -->
 
@@ -64,20 +65,20 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 ### E-commerce web app & blog website
 
-#### Final Year Project (Individual Employer Project)
+#### Individual Final Year Project
 
-- Handled food delivery orders: Total of RM8750 within 5 months (organic).
-- Fulfilled user requirements together with ISO 25010 software quality model.
-- Involved in full SDLC (Software Development Life Cycle), and documentation.
-- Tech stack of [E-commerce](http://www.sausagekl.com/): **React**, **Redux**, **Bootstrap**, **Google Firebase**, **SCSS**, **Git**, **Heroku**.
-- Tech stack of [Admin dashboard](http://www.sausagekl.com/): **React**, **Redux**, **Ant Design**, **Google Firebase**, **SCSS**, **Git**.
-- Tech stack of [Blog](https://prettier-jones-267440.netlify.app/): **Gatsby**, **GraphQL**, **styled-components**, **SCSS**, **Git**, **Netlify**.
+- Handled food delivery orders: RM 8750 within 5 months (organic).
+- Built user-facing marketplace, admin dashboard, and blogging site.
+- Fulfilled user requirements with ISO 25010 software quality model.
+- Handled full SDLC (Software Development Life Cycle), and documentation.
+- Tech stack: **React.js**, **Redux**, **Gatsby.js**, **GraphQL**, **styled-components**, **Ant Design**, **Bootstrap**, **Google Firebase**, **CSS/SCSS**, **Git**, **Heroku**, **Netlify**.
+- [Website](http://www.sausagekl.com/) | [GitHub repository](https://github.com/yeehanchung/e-commerce-react-redux-firestore)
 
 ### Office 365 educational website
 
 - Led a team of 7 using Kanban boards to scale our [educational website](https://modern-workplace-squad.netlify.app/) to provide O365 tips & tricks.
 - Conducted code reviews and provided internal training sessions.
-- Tech stack: **React**, **Git**, **CSS/SCSS**, **Markdown**, **Vercel**.
+- Tech stack: **React.js**, **Git**, **CSS/SCSS**, **Markdown**, **Vercel**.
 - Tools: **Docusaurus**, **VSCode**, **Trello**.
 - [Website](https://modern-workplace-squad.netlify.app/) | [GitHub repository](https://github.com/cyeehan/modern-workplace-squad)
 
