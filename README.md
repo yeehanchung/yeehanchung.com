@@ -24,17 +24,13 @@
 
 ## 🥞 Technologies
 
--   Gatsby
--   JavaScript
--   styled-components
--   SCSS
--   Markdown (mainly `.md`)
+-   Gatsby, JavaScript, styled-components, SCSS, Markdown
 
 Can find out more in `package.json`.
 
 ## 📝 To-do
 
--   [ ] Refactor for reusability
+-   [ ] Refactoring for reusability
 -   [x] Clean up codes
 
 ## 🗺 A little journey
