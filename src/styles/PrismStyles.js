@@ -28,10 +28,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-    /* .hello {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-} */
 
     @font-face {
         font-family: Consolas, monospace;
@@ -40,10 +36,9 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
     code[class*='language-'],
     pre[class*='language-'] {
-        /* color: red; */
         background: none;
-        /* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
         font-family: Monaco, Menlo, monospace;
+        /* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
         /* font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace; */
         font-size: 0.7rem;
         text-align: left;
@@ -64,9 +59,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
         hyphens: none;
 
         font-size: 95%;
-        /* line-height: 1.7; */
-        /* background: #efedf0; */
-        /* padding: 0.25rem; */
         border-radius: 0.375rem;
         background: white;
     }
@@ -86,13 +78,10 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
     }
     .gatsby-highlight pre[class*='language-'] {
         -webkit-overflow-scrolling: touch;
-        /* NEW */
-        /* padding: 1rem; */
         padding: 1.5rem 1rem 1rem;
         line-height: 1.5;
     }
     .gatsby-highlight pre[class*='language-']::before {
-        /* background: rgb(40, 42, 54); */
         border-radius: 0.25rem 0.25rem 0 0;
         color: #ff5e62;
         font-size: 12px;
@@ -107,56 +96,48 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
     /* Start of language tab */
     .gatsby-highlight pre[class~='language-js']::before {
         content: 'js';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-html']::before {
         content: 'html';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-css']::before {
         content: 'css';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-php']::before {
         content: 'php';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-wordpress']::before {
         content: 'wordpress';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-regex']::before {
         content: 'regex';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-md']::before {
         content: 'md';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
 
     .gatsby-highlight pre[class~='language-shell']::before {
         content: 'shell';
-        /* background: rgb(40, 42, 54); */
         background: #0a192f;
         color: #ff5e62;
     }
@@ -170,20 +151,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
     :not(pre) > code[class*='language-'],
     pre[class*='language-'] {
-        /* background: #2d2d2d; */
         background: #0a192f;
     }
 
     /* Inline code */
     :not(pre) > code[class*='language-'] {
-        /* padding: 0.1em; */
-        /* border-radius: 0.1rem; */
         white-space: normal;
-        /* Important */
-
         font-size: 85%;
         line-height: 1.7;
-        /* background: #efedf0; */
         padding: 0.25rem;
         border-radius: 0.375rem;
         background: white;
