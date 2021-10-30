@@ -9,8 +9,8 @@ lastEdited: 2021-02-15
 
 ## Pre-requisites:
 
--   Understand how to create a plugin in WordPress.
--   Know when to use WordPress plugins with hooks.
+- Understand how to create a plugin in WordPress.
+- Know when to use WordPress plugins with hooks.
 
 This short and simple article is to guide readers on how to create hooks, namely `action hook` and `filter hook`. This article breaks down a few sections as follows:
 
@@ -25,11 +25,11 @@ Generally, they can help with **reducing lines of codes**, and **improving code 
 
 ## The flow of this article
 
--   Why Action Hook?
--   Creating Action Hook
--   Why Filter Hook?
--   Creating Filter Hook
--   References
+- Why Action Hook?
+- Creating Action Hook
+- Why Filter Hook?
+- Creating Filter Hook
+- References
 
 <!-- - tl;dr -->
 
@@ -110,8 +110,8 @@ Action Hook can be more complicated than that. Some references are listed below.
 
 ## References
 
--   https://developer.wordpress.org/reference/functions/add_action/
--   https://developer.wordpress.org/reference/functions/do_action/
+- https://developer.wordpress.org/reference/functions/add_action/
+- https://developer.wordpress.org/reference/functions/do_action/
 
 ---
 
@@ -142,9 +142,9 @@ Case 2: apply_filter($tag, $value1, $value2)
 
 Remember that..
 
--   If you pass an array into the `Filter Hook`, ensure only return an array.
--   Ensure passing at least one argument into `apply_filters()`.
--   Only `Filter Hook` is able to return data; [array or object](https://wordpress.stackexchange.com/questions/99630/how-to-return-hook-data-when-multiple-parameters-are-present).
+- If you pass an array into the `Filter Hook`, ensure only return an array.
+- Ensure passing at least one argument into `apply_filters()`.
+- Only `Filter Hook` is able to return data; [array or object](https://wordpress.stackexchange.com/questions/99630/how-to-return-hook-data-when-multiple-parameters-are-present).
 
 An example of `apply_filters()` with two different files
 
@@ -187,16 +187,16 @@ function wcpt_custom_query_args($args, $product_table) {
 
 ## Want to overwrite theme file from filter plugin?
 
--   [WordPress stackexchange - overwrite theme file from plugin](https://wordpress.stackexchange.com/questions/258026/overwrite-theme-file-from-plugin)
+- [WordPress stackexchange - overwrite theme file from plugin](https://wordpress.stackexchange.com/questions/258026/overwrite-theme-file-from-plugin)
 
 ## References for Filter Hook
 
--   [Developer WordPress functions add_filter](https://developer.wordpress.org/reference/functions/add_filter/)
--   [Developer WordPress functions apply_filter](https://developer.wordpress.org/reference/functions/apply_filters/)
+- [Developer WordPress functions add_filter](https://developer.wordpress.org/reference/functions/add_filter/)
+- [Developer WordPress functions apply_filter](https://developer.wordpress.org/reference/functions/apply_filters/)
 
 ## General references that I found useful
 
--   [Hostinger - how to create wordpress plugin](https://www.hostinger.my/tutorials/how-to-create-wordpress-plugin)
--   [Codex WordPress Plugin_API Action Reference](https://codex.wordpress.org/Plugin_API/Action_Reference)
--   [Codex WordPress Plugin_API](https://codex.wordpress.org/Plugin_API)
--   [Developer WordPress Plugin Hooks Actions](https://developer.wordpress.org/plugins/hooks/actions/)
+- [Hostinger - how to create wordpress plugin](https://www.hostinger.my/tutorials/how-to-create-wordpress-plugin)
+- [Codex WordPress Plugin_API Action Reference](https://codex.wordpress.org/Plugin_API/Action_Reference)
+- [Codex WordPress Plugin_API](https://codex.wordpress.org/Plugin_API)
+- [Developer WordPress Plugin Hooks Actions](https://developer.wordpress.org/plugins/hooks/actions/)

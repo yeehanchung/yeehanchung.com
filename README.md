@@ -20,51 +20,51 @@
 
 ## Pre-requisite
 
--   Installed Gatsby CLI `npm install -g gatsby-cli`
+- Installed Gatsby CLI `npm install -g gatsby-cli`
 
 ## 🥞 Technologies
 
--   Gatsby, JavaScript, styled-components, SCSS, Markdown
+- Gatsby, JavaScript, styled-components, SCSS, Markdown
 
 Can find out more in `package.json`.
 
 ## 📝 To-do
 
--   [ ] Refactoring for reusability
--   [x] Clean up codes
+- [ ] Refactoring for reusability
+- [x] Clean up codes
 
 ## 🗺 A little journey
 
--   Restructured some of the **styled-components** following an article, [**Structuring our Styled Components | Part I**](https://alanbsmith.medium.com/structuring-our-styled-components-part-i-2bf21fa64b28). BEM component structure that improves styled component patterns, consistency, and predictability.
+- Restructured some of the **styled-components** following an article, [**Structuring our Styled Components | Part I**](https://alanbsmith.medium.com/structuring-our-styled-components-part-i-2bf21fa64b28). BEM component structure that improves styled component patterns, consistency, and predictability.
 
 ## 🚀 Quick start
 
 1. **Git clone**
 
-    ```shell
-    $ git clone https://github.com/cyeehan/yeehan-me.git
-    $ cd yeehan-me
-    ```
+   ```shell
+   $ git clone https://github.com/cyeehan/yeehan-me.git
+   $ cd yeehan-me
+   ```
 
 2. **Install dependencies**
 
-    ```shell
-    $ yarn install
-    ```
+   ```shell
+   $ yarn install
+   ```
 
 3. **Start developing**
 
-    In the main directory,
+   In the main directory,
 
-    ```shell
-    $ gatsby develop
-    or
-    $ yarn start
-    ```
+   ```shell
+   $ gatsby develop
+   or
+   $ yarn start
+   ```
 
-    Your site is now running at `http://localhost:8000`
+   Your site is now running at `http://localhost:8000`
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+   _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
 ## 🧐 What's inside? (Optional)
 

@@ -25,7 +25,7 @@ Another useful stuff is that viewing file content with syntax highlighting. It i
 
 ## Resources
 
--   [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen): He has posted a lot of videos messing around `VIM`.
-    -   [Command Line - Fu - sed + find tricks](https://www.youtube.com/watch?v=CyVV2FI7-DE)
-    -   [How to use Xargs!!! | Linux Core Utils](https://www.youtube.com/watch?v=5EFY5ztZb00)
--   [Bash shell command cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
+- [ThePrimeagen](https://www.youtube.com/c/ThePrimeagen): He has posted a lot of videos messing around `VIM`.
+  - [Command Line - Fu - sed + find tricks](https://www.youtube.com/watch?v=CyVV2FI7-DE)
+  - [How to use Xargs!!! | Linux Core Utils](https://www.youtube.com/watch?v=5EFY5ztZb00)
+- [Bash shell command cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
