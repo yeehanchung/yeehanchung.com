@@ -55,6 +55,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss}\"",
+    "prettier-docs": "prettier --config .prettierrc --write \"**/*.{md,mdx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
