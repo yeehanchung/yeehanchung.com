@@ -4,7 +4,7 @@ slug: tech/misc/my-2021-mac-setup
 date: 2021-10-30
 excerpt: 🚀
 tag: misc
-lastEdited:
+lastEdited: 2021-11-01
 ---
 
 While referring to my Mac setup below, should take a look at **swyx**'s new Mac setup [video](https://www.youtube.com/watch?v=qwflfsgU0eg).
@@ -16,8 +16,7 @@ While referring to my Mac setup below, should take a look at **swyx**'s new Mac 
   1. GitHub
   2. Gmail
   3. Trello
-  4. Notes using iCloud
-     1. Grammar and Spelling -> **Deselect all**
+  4. Notes using iCloud (Grammar and Spelling -> **Deselect all**)
 - **MacOS system settings**:
   - Disable Spotlight search for all miscellaneous crap except apps, and system preferences. Especially `Developer option`
   - Ensure to add `xcode.app` to **/Applications**
