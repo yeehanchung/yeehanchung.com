@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container, Seo } from '../components';
-import { ReinventionBlog } from '../components/blog-topics';
+import { ReinventionBlog, SoftwareEngineeringBlog } from '../components/blog-topics';
 import OG_image from '../img/og_image.jpeg';
 import './blog.css';
 
@@ -27,6 +27,7 @@ export default ({ location }) => {
                 <Seo image={OG_image} title={"Yee Han's Personal Blog"} />
                 <NoteListing>
                     <ReinventionBlog />
+                    <SoftwareEngineeringBlog />
                 </NoteListing>
             </Container>
         </>
