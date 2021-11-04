@@ -134,7 +134,7 @@ export const PostWrapper = styled.main`
     ul,
     ol {
         color: ${(props) => props.theme.colors.dark2};
-        margin: 0.5rem 0 1rem 1.5rem;
+        margin: 0.5rem 0 0rem 1.5rem;
         line-height: 1.5rem;
     }
 
@@ -150,7 +150,7 @@ export const PostWrapper = styled.main`
     }
 
     li > ul {
-        margin: 0 0 0 1rem;
+        margin: 0 0 0 1.5rem;
     }
 
     li:first-child {
@@ -163,6 +163,10 @@ export const PostWrapper = styled.main`
 
     li > ol {
         margin-top: 0;
+    }
+
+    li > ol > li {
+        list-style-type: lower-roman;
     }
 
     code {
