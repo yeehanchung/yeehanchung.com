@@ -4,7 +4,6 @@ export const PostWrapper = styled.main`
     display: flex;
     flex-direction: column;
     margin: 0 0 1rem 0;
-    padding: 3rem 0;
     z-index: 10;
     max-width: 40rem;
     color: #d2d2d2;
