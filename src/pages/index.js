@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Seo } from '../components';
-import { Author } from '../components/Author.js';
+import { Author, Container, Seo } from '../components';
 import OG_IMAGE from '../img/og_image.jpeg';
 import './blog.css';
 
