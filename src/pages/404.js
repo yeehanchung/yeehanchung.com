@@ -1,18 +1,19 @@
-// import { graphql } from 'gatsby';
+/* --- LIBRARIES --- */
 import React from 'react';
 import styled from 'styled-components';
+
+/* UI COMPONENTS */
 import { Container } from '../components';
 import * as Typography from '../styled/Typography';
 
 export const HomeWrapper = styled.div`
+    font-family: ${(props) => props.theme.fonts.main};
+    max-width: 90ch;
     display: flex;
     flex-direction: column;
-    font-family: ${(props) => props.theme.fonts.main};
-    padding: 3rem 0;
-    max-width: 90ch;
+    align-items: center;
     padding: 2rem 0 3rem;
     margin: 0 auto 2rem;
-    align-items: center;
 `;
 
 const notFound = ({ data }) => {

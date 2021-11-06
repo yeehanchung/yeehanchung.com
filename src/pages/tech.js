@@ -1,5 +1,8 @@
+/* --- LIBRARIES --- */
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Container, Seo } from '../components';
 import {
     CliNotes,
@@ -9,8 +12,9 @@ import {
     WordPressNotes,
     JavaScriptNotes,
 } from '../components/tech-topics';
+
+/* --- IMAGES --- */
 import OG_image from '../img/og_image.jpeg';
-import './tech.css';
 
 export const NoteListing = styled.div`
     column-width: 20rem;
@@ -30,7 +34,7 @@ export default ({ location }) => {
                 <Seo image={OG_image} title={"Yee Han's Dev Blog"} />
                 <NoteListing>
                     {/* <ApiNotes /> */}
-                    <CliNotes />
+                    <CliNotes src={"cli"} />
                     {/* <CssNotes /> */}
                     <DocusaurusNotes />
                     {/* <GatsbyNotes /> */}

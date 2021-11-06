@@ -1,9 +1,13 @@
+/* --- LIBRARIES --- */
 import React from 'react';
 import styled from 'styled-components';
-import { Container, Seo } from '../components';
+
+/* --- UI COMPONENTS --- */
 import { ReinventionBlog, SoftwareEngineeringBlog } from '../components/blog-topics';
+import { Container, Seo } from '../components';
+
+/* --- IMAGES --- */
 import OG_image from '../img/og_image.jpeg';
-import './blog.css';
 
 export const NoteListing = styled.div`
     column-width: 20rem;

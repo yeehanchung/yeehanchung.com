@@ -1,6 +1,9 @@
+/* --- LIBRARIES --- */
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Container, Post, Seo } from '../components';
 
 const Span = styled.span`
@@ -26,16 +29,11 @@ const StyledPostContent = styled.div`
     }
 `;
 
-/**
- *
- * @param {*} param0
- * @returns
- */
 const BackToNotes = styled(Link)`
+    color: ${(props) => props.theme.colors.link};
     max-width: 90ch;
     margin: 3.5rem auto 2rem;
     display: block;
-    color: ${(props) => props.theme.colors.link};
     text-decoration: none;
 `;
 
@@ -84,7 +82,9 @@ export default singlePost;
 
 export const pageQuery = graphql`
     query SinglePostQuery($id: String!) {
-        markdownRemark(id: { eq: $id }) {
+        markdownRemark(
+                id: { eq: $id }
+            ) {
             fields {
                 readingTime {
                     text

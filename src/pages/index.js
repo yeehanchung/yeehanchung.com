@@ -1,24 +1,24 @@
+/* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Author, Container, Seo } from '../components';
+
+/* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';
-import './blog.css';
 
 export const HomeWrapper = styled.div`
+    font-family: ${(props) => props.theme.fonts.main};
     display: flex;
     flex-direction: column;
-    font-family: ${(props) => props.theme.fonts.main};
-    padding: 3rem 0;
     max-width: 90ch;
     padding: 2rem 0 3rem;
     margin: 0 auto 2rem;
     align-items: center;
 
     h3 {
-        font-size: 1rem;
-        font-weight: bold;
-        margin: 2rem 0 1rem 0;
         font-size: 1.1rem;
         font-weight: bold;
         margin: 0.8rem 0 0.25rem 0;

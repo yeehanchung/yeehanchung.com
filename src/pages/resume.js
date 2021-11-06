@@ -1,11 +1,14 @@
+/* --- LIBRARIES --- */
 import { graphql } from 'gatsby';
 import React from 'react';
-// import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { Container, ResumePost, Seo } from '../components';
-import { Author } from '../components/Author.js';
-import OG_IMAGE from '../img/og_image.jpeg';
+
+/* --- UI COMPONENTS --- */
 import * as Typography from '../styled/Typography';
-import './blog.css';
+import { Author } from '../components/Author.js';
+import { Container, ResumePost, Seo } from '../components';
+
+/* --- IMAGES --- */
+import OG_IMAGE from '../img/og_image.jpeg';
 
 export default ({ data }) => {
     let queryData = data.markdownRemark.frontmatter;

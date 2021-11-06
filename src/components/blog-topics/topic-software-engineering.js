@@ -1,19 +1,20 @@
+/* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Topic, TopicTag } from '../../styled';
 import { TopicListing } from './index';
 
 export const Ul = styled.ul`
     list-style: none;
     margin: 0;
-    /* padding: 1rem; */
     border-radius: var(--border-radius, 2px);
 `;
 
 export const NoteListing = styled.div`
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin: 4rem 0 6rem 0;
     padding: 1rem;
     column-width: 25rem;
     column-gap: 2rem;
