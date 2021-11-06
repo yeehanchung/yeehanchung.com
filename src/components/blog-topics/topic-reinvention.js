@@ -1,6 +1,9 @@
+/* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
 

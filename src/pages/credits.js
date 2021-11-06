@@ -1,7 +1,9 @@
+/* --- LIBRARIES --- */
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-// import { P, TopicTag, A } from "../elements"
+
+/* UI COMPONENTS */
 import { Container, Post, Seo } from '../components';
 
 const Span = styled.span`

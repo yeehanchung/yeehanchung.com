@@ -1,5 +1,8 @@
+/* --- LIBRARIES --- */
 import React from 'react';
 import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Button } from './index';
 
 const TopicListingLi = styled.li`

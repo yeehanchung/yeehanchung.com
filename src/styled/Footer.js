@@ -1,3 +1,4 @@
+/* --- LIBRARIES --- */
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.footer`
@@ -33,7 +34,6 @@ export const FooterSocialIcons = styled.div`
     transition: all 0.5s;
 
     img {
-        /* height: 25px; */
         margin: 10px 0;
         padding: 0 3rem;
         transition: filter 0.3s;
