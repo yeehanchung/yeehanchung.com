@@ -1,8 +1,9 @@
+/* --- LIBRARIES --- */
 import React from 'react';
 import styled from 'styled-components';
-// import { CardWrapper, P, NoteWrapper, H2 } from "../../styled"
+
+/* --- UI COMPONENTS --- */
 import { Button } from './index';
-// import { WordPressTopic } from "./index"
 
 const TopicListingLi = styled.li`
     color: ${(props) => props.theme.colors.font};

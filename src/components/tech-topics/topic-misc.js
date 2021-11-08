@@ -1,17 +1,10 @@
+/* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-// import { Button } from "."
-import styled from 'styled-components';
+
+/* --- UI COMPONENTS --- */
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
-
-export const NoteListing = styled.div`
-    margin-top: 4rem;
-    margin-bottom: 6rem;
-    padding: 1rem;
-    column-width: 25rem;
-    column-gap: 2rem;
-`;
 
 export const MiscNotes = () => {
     const data = useStaticQuery(graphql`

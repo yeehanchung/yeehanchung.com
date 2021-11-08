@@ -1,20 +1,20 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {
-    FooterSocialIcons,
+    // FooterSocialIcons,
     FooterSocialWrapper,
     FooterWrapper,
     P,
 } from '../styled';
 
-export const InnerIcon = styled.a`
-    margin: '2rem 1rem';
-    padding: '2rem';
-`;
+// const InnerIcon = styled.a`
+//     margin: '2rem 1rem';
+//     padding: '2rem';
+// `;
 
 export const Footer = () => {
-    const { linkedin, github, instagram, site } = useStaticQuery(graphql`
+    const { site } = useStaticQuery(graphql`
         query {
             linkedin: file(relativePath: { eq: "linkedin.svg" }) {
                 publicURL
