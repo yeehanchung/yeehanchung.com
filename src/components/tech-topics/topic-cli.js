@@ -1,15 +1,12 @@
 /* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+
 /* --- UI COMPONENTS --- */
 import { Topic, TopicTag, UnorderedList } from "../../styled";
 import { TopicListing } from "./index";
 
-export const CliNotes = ({ src }) => {
-
-    console.log(src);
-    // src = "cli";
-
+const CliNotes = () => {
 	const data = useStaticQuery(graphql`
 		query  {
 			allMarkdownRemark(
@@ -43,8 +40,6 @@ export const CliNotes = ({ src }) => {
 	let newData = data.allMarkdownRemark.edges;
 	let cliSVG = data.cli.publicURL;
 
-	console.log(newData);
-
 	return (
 		<Topic>
 			<TopicTag>
@@ -59,25 +54,6 @@ export const CliNotes = ({ src }) => {
 			</TopicTag>
 			<UnorderedList>
 				{newData.map((data) => {
-					// switch (data.node.frontmatter.tag) {
-					// 	case "cli":
-					// 		return (
-					// 			<TopicListing
-					// 				key={data.node.frontmatter.slug}
-					// 				date={data.node.frontmatter.date}
-					// 				title={data.node.frontmatter.title}
-					// 				excerpt={data.node.frontmatter.excerpt}
-					// 				slug={data.node.frontmatter.slug}
-					// 				readingTime={
-					// 					data.node.fields.readingTime.text
-					// 				}
-					// 				lastEdited={
-					// 					data.node.frontmatter.lastEdited
-					// 				}
-					// 			/>
-					// 		);
-					// }
-
 					return (
 						<TopicListing
 							key={data.node.frontmatter.slug}
@@ -89,13 +65,10 @@ export const CliNotes = ({ src }) => {
 							lastEdited={data.node.frontmatter.lastEdited}
 						/>
 					);
-                    // return;
 				})}
 			</UnorderedList>
 		</Topic>
 	);
 };
 
-// export const getTechNotes = graphql`
-//     query GatsbyQuery()
-// `;
+export default CliNotes;
