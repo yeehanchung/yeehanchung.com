@@ -10,7 +10,7 @@ import { Container, ResumePost, Seo } from '../components';
 /* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';
 
-export default ({ data }) => {
+const Resume = ({ data }) => {
     let queryData = data.markdownRemark.frontmatter;
 
     return (
@@ -60,3 +60,5 @@ export const pageQuery = graphql`
         }
     }
 `;
+
+export default Resume;

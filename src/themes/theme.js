@@ -2,7 +2,7 @@
  * Hydrate styling when page is first loaded
  */
 
-export default {
+const Theme = {
     background: {
         main: 'var(--body-bg)',
     },
@@ -49,3 +49,5 @@ export default {
         shadow1: '2px 5px 20px rgba(30, 30, 31, 0.05)',
     },
 };
+
+export default Theme;
