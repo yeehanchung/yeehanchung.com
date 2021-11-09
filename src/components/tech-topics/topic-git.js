@@ -12,7 +12,7 @@ export const NoteListing = styled.div`
     column-gap: 2rem;
 `;
 
-export const GitNotes = () => {
+const GitNotes = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
@@ -72,3 +72,5 @@ export const GitNotes = () => {
         </Topic>
     );
 };
+
+export default GitNotes;

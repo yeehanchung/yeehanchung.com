@@ -8,7 +8,7 @@ import { TopicListing } from './index';
 
 import '../../styles/styles.css';
 
-const WordPressNotes = () => {
+export const WordPressNotes = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
@@ -72,5 +72,3 @@ const WordPressNotes = () => {
         </Topic>
     );
 };
-
-export default WordPressNotes;

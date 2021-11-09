@@ -17,7 +17,7 @@ const TopicListingP = styled.p`
     font-size: 0.625rem;
 `;
 
-export const TopicListing = ({
+const TopicListing = ({
     date,
     title,
     excerpt,
@@ -39,3 +39,5 @@ export const TopicListing = ({
         </>
     );
 };
+
+export default TopicListing;
