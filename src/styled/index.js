@@ -7,3 +7,4 @@ export * from './Topic';
 export * from './TopicTag';
 export * from './Typography';
 export * from './UnorderedList';
+export * from './NoteListing';

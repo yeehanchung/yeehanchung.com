@@ -37,7 +37,7 @@ const BackToNotes = styled(Link)`
     text-decoration: none;
 `;
 
-export default ({ data }) => {
+const Credits = ({ data }) => {
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
@@ -98,3 +98,5 @@ export const pageQuery = graphql`
         }
     }
 `;
+
+export default Credits;

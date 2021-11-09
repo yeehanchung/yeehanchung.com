@@ -1,10 +1,14 @@
-import { graphql, useStaticQuery } from 'gatsby';
+/* --- LIBRARIES --- */
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+
+/* --- UI COMPONENTS --- */
 import { Topic, TopicTag, UnorderedList } from '../../styled';
 import { TopicListing } from './index';
-import './styles/styles.css';
 
-export const WordPressNotes = () => {
+import '../../styles/styles.css';
+
+const WordPressNotes = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
@@ -68,3 +72,5 @@ export const WordPressNotes = () => {
         </Topic>
     );
 };
+
+export default WordPressNotes;
