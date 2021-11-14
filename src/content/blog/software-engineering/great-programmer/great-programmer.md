@@ -8,7 +8,7 @@ tag: software-engineering
 lastEdited:
 ---
 
-## In summary
+## Info 1
 
 1. Curiosity.
 2. Breaking down problems into smaller parts.
@@ -17,8 +17,9 @@ lastEdited:
 4. Don't be afraid of copy-paste, but have to understand, which is relating back to curiosity.
 5. Be cautious of hype cycles (skeptical about the latest things came out).
 
-To be continued....
+> By Travis Oliphant and Lex Fridman:
+> https://www.youtube.com/watch?v=XklQac5WLs4
 
-## References
+## Info 2
 
-- [How to be a great programmer | Travis Oliphant and Lex Fridman](https://www.youtube.com/watch?v=XklQac5WLs4)
+An article by Peter Nixey on **[How to be a great software developer](https://peternixey.com/post/83510597580/how-to-be-a-great-software-developer)**. Definitely worth a read.
