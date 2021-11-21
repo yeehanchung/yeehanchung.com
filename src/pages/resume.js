@@ -4,8 +4,7 @@ import React from 'react';
 
 /* --- UI COMPONENTS --- */
 import * as Typography from '../styled/Typography';
-import { Author } from '../components/Author.js';
-import { Container, ResumePost, Seo } from '../components';
+import { Container, ResumePost, Seo, Author } from '../components';
 
 /* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';
