@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* UI COMPONENTS */
-import { Container } from '../components';
+import {Container} from '../components';
 import * as Typography from '../styled/Typography';
 
 export const HomeWrapper = styled.div`
@@ -16,7 +16,7 @@ export const HomeWrapper = styled.div`
     margin: 0 auto 2rem;
 `;
 
-const notFound = ({ data }) => {
+const notFound = ({data}) => {
     return (
         <Container>
             <HomeWrapper>

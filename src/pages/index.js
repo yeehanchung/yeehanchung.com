@@ -1,10 +1,10 @@
 /* --- LIBRARIES --- */
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { Author, Container, Seo } from '../components';
+import {Author, Container, Seo} from '../components';
 
 /* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';

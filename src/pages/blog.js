@@ -3,8 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { ReinventionBlog, SoftwareEngineeringBlog } from '../components/blog';
-import { Container, Seo } from '../components';
+import {ReinventionBlog, SoftwareEngineeringBlog} from '../components/blog';
+import {Container, Seo} from '../components';
 
 /* --- IMAGES --- */
 import OG_image from '../img/og_image.jpeg';
@@ -24,7 +24,7 @@ export const NoteListing = styled.div`
     }
 `;
 
-export default ({ location }) => {
+export default ({location}) => {
     return (
         <>
             <Container location={location}>

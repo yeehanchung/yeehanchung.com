@@ -85,7 +85,7 @@ module.exports = {
                 plugins: [
                     {
                         resolve: `gatsby-remark-figure-caption`,
-                        options: { figureClassName: 'md-figure' },
+                        options: {figureClassName: 'md-figure'},
                     },
                     `gatsby-remark-autolink-headers`,
                     {

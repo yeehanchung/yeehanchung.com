@@ -1,10 +1,10 @@
 /* --- LIBRARIES --- */
-import { graphql, Link } from 'gatsby';
+import {graphql, Link} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { Container, Post, Seo } from '../components';
+import {Container, Post, Seo} from '../components';
 
 const Span = styled.span`
     padding: 0 1rem 0 0rem;
@@ -37,7 +37,7 @@ const BackToNotes = styled(Link)`
     text-decoration: none;
 `;
 
-const singlePost = ({ data }) => {
+const singlePost = ({data}) => {
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
@@ -51,7 +51,7 @@ const singlePost = ({ data }) => {
             />
             <Post>
                 <h1>{data.markdownRemark.frontmatter.title}</h1>
-                <p style={{ marginBottom: '50px' }}>
+                <p style={{marginBottom: '50px'}}>
                     <Span>{data.markdownRemark.frontmatter.date}</Span>
                     <Span>{readingTime}</Span>
                     <Span>{excerpt}</Span>
@@ -66,7 +66,7 @@ const singlePost = ({ data }) => {
                     }}
                 />
                 {lastEdited ? (
-                    <p style={{ marginTop: '70px', marginBottom: '0' }}>
+                    <p style={{marginTop: '70px', marginBottom: '0'}}>
                         Last edited: {lastEdited}
                     </p>
                 ) : (
@@ -82,9 +82,7 @@ export default singlePost;
 
 export const pageQuery = graphql`
     query SinglePostQuery($id: String!) {
-        markdownRemark(
-                id: { eq: $id }
-            ) {
+        markdownRemark(id: {eq: $id}) {
             fields {
                 readingTime {
                     text

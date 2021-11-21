@@ -1,8 +1,8 @@
-import { graphql, StaticQuery } from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
-export const Seo = ({ title, description, keywords, image, url, author }) => {
+export const Seo = ({title, description, keywords, image, url, author}) => {
     return (
         <StaticQuery
             query={detailsQuery}

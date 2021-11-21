@@ -1,5 +1,5 @@
 /* --- LIBRARIES --- */
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
 
 /* --- UI COMPONENTS --- */
@@ -9,8 +9,8 @@ export const MiscNotes = () => {
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
-                sort: { fields: frontmatter___date, order: DESC }
-                filter: { frontmatter: { tag: { eq: "misc" } } }
+                sort: {fields: frontmatter___date, order: DESC}
+                filter: {frontmatter: {tag: {eq: "misc"}}}
             ) {
                 edges {
                     node {
@@ -31,13 +31,13 @@ export const MiscNotes = () => {
                     }
                 }
             }
-            image: file(relativePath: { eq: "topic-svg/misc.svg" }) {
+            image: file(relativePath: {eq: "topic-svg/misc.svg"}) {
                 publicURL
             }
         }
     `);
     let posts = data.allMarkdownRemark.edges;
-	let imageUrl = data.image.publicURL;
+    let imageUrl = data.image.publicURL;
 
     return <TopicListColumn title="Misc" imageUrl={imageUrl} posts={posts} />;
 };

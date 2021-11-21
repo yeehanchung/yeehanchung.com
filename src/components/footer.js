@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
 // import styled from 'styled-components';
 import {
@@ -14,18 +14,18 @@ import {
 // `;
 
 export const Footer = () => {
-    const { site } = useStaticQuery(graphql`
+    const {site} = useStaticQuery(graphql`
         query {
-            linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+            linkedin: file(relativePath: {eq: "linkedin.svg"}) {
                 publicURL
             }
-            github: file(relativePath: { eq: "github.svg" }) {
+            github: file(relativePath: {eq: "github.svg"}) {
                 publicURL
             }
-            facebook: file(relativePath: { eq: "facebook.svg" }) {
+            facebook: file(relativePath: {eq: "facebook.svg"}) {
                 publicURL
             }
-            instagram: file(relativePath: { eq: "instagram.svg" }) {
+            instagram: file(relativePath: {eq: "instagram.svg"}) {
                 publicURL
             }
             site {

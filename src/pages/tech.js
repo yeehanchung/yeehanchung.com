@@ -3,15 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { Container, Seo } from '../components';
+import {Container, Seo} from '../components';
 import {
     CliNotes,
     DocusaurusNotes,
     GitNotes,
     MiscNotes,
     WordPressNotes,
-    JavaScriptNotes, 
-    HowToNotes
+    JavaScriptNotes,
+    HowToNotes,
 } from '../components/tech';
 
 /* --- IMAGES --- */
@@ -28,7 +28,7 @@ export const NoteListing = styled.div`
     }
 `;
 
-export default ({ location }) => {
+export default ({location}) => {
     return (
         <>
             <Container location={location}>

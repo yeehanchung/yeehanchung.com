@@ -1,10 +1,10 @@
 /* --- LIBRARIES --- */
-import { graphql, Link } from 'gatsby';
+import {graphql, Link} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
 /* UI COMPONENTS */
-import { Container, Post, Seo } from '../components';
+import {Container, Post, Seo} from '../components';
 
 const Span = styled.span`
     padding: 0 1rem 0 0;
@@ -37,7 +37,7 @@ const BackToNotes = styled(Link)`
     text-decoration: none;
 `;
 
-export default ({ data }) => {
+export default ({data}) => {
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
@@ -52,7 +52,7 @@ export default ({ data }) => {
             />
             <Post>
                 <h1>{data.markdownRemark.frontmatter.title}</h1>
-                <p style={{ marginBottom: '50px' }}>
+                <p style={{marginBottom: '50px'}}>
                     <Span>{data.markdownRemark.frontmatter.date}</Span>
                     <Span>{readingTime}</Span>
                     <Span>{excerpt}</Span>
@@ -66,7 +66,7 @@ export default ({ data }) => {
                         __html: data.markdownRemark.html,
                     }}
                 />
-                <p style={{ marginTop: '70px', marginBottom: '0' }}>
+                <p style={{marginTop: '70px', marginBottom: '0'}}>
                     Last edited: {lastEdited}
                 </p>
                 <BackToNotes to={'/tech'}>← Back to notes</BackToNotes>
@@ -77,7 +77,7 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     {
-        markdownRemark(frontmatter: { tag: { eq: "credits" } }) {
+        markdownRemark(frontmatter: {tag: {eq: "credits"}}) {
             fields {
                 readingTime {
                     text

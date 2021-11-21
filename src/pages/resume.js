@@ -1,15 +1,15 @@
 /* --- LIBRARIES --- */
-import { graphql } from 'gatsby';
+import {graphql} from 'gatsby';
 import React from 'react';
 
 /* --- UI COMPONENTS --- */
 import * as Typography from '../styled/Typography';
-import { Container, ResumePost, Seo, Author } from '../components';
+import {Container, ResumePost, Seo, Author} from '../components';
 
 /* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';
 
-export default ({ data }) => {
+export default ({data}) => {
     let queryData = data.markdownRemark.frontmatter;
 
     return (
@@ -23,7 +23,7 @@ export default ({ data }) => {
             <ResumePost>
                 <Author />
                 <Typography.H2>{queryData.description}</Typography.H2>
-                <p style={{ marginBottom: '0.8rem' }}>
+                <p style={{marginBottom: '0.8rem'}}>
                     <span role="img">⏳</span> {queryData.date}
                 </p>
                 <div
@@ -38,7 +38,7 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
     {
-        markdownRemark(frontmatter: { slug: { eq: "resume" } }) {
+        markdownRemark(frontmatter: {slug: {eq: "resume"}}) {
             fields {
                 readingTime {
                     text

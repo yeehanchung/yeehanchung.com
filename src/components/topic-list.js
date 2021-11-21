@@ -18,14 +18,7 @@ const TopicListingP = styled.p`
     font-size: 0.625rem;
 `;
 
-const TopicList = ({
-    date,
-    title,
-    excerpt,
-    slug,
-    readingTime,
-    lastEdited,
-}) => {
+const TopicList = ({date, title, excerpt, slug, readingTime, lastEdited}) => {
     return (
         <>
             <TopicListingLi key={slug}>

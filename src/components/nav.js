@@ -1,7 +1,7 @@
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import {graphql, Link, useStaticQuery} from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import { NavWrapper } from '../styled';
+import {NavWrapper} from '../styled';
 
 export const NavElement = styled((props) => <Link {...props} />)`
     color: ${(props) => props.theme.colors.link};
@@ -36,7 +36,7 @@ export const HomeIcon = styled.div`
 export const Nav = () => {
     const data = useStaticQuery(graphql`
         query {
-            cli: file(relativePath: { eq: "topic-svg/house.svg" }) {
+            cli: file(relativePath: {eq: "topic-svg/house.svg"}) {
                 publicURL
             }
         }
@@ -52,7 +52,7 @@ export const Nav = () => {
                         alt="Home icon"
                         width="25px"
                         height="25px"
-                        style={{ display: 'flex' }}
+                        style={{display: 'flex'}}
                     />
                 </HomeIcon>
             </NavElement>

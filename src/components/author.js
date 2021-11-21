@@ -1,12 +1,12 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
 import yeehan_img from '../img/yee-han-chung.jpeg';
 import * as Typography from '../styled/Typography';
 import * as styles from '../styles/author.module.scss';
 
-export function Author({ ogImage }) {
+export function Author({ogImage}) {
     // Data from gatsby-config.js
-    const { site, linkedin, github, twitter } = useStaticQuery(graphql`
+    const {site, linkedin, github, twitter} = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
@@ -27,19 +27,19 @@ export function Author({ ogImage }) {
                     }
                 }
             }
-            linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+            linkedin: file(relativePath: {eq: "linkedin.svg"}) {
                 publicURL
             }
-            github: file(relativePath: { eq: "github.svg" }) {
+            github: file(relativePath: {eq: "github.svg"}) {
                 publicURL
             }
-            facebook: file(relativePath: { eq: "facebook.svg" }) {
+            facebook: file(relativePath: {eq: "facebook.svg"}) {
                 publicURL
             }
-            instagram: file(relativePath: { eq: "instagram.svg" }) {
+            instagram: file(relativePath: {eq: "instagram.svg"}) {
                 publicURL
             }
-            twitter: file(relativePath: { eq: "twitter.svg" }) {
+            twitter: file(relativePath: {eq: "twitter.svg"}) {
                 publicURL
             }
         }
@@ -57,8 +57,8 @@ export function Author({ ogImage }) {
             <div className={styles.intro}>
                 <div className={styles.subtitle}>
                     <h3 className={styles.name}>{data.author}</h3>
-                    <p style={{ marginBottom: '0.5rem' }}>{data.occupation}</p>
-                    <div style={{ marginBottom: '0.5rem' }}>
+                    <p style={{marginBottom: '0.5rem'}}>{data.occupation}</p>
+                    <div style={{marginBottom: '0.5rem'}}>
                         <Typography.A
                             href={data.social.githubUrl}
                             rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export function Author({ ogImage }) {
                         </Typography.A>
                     </div>
                     {/* <p>🇲🇾 +6 017 857 8815</p> */}
-                    <p style={{ margin: '0' }}>+65 8790 8815</p>
+                    <p style={{margin: '0'}}>+65 8790 8815</p>
                     <br />
                     <p>
                         <a href="mailto:yeehanchung@gmail.com">

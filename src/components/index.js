@@ -4,4 +4,4 @@ export * from './nav';
 export * from './post';
 export * from './resume-post';
 export * from './seo';
-export * from './author'
+export * from './author';
