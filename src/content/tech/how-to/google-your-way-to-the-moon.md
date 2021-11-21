@@ -1,5 +1,5 @@
 ---
-title: Google your way to the moon
+title: ..google your way to the moon
 slug: tech/how-to/google-your-way-to-the-moon
 date: 2021-11-12
 excerpt: 🔍
@@ -54,4 +54,7 @@ It's to find exact matches, and they are not based on **keyword** this time.
 "typescript essentials"
 ```
 
+## References
 
+- [Google Search Operators Cheat Sheet](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf)
+- https://kinsta.com/blog/google-search-operators/

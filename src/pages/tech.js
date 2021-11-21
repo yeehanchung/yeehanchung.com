@@ -10,7 +10,8 @@ import {
     GitNotes,
     MiscNotes,
     WordPressNotes,
-    JavaScriptNotes,
+    JavaScriptNotes, 
+    HowToNotes
 } from '../components/tech-topics';
 
 /* --- IMAGES --- */
@@ -39,6 +40,7 @@ export default ({ location }) => {
                     <DocusaurusNotes />
                     {/* <GatsbyNotes /> */}
                     <GitNotes />
+                    <HowToNotes />
                     <JavaScriptNotes />
                     {/* <ReactNotes /> */}
                     {/* <ReduxNotes /> */}

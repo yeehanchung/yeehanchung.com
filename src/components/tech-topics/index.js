@@ -4,6 +4,7 @@ export { default as JavaScriptNotes } from './topic-javascript';
 export { default as GitNotes } from './topic-git';
 export { default as MiscNotes } from './topic-misc';
 export { default as WordPressNotes } from './topic-wordpress';
+export { default as HowToNotes } from './topic-how-to';
 
 export * from './Button';
 export * from './topic-listing';
