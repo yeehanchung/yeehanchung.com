@@ -21,7 +21,7 @@ export const HomeWrapper = styled.div`
     h3 {
         font-size: 1.1rem;
         font-weight: bold;
-        margin: 0.8rem 0 0.25rem 0;
+        margin: 0 0 0.25rem 0;
     }
 
     p {
