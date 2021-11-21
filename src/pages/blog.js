@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { ReinventionBlog, SoftwareEngineeringBlog } from '../components/blog-topics';
+import { ReinventionBlog, SoftwareEngineeringBlog } from '../components/blog';
 import { Container, Seo } from '../components';
 
 /* --- IMAGES --- */

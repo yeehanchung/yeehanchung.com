@@ -12,7 +12,7 @@ import {
     WordPressNotes,
     JavaScriptNotes, 
     HowToNotes
-} from '../components/tech-topics';
+} from '../components/tech';
 
 /* --- IMAGES --- */
 import OG_image from '../img/og_image.jpeg';
