@@ -7,9 +7,10 @@
 </p>
 <div align="center">
   <h1>
-    Markdown Resume Website
+    yeehan.me
   </h1>
   <p>
+    <a href="https://app.netlify.com/sites/optimistic-shaw-2eddbf/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/7e3adfe9-9c72-4b1a-ae81-cdb3df0f8755/deploy-status"></a>
     <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.3891401)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
   </p>
@@ -24,26 +25,20 @@
 
 ## 🥞 Technologies
 
-- Gatsby, JavaScript, styled-components, SCSS, Markdown
-
-Can find out more in `package.json`.
+Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
 
 ## 📝 To-do
 
-- [ ] Refactoring for reusability
+- [x] Refactoring for reusability
 - [x] Clean up codes
-
-## 🗺 A little journey
-
-- Restructured some of the **styled-components** following an article, [**Structuring our Styled Components | Part I**](https://alanbsmith.medium.com/structuring-our-styled-components-part-i-2bf21fa64b28). BEM component structure that improves styled component patterns, consistency, and predictability.
 
 ## 🚀 Quick start
 
 1. **Git clone**
 
    ```shell
-   $ git clone https://github.com/cyeehan/yeehan-me.git
-   $ cd yeehan-me
+   $ git clone https://github.com/cyeehan/yeehan.me.git
+   $ cd yeehan.me
    ```
 
 2. **Install dependencies**
