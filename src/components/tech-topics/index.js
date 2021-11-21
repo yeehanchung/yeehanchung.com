@@ -5,7 +5,6 @@ export { default as GitNotes } from './topic-git';
 export { default as MiscNotes } from './topic-misc';
 export { default as WordPressNotes } from './topic-wordpress';
 export { default as HowToNotes } from './topic-how-to';
-export * from './topic-listing';
 // export * from './topic-redux';
 // export * from './topic-api';
 // export * from './topic-decision';

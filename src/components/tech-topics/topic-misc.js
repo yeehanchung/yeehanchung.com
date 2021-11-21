@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 /* --- UI COMPONENTS --- */
-import TopicList from '../topic-list';
+import TopicListColumn from '../topic-list-column';
 
 export const MiscNotes = () => {
     const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ export const MiscNotes = () => {
     let posts = data.allMarkdownRemark.edges;
 	let imageUrl = data.image.publicURL;
 
-    return <TopicList title="Misc" imageUrl={imageUrl} posts={posts} />;
+    return <TopicListColumn title="Misc" imageUrl={imageUrl} posts={posts} />;
 };
 
 export default MiscNotes;

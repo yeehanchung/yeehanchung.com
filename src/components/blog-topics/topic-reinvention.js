@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
 /* --- UI COMPONENTS --- */
-import TopicList from "../topic-list";
+import TopicListColumn from "../topic-list-column";
 
 const ReinventionBlog = () => {
 	const data = useStaticQuery(graphql`
@@ -40,7 +40,7 @@ const ReinventionBlog = () => {
 	let posts = data.allMarkdownRemark.edges;
 	let imageUrl = data.infinity.publicURL;
 
-	return <TopicList title="Reinvention" imageUrl={imageUrl} posts={posts} />;
+	return <TopicListColumn title="Reinvention" imageUrl={imageUrl} posts={posts} />;
 };
 
 export default ReinventionBlog;

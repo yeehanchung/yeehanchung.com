@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
 /* --- UI COMPONENTS --- */
-import TopicList from "../topic-list";
+import TopicListColumn from "../topic-list-column";
 
 const GitNotes = () => {
 	const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ const GitNotes = () => {
 	let posts = data.allMarkdownRemark.edges;
 	let imageUrl = data.image.publicURL;
 
-	return <TopicList title="Git" imageUrl={imageUrl} posts={posts} />;
+	return <TopicListColumn title="Git" imageUrl={imageUrl} posts={posts} />;
 };
 
 export default GitNotes;

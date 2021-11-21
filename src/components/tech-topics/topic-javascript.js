@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
 /* --- UI COMPONENTS --- */
-import TopicList from "../topic-list";
+import TopicListColumn from "../topic-list-column";
 
 const JavaScriptNotes = () => {
 	const data = useStaticQuery(graphql`
@@ -39,7 +39,7 @@ const JavaScriptNotes = () => {
 	let posts = data.allMarkdownRemark.edges;
 	let imageUrl = data.javascript.publicURL;
 
-	return <TopicList title="JavaScript" imageUrl={imageUrl} posts={posts} />;
+	return <TopicListColumn title="JavaScript" imageUrl={imageUrl} posts={posts} />;
 };
 
 export default JavaScriptNotes;
