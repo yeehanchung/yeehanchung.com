@@ -34,7 +34,7 @@ export default ({ location }) => {
                 <Seo image={OG_image} title={"Yee Han's Dev Blog"} />
                 <NoteListing>
                     {/* <ApiNotes /> */}
-                    <CliNotes src={"cli"} />
+                    <CliNotes />
                     {/* <CssNotes /> */}
                     <DocusaurusNotes />
                     {/* <GatsbyNotes /> */}
