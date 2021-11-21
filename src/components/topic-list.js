@@ -4,6 +4,7 @@ import React from "react";
 /* --- UI COMPONENTS --- */
 import { Topic, TopicTag, UnorderedList } from "../styled";
 import { TopicListing } from "./tech-topics";
+import "../styles/styles.css";
 
 const TopicList = ({ title, imageUrl, posts }) => {
 	return (

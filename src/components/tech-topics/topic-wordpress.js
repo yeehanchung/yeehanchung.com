@@ -4,7 +4,6 @@ import React from "react";
 
 /* --- UI COMPONENTS --- */
 import TopicList from "../topic-list";
-import "./styles/styles.css";
 
 export const WordPressNotes = () => {
 	const data = useStaticQuery(graphql`
