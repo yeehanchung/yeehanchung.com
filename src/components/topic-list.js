@@ -1,41 +1,44 @@
-/* --- MODULES --- */
-import React from "react";
+/* --- LIBRARIES --- */
+import React from 'react';
+import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { Topic, TopicTag, UnorderedList } from "../styled";
-import { TopicListing } from "./tech-topics";
-import "../styles/styles.css";
+import Button from './button';
 
-const TopicList = ({ title, imageUrl, posts }) => {
-	return (
-		<>
-			<Topic>
-				<TopicTag>
-					<img
-						className="tag-emoji"
-						src={imageUrl}
-						alt={`${title} Logo`}
-					/>
-					{title}
-				</TopicTag>
-				<UnorderedList>
-					{posts.map((post) => {
-						return (
-							<TopicListing
-								key={post.node.frontmatter.slug}
-								date={post.node.frontmatter.date}
-								title={post.node.frontmatter.title}
-								excerpt={post.node.frontmatter.excerpt}
-								slug={post.node.frontmatter.slug}
-								readingTime={post.node.fields.readingTime.text}
-								lastEdited={post.node.frontmatter.lastEdited}
-							/>
-						);
-					})}
-				</UnorderedList>
-			</Topic>
-		</>
-	);
+const TopicListingLi = styled.li`
+    color: ${(props) => props.theme.colors.font};
+    color: var(--font-color-topic-date);
+    margin-bottom: 0.3rem;
+    line-height: 0.9rem;
+    max-width: 35ch;
+`;
+
+const TopicListingP = styled.p`
+    margin-top: 2.5px;
+    font-size: 0.625rem;
+`;
+
+const TopicList = ({
+    date,
+    title,
+    excerpt,
+    slug,
+    readingTime,
+    lastEdited,
+}) => {
+    return (
+        <>
+            <TopicListingLi key={slug}>
+                <Button href={slug} size="small">
+                    {title}
+                </Button>
+                <TopicListingP>
+                    {readingTime} - {date} ☕︎{' '}
+                    {lastEdited ? `Last edited: ${lastEdited}` : null}
+                </TopicListingP>
+            </TopicListingLi>
+        </>
+    );
 };
 
 export default TopicList;
