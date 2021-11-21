@@ -3,8 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 
 /* --- UI COMPONENTS --- */
-import { Topic, TopicTag, UnorderedList } from '../../styled';
-import { TopicListing } from './index';
+import TopicList from '../topic-list';
 
 export const MiscNotes = () => {
     const data = useStaticQuery(graphql`
@@ -32,41 +31,15 @@ export const MiscNotes = () => {
                     }
                 }
             }
-            docusaurus: file(relativePath: { eq: "topic-svg/misc.svg" }) {
+            image: file(relativePath: { eq: "topic-svg/misc.svg" }) {
                 publicURL
             }
         }
     `);
-    let newData = data.allMarkdownRemark.edges;
-    let docusaurusSVG = data.docusaurus.publicURL;
+    let posts = data.allMarkdownRemark.edges;
+	let imageUrl = data.image.publicURL;
 
-    return (
-        <Topic>
-            <TopicTag>
-                <span className="inner-tag-emoji">
-                    <img
-                        className="tag-emoji"
-                        src={docusaurusSVG}
-                        alt="Misc Logo"
-                    />
-                </span>
-                Misc
-            </TopicTag>
-            <UnorderedList>
-                {newData.map((data) => {
-                    return (
-                        <TopicListing
-                            key={data.node.frontmatter.slug}
-                            date={data.node.frontmatter.date}
-                            title={data.node.frontmatter.title}
-                            excerpt={data.node.frontmatter.excerpt}
-                            slug={data.node.frontmatter.slug}
-                            readingTime={data.node.fields.readingTime.text}
-                            lastEdited={data.node.frontmatter.lastEdited}
-                        />
-                    );
-                })}
-            </UnorderedList>
-        </Topic>
-    );
+    return <TopicList title="Misc" imageUrl={imageUrl} posts={posts} />;
 };
+
+export default MiscNotes;

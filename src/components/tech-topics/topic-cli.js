@@ -1,21 +1,17 @@
 /* --- LIBRARIES --- */
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+
 /* --- UI COMPONENTS --- */
-import { Topic, TopicTag, UnorderedList } from "../../styled";
-import { TopicListing } from "./index";
+import TopicList from "../topic-list";
 
-export const CliNotes = ({ src }) => {
-
-    console.log(src);
-    // src = "cli";
-
+const CliNotes = () => {
 	const data = useStaticQuery(graphql`
-		query  {
+		query {
 			allMarkdownRemark(
-                sort: { fields: frontmatter___date, order: DESC }
-                filter: { frontmatter: { tag: { eq: "cli" } } }
-            ) {
+				sort: { fields: frontmatter___date, order: DESC }
+				filter: { frontmatter: { tag: { eq: "cli" } } }
+			) {
 				edges {
 					node {
 						frontmatter {
@@ -35,67 +31,15 @@ export const CliNotes = ({ src }) => {
 					}
 				}
 			}
-			cli: file(relativePath: { eq: "topic-svg/cli.svg" }) {
+			image: file(relativePath: { eq: "topic-svg/cli.svg" }) {
 				publicURL
 			}
 		}
 	`);
-	let newData = data.allMarkdownRemark.edges;
-	let cliSVG = data.cli.publicURL;
+	let posts = data.allMarkdownRemark.edges;
+	let imageUrl = data.image.publicURL;
 
-	console.log(newData);
-
-	return (
-		<Topic>
-			<TopicTag>
-				<span className="inner-tag-emoji">
-					<img
-						className="tag-emoji"
-						src={cliSVG}
-						alt="WordPress Logo"
-					/>
-				</span>
-				CLI
-			</TopicTag>
-			<UnorderedList>
-				{newData.map((data) => {
-					// switch (data.node.frontmatter.tag) {
-					// 	case "cli":
-					// 		return (
-					// 			<TopicListing
-					// 				key={data.node.frontmatter.slug}
-					// 				date={data.node.frontmatter.date}
-					// 				title={data.node.frontmatter.title}
-					// 				excerpt={data.node.frontmatter.excerpt}
-					// 				slug={data.node.frontmatter.slug}
-					// 				readingTime={
-					// 					data.node.fields.readingTime.text
-					// 				}
-					// 				lastEdited={
-					// 					data.node.frontmatter.lastEdited
-					// 				}
-					// 			/>
-					// 		);
-					// }
-
-					return (
-						<TopicListing
-							key={data.node.frontmatter.slug}
-							date={data.node.frontmatter.date}
-							title={data.node.frontmatter.title}
-							excerpt={data.node.frontmatter.excerpt}
-							slug={data.node.frontmatter.slug}
-							readingTime={data.node.fields.readingTime.text}
-							lastEdited={data.node.frontmatter.lastEdited}
-						/>
-					);
-                    // return;
-				})}
-			</UnorderedList>
-		</Topic>
-	);
+	return <TopicList title="CLI" imageUrl={imageUrl} posts={posts} />;
 };
 
-// export const getTechNotes = graphql`
-//     query GatsbyQuery()
-// `;
+export default CliNotes;
