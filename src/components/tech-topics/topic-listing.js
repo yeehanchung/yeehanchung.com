@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
-import { Button } from './index';
+import Button from '../button';
 
 const TopicListingLi = styled.li`
     color: ${(props) => props.theme.colors.font};
