@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContainerWrapper } from '../styled/Container';
 import { Footer } from './index';
-import { Nav } from './Nav';
+import { Nav } from './nav';
 
 export const Container = ({ children }) => {
     return (
