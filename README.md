@@ -32,6 +32,10 @@ Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
 - [x] Refactoring for reusability
 - [x] Clean up codes
 
+## 📝 Fix-log
+
+- ...
+
 ## 🚀 Quick start
 
 1. **Git clone**
