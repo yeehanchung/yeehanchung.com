@@ -17,8 +17,7 @@ lastEdited:
 4. Don't be afraid of copy-paste, but have to understand, which is relating back to curiosity.
 5. Be cautious of hype cycles (skeptical about the latest things came out).
 
-> By Travis Oliphant and Lex Fridman:
-> https://www.youtube.com/watch?v=XklQac5WLs4
+> By Travis Oliphant and Lex Fridman: https://www.youtube.com/watch?v=XklQac5WLs4
 
 ## Info 2
 
