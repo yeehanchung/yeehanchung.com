@@ -1,60 +1,52 @@
-import {graphql, useStaticQuery} from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-// import styled from 'styled-components';
-import {
-    // FooterSocialIcons,
-    FooterSocialWrapper,
-    FooterWrapper,
-    P,
-} from '../styled';
 
-// const InnerIcon = styled.a`
-//     margin: '2rem 1rem';
-//     padding: '2rem';
-// `;
+/* --- UI COMPONENTS --- */
+import { FooterSocialWrapper, FooterWrapper, P } from '../styled';
 
 export const Footer = () => {
-    const {site} = useStaticQuery(graphql`
-        query {
-            linkedin: file(relativePath: {eq: "linkedin.svg"}) {
-                publicURL
-            }
-            github: file(relativePath: {eq: "github.svg"}) {
-                publicURL
-            }
-            facebook: file(relativePath: {eq: "facebook.svg"}) {
-                publicURL
-            }
-            instagram: file(relativePath: {eq: "instagram.svg"}) {
-                publicURL
-            }
-            site {
-                siteMetadata {
-                    author
-                    shortName
-                    title
-                    description
-                    occupation
-                    url
-                    image
-                    social {
-                        githubUrl
-                        linkedInUrl
-                        facebookUrl
-                        twitterUrl
-                        instagramUrl
-                    }
-                    keywords
-                }
-            }
-        }
-    `);
-    let data = site.siteMetadata;
+    
+	const { site } = useStaticQuery(graphql`
+		query {
+			linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+				publicURL
+			}
+			github: file(relativePath: { eq: "github.svg" }) {
+				publicURL
+			}
+			facebook: file(relativePath: { eq: "facebook.svg" }) {
+				publicURL
+			}
+			instagram: file(relativePath: { eq: "instagram.svg" }) {
+				publicURL
+			}
+			site {
+				siteMetadata {
+					author
+					shortName
+					title
+					description
+					occupation
+					url
+					image
+					social {
+						githubUrl
+						linkedInUrl
+						facebookUrl
+						twitterUrl
+						instagramUrl
+					}
+					keywords
+				}
+			}
+		}
+	`);
+	let data = site.siteMetadata;
 
-    return (
-        <FooterWrapper>
-            <FooterSocialWrapper>
-                {/* <FooterSocialIcons>
+	return (
+		<FooterWrapper>
+			<FooterSocialWrapper>
+				{/* <FooterSocialIcons>
           <InnerIcon
             href={data.social.githubUrl}
             target="_blank"
@@ -80,14 +72,14 @@ export const Footer = () => {
             <img src={instagram.publicURL} alt="Instagram" height="25px" />
           </InnerIcon>
         </FooterSocialIcons> */}
-                <P size="xSmall" color="dark3">
-                    Built by {data.shortName}{' '}
-                    <span role="img" aria-label="Copyright">
-                        &copy;
-                    </span>{' '}
-                    2020 - {new Date().getFullYear()}. All Rights Reserved.
-                </P>
-            </FooterSocialWrapper>
-        </FooterWrapper>
-    );
+				<P size="xSmall" color="dark3">
+					Built by {data.shortName}{' '}
+					<span role="img" aria-label="Copyright">
+						&copy;
+					</span>{' '}
+					2020 - {new Date().getFullYear()}. All Rights Reserved.
+				</P>
+			</FooterSocialWrapper>
+		</FooterWrapper>
+	);
 };
