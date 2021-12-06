@@ -2,7 +2,6 @@
     --body-bg: #212121;
     --font-family: 'Source Sans Pro, Helvatica Neue, Helvetica, Arial',
         sans-serif;
-    /* // --font-size-list: '0.85rem'; */
 }
 
 * {
@@ -15,23 +14,7 @@ body {
     background-attachment: fixed;
     background-color: var(--body-bg);
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48ZGVmcz48cGF0dGVybiBpZD0icGF0dGVybiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHZpZXdCb3g9IjAgMCA0MCw0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDIwNSkgIj48cmVjdCBpZD0icGF0dGVybi1iYWNrZ3JvdW5kIiB3aWR0aD0iNDAwJSIgaGVpZ2h0PSI0MDAlIiBmaWxsPSJyZ2JhKDI1NSwgMjUwLCAyNDAsMSkiPjwvcmVjdD4gPHBhdGggZmlsbD0icmdiYSgyNTUsIDI1MCwgMjQwLDEpIiBkPSIKICAgICAgICAgICAgICAgIE0tMjAgMzEgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgdi0yIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIHoKICAgICAgICAgICAgICAgIE0tMjAgLTkgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgdi0yIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIHoKICAgICAgICAgICAgICAgIE0tMjAgNzEgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgdi0yIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIHoKICAgICAgICAgICAgICAgICI+PC9wYXRoPjxwYXRoIGZpbGw9InJnYmEoMjM1LCAyNDgsIDI1NSwxKSIgZD0iCiAgICAgICAgICAgICAgICBNLTYwIDMwLjUgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgbDIwIC0yMCBsMjAgMjAgdi0xIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIGwtMjAgLTIwIGwtMjAgMjAgegogICAgICAgICAgICAgICAgTS02MCAtOS41IGwyMCAtMjAgbDIwIDIwIGwyMCAtMjAgbDIwIDIwIGwyMCAtMjAgbDIwIDIwIGwyMCAtMjAgbDIwIDIwIHYtMSBsLTIwIC0yMCBsLTIwIDIwIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIHoKICAgICAgICAgICAgICAgIE0tNjAgNzAuNSBsMjAgLTIwIGwyMCAyMCBsMjAgLTIwIGwyMCAyMCBsMjAgLTIwIGwyMCAyMCBsMjAgLTIwIGwyMCAyMCB2LTEgbC0yMCAtMjAgbC0yMCAyMCBsLTIwIC0yMCBsLTIwIDIwIGwtMjAgLTIwIGwtMjAgMjAgbC0yMCAtMjAgbC0yMCAyMCB6CiAgICAgICAgICAgICAgICAiPjwvcGF0aD48L3BhdHRlcm4+ICA8L2RlZnM+IDxyZWN0IGZpbGw9InVybCgjcGF0dGVybikiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUiPjwvcmVjdD48L3N2Zz4=');
-    /* // background-color: hsl(210deg, 38%, 15%); */
     font-family: var(--font-family);
-    /* // -webkit-font-smoothing: antialiased; */
     height: 100%;
-    /* Hide scrollbars */
-    /* // overflow: hidden;  */
-    /* Hide vertical scrollbar */
-    /* // overflow-y: hidden; */
     background-color: wheat;
-}
-
-/* // Brave, Google Chome */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/* // Firefox scrollbar */
-html {
-    scrollbar-width: none;
 }
