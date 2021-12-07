@@ -38,8 +38,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
     pre[class*='language-'] {
         background: none;
         font-family: Monaco, Menlo, monospace;
-        /* font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; */
-        /* font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, monospace; */
         font-size: 0.7rem;
         text-align: left;
         white-space: pre;
