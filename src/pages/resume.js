@@ -1,6 +1,7 @@
 /* --- LIBRARIES --- */
-import {graphql} from 'gatsby';
 import React from 'react';
+import styled from 'styled-components';
+import {graphql} from 'gatsby';
 
 /* --- UI COMPONENTS --- */
 import * as Typography from '../styled/Typography';
@@ -8,6 +9,11 @@ import {Container, ResumePost, Seo, Author} from '../components';
 
 /* --- IMAGES --- */
 import OG_IMAGE from '../img/og_image.jpeg';
+
+
+const UpdatedDate = styled.p`
+    margin-bottom: 0.8rem;
+`;
 
 export default ({data}) => {
     let queryData = data.markdownRemark.frontmatter;
@@ -23,9 +29,9 @@ export default ({data}) => {
             <ResumePost>
                 <Author />
                 <Typography.H2>{queryData.description}</Typography.H2>
-                <p style={{marginBottom: '0.8rem'}}>
-                    <span role="img">⏳</span> {queryData.date}
-                </p>
+                <UpdatedDate>
+                    <span role="img">⏳</span>&nbsp;{queryData.date}
+                </UpdatedDate>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: data.markdownRemark.html,
