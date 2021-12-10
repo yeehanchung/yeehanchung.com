@@ -1,6 +1,10 @@
-import {graphql, useStaticQuery} from 'gatsby';
+/* --- NODE MODULES --- */
 import React from 'react';
+import {graphql, useStaticQuery} from 'gatsby';
+
 import yeehan_img from '../img/yee-han-chung.jpeg';
+
+/* --- STYLES --- */
 import * as Typography from '../styled/Typography';
 import * as styles from '../styles/author.module.scss';
 
