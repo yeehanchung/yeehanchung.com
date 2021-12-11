@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 /* --- UI COMPONENTS --- */
 import {Container, Post, Seo} from '../components';
-import * as styles from '../pages/credits.module.css';
 
 const Span = styled.span`
     padding: 0 1rem 0 0rem;
