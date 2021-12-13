@@ -30,7 +30,7 @@ Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
 ## 📝 To-do
 
 - [x] Refactoring for reusability
-- [x] Clean up codes
+- [ ] Clean up codes
 
 ## 📝 Fix-log
 
