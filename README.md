@@ -32,6 +32,7 @@ Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
 - [x] Refactoring for reusability
 - [ ] Clean up codes
 - [ ] Refactoring: path resolver
+- [ ] Refactoring: design pattern
 
 ## 📝 Fix-log
 
