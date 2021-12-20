@@ -33,6 +33,8 @@ Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
 - [ ] Clean up codes
 - [ ] Refactoring: path resolver
 - [ ] Refactoring: design pattern
+- [ ] Refactoring: code quality (dont pollute template, etc.)
+
 
 ## 📝 Fix-log
 
