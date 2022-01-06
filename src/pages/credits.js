@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 /* UI COMPONENTS */
 import {Container, Post, Seo} from '../components';
+import * as styles from './credits.module.css';
 
 const Span = styled.span`
     padding: 0 1rem 0 0;
@@ -66,7 +67,7 @@ export default ({data}) => {
                         __html: data.markdownRemark.html,
                     }}
                 />
-                <p style={{marginTop: '70px', marginBottom: '0'}}>
+                <p className={styles.lastEdited}>
                     Last edited: {lastEdited}
                 </p>
                 <BackToNotes to={'/tech'}>← Back to notes</BackToNotes>
