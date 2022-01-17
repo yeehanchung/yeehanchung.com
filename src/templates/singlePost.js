@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { Container, Post, Seo } from '../components';
 
 const Span = styled.span`
+	color: rgb(65, 66, 68);
 	padding: 0 1rem 0 0rem;
 `;
 
