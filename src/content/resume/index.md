@@ -14,13 +14,10 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 #### Jun 2021 - Present @ Singapore
 
-<!-- - [Eezee.sg](https://eezee.sg/about-us) is Singapore's largest B2B marketplace for industrial and business supplies. We are committed to providing a customer-centric eCommerce experience that is easy, transparent and secure.
-- Build mobile reusable components based on system design from Figma.
-- Strategic planning and decision-making for driving successful hires.
-- Automate test cases for improving site-reliability.
-- Documentation for onboarding Software Engineer and Quality Assurance Test Engineer.
-- Developed internal CLI tooling for detecting UI difference on each build process.
-- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **JSX/CSS/XPATH**, **DOM manipulation** -->
+- [Eezee.sg](https://eezee.sg/about-us) is Singapore's largest B2B marketplace for industrial and business supplies.
+- Aligns with Product Managers and UI/UX designers.
+- Develops modern user-facing web applications with good architecture design.
+- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **JSX/CSS/XPATH**, **DOM manipulation**
 
 ### Software Engineer Intern @ Fusionex International
 
