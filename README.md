@@ -1,5 +1,3 @@
-#
-
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -26,19 +24,6 @@
 ## 🥞 Technologies
 
 Gatsby, JavaScript, styled-components, SCSS, Markdown, etc.
-
-## 📝 To-do
-
-- [x] Refactoring for reusability
-- [ ] Clean up codes
-- [ ] Refactoring: path resolver
-- [ ] Refactoring: design pattern
-- [ ] Refactoring: code quality (dont pollute template, etc.)
-
-
-## 📝 Fix-log
-
-- ...
 
 ## 🚀 Quick start
 
