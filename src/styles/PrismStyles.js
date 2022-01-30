@@ -1,16 +1,16 @@
-import {css} from 'styled-components';
+import { css } from "styled-components";
 
 const prismColors = {
-    bg: `#112340`,
-    lineHighlight: `#1d2d50`,
-    blue: `#5ccfe6`,
-    purple: `#c3a6ff`,
-    green: `#bae67e`,
-    yellow: `#ffd580`,
-    orange: `#ffae57`,
-    red: `#ef6b73`,
-    grey: `#a2aabc`,
-    comment: `#8695b799`,
+    bg:            "#112340",
+    lineHighlight: "#1d2d50",
+    blue:          "#5ccfe6",
+    purple:        "#c3a6ff",
+    green:         "#bae67e",
+    yellow:        "#ffd580",
+    orange:        "#ffae57",
+    red:           "#ef6b73",
+    grey:          "#a2aabc",
+    comment:       "#8695b799",
 };
 
 export const PrismStyles = css`
@@ -150,6 +150,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
     :not(pre) > code[class*='language-'],
     pre[class*='language-'] {
         background: #0a192f;
+        color: white;
     }
 
     /* Inline code */
@@ -159,7 +160,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
         line-height: 1.7;
         padding: 0.25rem;
         border-radius: 0.375rem;
-        background: white;
+        background: #0a192f;
     }
 
     .token.comment,
