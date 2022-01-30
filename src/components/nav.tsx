@@ -4,7 +4,7 @@ import React from "react";
 import {
     graphql, 
     Link, 
-    useStaticQuery 
+    useStaticQuery
 } from "gatsby";
 import styled from "styled-components";
 
@@ -13,10 +13,9 @@ import { Colors } from "@design-system/colors";
 import { NavWrapper } from "@design-system/index";
 
 /* --- STYLED COMPONENTS --- */
-const NavElement = styled((props) => <Link {...props} />)`
+const NavElement = styled((props) => <Link activeStyle={{ color: `${Colors.sunsetTint}` }} {...props} />)`
     display: flex;
-    color: ${(props) => props.active? 
-        `${Colors.sunsetTint}` : props.theme.colors.link };
+    color: ${(props) => props.theme.colors.link };
     text-decoration: ${(props) =>
         props.textDecoration ? props.textDecoration : "none"};
     font-size: 1rem;
@@ -50,7 +49,6 @@ const Nav = (): React.ReactElement => {
     `);
 
     const cliSVG = data.cli.publicURL;
-    const activeUrl = getActiveUrl();
 
     return (
         <NavWrapper>
@@ -61,15 +59,11 @@ const Nav = (): React.ReactElement => {
             </NavElement>
 
             {urls.map(url => {
-                    
-                const isUrlActive = activeUrl.redirectUrl === url.redirectUrl;
-                const active = isUrlActive? "active" : "";
 
                 return (
                     <NavElement 
                         key={url.title} 
                         to={url.redirectUrl} 
-                        active={active}
                     >
                         {url.title}
                     </NavElement>
@@ -78,19 +72,6 @@ const Nav = (): React.ReactElement => {
         </NavWrapper>
     );
 };
-
-function getActiveUrl() {
-    const currentUrl = location.pathname;
-    const matchingUrl = urls.filter(url => {
-
-        if (currentUrl.indexOf(url.redirectUrl) === 0) {
-            return true;
-        }
-        return false;
-    });
-
-    return matchingUrl[matchingUrl.length - 1];
-}
 
 const urls = [
     {
