@@ -10,7 +10,7 @@ lastEdited: 2021-11-01
 While referring to my Mac setup below, should take a look at **swyx**'s new Mac setup [video](https://www.youtube.com/watch?v=qwflfsgU0eg).
 
 - **Browsers**:
-  - Download `Chrome`/`Canary` and `Brave`, set `Chrome` to default
+  - Download `Chrome` / `Canary` and `Brave`, set `Chrome` to default
   - Page zoom 80%
 - **Login**:
   1. GitHub
