@@ -1,5 +1,5 @@
 ---
-title: Why Singapore 🇸🇬 after studying in Malaysia?
+title: Why Singapore 🇸🇬 after studying in Malaysia? (Since May 2021)
 slug: blog/reinvention/why-singapore-after-studying-in-malaysia
 date: 2021-10-16
 excerpt: 🚀
