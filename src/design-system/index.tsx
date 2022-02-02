@@ -6,6 +6,6 @@ export { default as ResumeWrapper } from "@design-system/ResumeWrapper";
 export { default as Topic } from "@design-system/Topic";
 export { default as TopicTag } from "@design-system/TopicTag";
 export { default as UnorderedList } from "@design-system/UnorderedList";
-export * as AuthorElements from "@design-system/AuthorWrapper";
-export * as FooterElements from "@design-system/Footer";
+export * as AuthorElements from "@design-system/AuthorElements";
+export * as FooterElements from "@design-system/FooterElements";
 export * as Typography from "@design-system/Typography";
