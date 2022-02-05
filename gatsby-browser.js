@@ -21,10 +21,9 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export const wrapRootElement = ({ element }) => (
+  
     <ThemeProvider theme={Theme}>
         <GlobalStyles />
         {element}
     </ThemeProvider>
 );
-
-export const wrapPageElement = ({ element }) => <>{element}</>;
