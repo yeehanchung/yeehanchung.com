@@ -2,7 +2,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-/* UI COMPONENTS */
+/* --- UI COMPONENTS ---  */
 import { TopicListColumn } from "@components/index";
 
 const CliNotes = (): React.ReactElement => {
