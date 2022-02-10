@@ -32,6 +32,8 @@ const TopicList = ({
     date, title, excerpt, slug, readingTime, lastEdited 
 }: Props) => {
 
+    const lastEditedData = lastEdited ? `Last edited: ${lastEdited}` : null;
+
     return (
         <>
             <TopicListingLi key={slug}>
@@ -40,7 +42,7 @@ const TopicList = ({
                 </Button>
                 <TopicListingP>
                     {readingTime} - {date} ☕︎{" "}
-                    {lastEdited ? `Last edited: ${lastEdited}` : null}
+                    {lastEditedData}
                 </TopicListingP>
             </TopicListingLi>
         </>
