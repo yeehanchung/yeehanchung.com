@@ -8,7 +8,7 @@ export default function HTML(props) {
             <head>
                 <script
                     async
-                    src="https://www.googletagmanager.com/gtag/js?id=G-9T6HJY6D2J"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-2QF8FBPNDV"
                 />
                 <script
                     dangerouslySetInnerHTML={{
