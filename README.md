@@ -5,11 +5,10 @@
 </p>
 <div align="center">
   <h1>
-    yeehan.me
+    yeehanchung.com
   </h1>
   <p>
     <a href="https://app.netlify.com/sites/optimistic-shaw-2eddbf/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/7e3adfe9-9c72-4b1a-ae81-cdb3df0f8755/deploy-status"></a>
-    <a href=""><img alt="Visitors" src="https://visitor-badge.glitch.me/badge?page_id=cyeehan.3891401)"></a>
     <img alt="SEO Ready" src="https://img.shields.io/badge/SEO-Ready-success?style=flat" />
   </p>
 
