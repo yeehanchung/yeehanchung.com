@@ -6,6 +6,7 @@ excerpt: 🚀
 keywords: [reinvention, physique, bodybuilding]
 tag: reinvention
 lastEdited:
+isDraft: false
 ---
 
 ![Photo taken in 2017](selfie.jpeg)

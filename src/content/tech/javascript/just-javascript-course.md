@@ -4,6 +4,7 @@ slug: tech/javascript/just-javascript-course
 date: 2021-09-26
 excerpt: 🧩
 tag: javascript
+isDraft: false
 ---
 
 Wellworthy JavaScript course. Thankfully I came across [Dan Abramov](https://twitter.com/dan_abramov)'s curated content on [JavaScript Universe](https://justjavascript.com/), learning JavaScript Under the Hood and his mental models really make more sense to me when I look at the codes now.

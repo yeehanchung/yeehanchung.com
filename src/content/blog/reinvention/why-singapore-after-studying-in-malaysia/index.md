@@ -6,6 +6,7 @@ excerpt: 🚀
 keywords: [reinvention, singapore, malaysia, tech career, software engineer]
 tag: reinvention
 lastEdited:
+isDraft: false
 ---
 
 To be frank, I've been planning to work in Singapore as a **Software Engineer** before I started my Computer Science Bachelor's Degree in Malaysia.

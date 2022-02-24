@@ -5,6 +5,7 @@ date: 2021-02-03
 excerpt: ⏳
 tag: wordpress
 lastEdited: 2021-02-15
+isDraft: false
 ---
 
 ## Pre-requisites:

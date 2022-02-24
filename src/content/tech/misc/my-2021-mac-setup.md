@@ -5,6 +5,7 @@ date: 2021-10-30
 excerpt: 🚀
 tag: misc
 lastEdited: 2021-11-01
+isDraft: false
 ---
 
 While referring to my Mac setup below, should take a look at **swyx**'s new Mac setup [video](https://www.youtube.com/watch?v=qwflfsgU0eg).

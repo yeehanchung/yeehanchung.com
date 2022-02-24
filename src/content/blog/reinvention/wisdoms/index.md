@@ -6,6 +6,7 @@ excerpt: 🚀
 keywords: [reinvention, singapore]
 tag: reinvention
 lastEdited:
+isDraft: true
 ---
 
 > This page is intended to be hidden from the outside world for now. Here I store not limited to the reading materials that I treasure.

@@ -5,6 +5,7 @@ date: 2021-02-01
 excerpt: ⏳
 tag: cli
 lastEdited: 2021-02-03
+isDraft: false
 ---
 
 It's based on Linux Shell or "Terminal".

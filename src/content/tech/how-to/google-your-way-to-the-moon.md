@@ -5,6 +5,7 @@ date: 2021-11-12
 excerpt: 🔍
 tag: how-to
 lastEdited:
+isDraft: false
 ---
 
 I've seeing how technical people emphasized **Googling** is an extremely important skill that every Software Engineer should properly acquire.
