@@ -13,6 +13,7 @@ interface Props {
     slug: string;
     readingTime: string;
     lastEdited: string;
+    isDraft: boolean;
 }
 
 const TopicListingLi = styled.li`
@@ -29,22 +30,30 @@ const TopicListingP = styled.p`
 `;
 
 const TopicList = ({
-    date, title, excerpt, slug, readingTime, lastEdited 
+    date,
+    title,
+    excerpt,
+    slug,
+    readingTime,
+    lastEdited,
+    isDraft
 }: Props) => {
 
     const lastEditedData = lastEdited ? `Last edited: ${lastEdited}` : null;
 
     return (
         <>
-            <TopicListingLi key={slug}>
-                <Button href={slug} size="small">
-                    {title}
-                </Button>
-                <TopicListingP>
-                    {readingTime} - {date} ☕︎{" "}
-                    {lastEditedData}
-                </TopicListingP>
-            </TopicListingLi>
+            {!isDraft && (
+                <TopicListingLi key={slug}>
+                    <Button href={slug} size="small">
+                        {title}
+                    </Button>
+                    <TopicListingP>
+                        {readingTime} - {date} ☕︎{" "}
+                        {lastEditedData}
+                    </TopicListingP>
+                </TopicListingLi>
+            )}
         </>
     );
 };

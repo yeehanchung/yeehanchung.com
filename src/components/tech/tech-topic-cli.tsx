@@ -22,6 +22,7 @@ const CliNotes = (): React.ReactElement => {
                             title
                             excerpt
                             lastEdited(formatString: "MMM DD, YYYY")
+                            isDraft
                         }
                         id
                         fields {

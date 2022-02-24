@@ -46,7 +46,7 @@ const LastEdited = styled.p`
 `;
 
 export default ({ data }: {data: Props}) => {
-    
+
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
@@ -102,6 +102,7 @@ export const creditsQuery = graphql`
                 title
                 excerpt
                 lastEdited(formatString: "MMM DD, YYYY")
+                isDraft
             }
             html
         }

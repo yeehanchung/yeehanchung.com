@@ -5,7 +5,9 @@ import styled from "styled-components";
 /* --- UI COMPONENTS --- */
 import { TopicList } from "@components/index";
 import {
-    Topic, TopicTag, UnorderedList 
+    Topic,
+    TopicTag,
+    UnorderedList
 } from "@design-system/index";
 
 /* --- UTIS --- */
@@ -30,6 +32,7 @@ export interface I_Data {
                     title: string;
                     excerpt: string;
                     lastEdited: string;
+                    isDraft: boolean;
                 }
                 id: string;
                 fields: {
@@ -54,6 +57,7 @@ export interface Props {
             title: string;
             excerpt: string;
             lastEdited: string;
+            isDraft: boolean;
         }
         id: string;
         fields: {
@@ -68,12 +72,12 @@ const TopicListColumn = ( { queryData }: { queryData: I_Data }) => {
 
     const posts: Props = queryData.allMarkdownRemark.edges;
     const imageUrl = queryData.image.publicURL || "";
-    
+
     let firstPostOfEachTopic;
     if (Array.isArray(posts)) {
         firstPostOfEachTopic = posts.filter((post: Props) => post)[0];
     }
-    
+
     const uppercasedTitle = capitalizeFirstLetter(firstPostOfEachTopic.node.frontmatter.tag);
 
     return (
@@ -87,7 +91,7 @@ const TopicListColumn = ( { queryData }: { queryData: I_Data }) => {
             <UnorderedList>
                 {Array.isArray(posts) && (
                     posts.map((post: Props) => {
-                        
+
                         return (
                             <TopicList
                                 key={post.node.frontmatter.slug}
@@ -97,6 +101,7 @@ const TopicListColumn = ( { queryData }: { queryData: I_Data }) => {
                                 slug={post.node.frontmatter.slug}
                                 readingTime={post.node.fields.readingTime.text}
                                 lastEdited={post.node.frontmatter.lastEdited}
+                                isDraft={post.node.frontmatter.isDraft}
                             />
                         );
                     })

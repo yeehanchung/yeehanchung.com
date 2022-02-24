@@ -22,6 +22,7 @@ export const MiscNotes = (): React.ReactElement => {
                             title
                             excerpt
                             lastEdited(formatString: "MMM DD, YYYY")
+                            isDraft
                         }
                         id
                         fields {

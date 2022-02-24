@@ -22,6 +22,7 @@ const ReinventionBlog = (): React.ReactElement => {
                             title
                             lastEdited(formatString: "MMM DD, YYYY")
                             excerpt
+                            isDraft
                         }
                         id
                         fields {

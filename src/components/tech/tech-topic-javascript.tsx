@@ -22,6 +22,7 @@ const JavaScriptNotes = (): React.ReactElement => {
                             title
                             excerpt
                             lastEdited(formatString: "MMM DD, YYYY")
+                            isDraft
                         }
                         id
                         fields {
@@ -37,7 +38,7 @@ const JavaScriptNotes = (): React.ReactElement => {
             }
         }
     `);
-   
+
     return (
         <TopicListColumn queryData={data} />
     );

@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { TopicListColumn } from "@components/index";
 
 const DocusaurusNotes = (): React.ReactElement => {
-    
+
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark(
@@ -22,6 +22,7 @@ const DocusaurusNotes = (): React.ReactElement => {
                             title
                             excerpt
                             lastEdited(formatString: "MMM DD, YYYY")
+                            isDraft
                         }
                         id
                         fields {
