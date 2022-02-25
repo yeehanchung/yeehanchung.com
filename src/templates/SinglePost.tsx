@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 /* --- UI COMPONENTS --- */
 import { Container, Seo } from "@components/index";
+import { I_Location } from "pages/blog";
 import{ PostWrapper } from "@design-system/index";
 
 /* --- IMAGES --- */
@@ -76,15 +77,16 @@ export interface Props {
 		readingTime: {
 			text: string;
 		}
-	}	
+	}
 }
 
-const SinglePost = ({ data }: {data: Props}) => {
+const SinglePost = ({ data, location }: {data: Props; location: I_Location }) => {
 
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
     const lastEdited = data.markdownRemark.frontmatter.lastEdited;
+    const backToNoteUrl = location.pathname.substring(0, 5);
 
     return (
         <Container>
@@ -116,7 +118,7 @@ const SinglePost = ({ data }: {data: Props}) => {
                 ) : (
                     ""
                 )}
-                <BackToNotes to={"/tech"}>← Back to notes</BackToNotes>
+                <BackToNotes to={backToNoteUrl}>← Back to notes</BackToNotes>
             </PostWrapper>
         </Container>
     );
