@@ -2,8 +2,8 @@
 /* --- NODE MODULES --- */
 import React from "react";
 import {
-    graphql, 
-    Link, 
+    graphql,
+    Link,
     useStaticQuery
 } from "gatsby";
 import styled from "styled-components";
@@ -13,9 +13,14 @@ import { Colors } from "@design-system/colors";
 import { NavWrapper } from "@design-system/index";
 
 /* --- STYLED COMPONENTS --- */
-const NavElement = styled((props) => <Link activeStyle={{ color: `${Colors.sunsetTint}` }} {...props} />)`
+const NavElement = styled((props) => {
+    const { isActiveUrl, ...rest } = props;
+    return (
+        <Link { ...rest } />
+    );
+})`
     display: flex;
-    color: ${(props) => props.theme.colors.link };
+    color: ${(props) => props.isActiveUrl? Colors.sunsetTint : "black" };
     text-decoration: ${(props) =>
         props.textDecoration ? props.textDecoration : "none"};
     font-size: 1rem;
@@ -60,10 +65,13 @@ const Nav = (): React.ReactElement => {
 
             {urls.map(url => {
 
+                const isActiveUrl = url.redirectUrl.split("/")[1] === location.pathname.split("/")[1].split("/")[0];
+
                 return (
-                    <NavElement 
-                        key={url.title} 
-                        to={url.redirectUrl} 
+                    <NavElement
+                        key={url.title}
+                        to={url.redirectUrl}
+                        isActiveUrl={isActiveUrl}
                     >
                         {url.title}
                     </NavElement>
