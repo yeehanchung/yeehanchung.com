@@ -65,7 +65,7 @@ const Nav = (): React.ReactElement => {
 
             {urls.map(url => {
 
-                const isActiveUrl = url.redirectUrl.split("/")[1] === location.pathname.split("/")[1].split("/")[0];
+                const isActiveUrl = url.redirectUrl.split("/")[1] === window.location.pathname.split("/")[1].split("/")[0];
 
                 return (
                     <NavElement
