@@ -78,7 +78,7 @@ export default ({ data }: {data: Props}) => {
                 <LastEdited>
                     Last edited: {lastEdited}
                 </LastEdited>
-                <BackToNotes to={"/tech"}>← Back to notes</BackToNotes>
+                <BackToNotes to={"/"}>← Back to home</BackToNotes>
             </PostWrapper>
         </Container>
     );
