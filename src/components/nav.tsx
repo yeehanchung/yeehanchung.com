@@ -53,6 +53,10 @@ const Nav = (): React.ReactElement => {
         }
     `);
 
+    if (typeof window === "undefined") {
+        return null as never;
+    }
+
     const cliSVG = data.cli.publicURL;
 
     return (
@@ -65,7 +69,7 @@ const Nav = (): React.ReactElement => {
 
             {urls.map(url => {
 
-                const isActiveUrl = url.redirectUrl.split("/")[1] === window.location.pathname.split("/")[1].split("/")[0];
+                const isActiveUrl = url.redirectUrl.split("/")[1] === window.location.pathname.split("/")[1];
 
                 return (
                     <NavElement
