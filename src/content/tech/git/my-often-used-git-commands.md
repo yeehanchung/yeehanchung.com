@@ -18,11 +18,12 @@ NOT: 2000-1-1 -->
 
 ## Table of contents
 
-1. Add, Commit and Push
-2. Amending the latest commit message
-3. Amending older commit messages
-4. Renaming a Git branch
-5. Stashing and Cleaning
+1. [Add, Commit and Push](#1-add-commit-and-push)
+2. [Amending the latest commit message](#2-amending-the-latest-commit-message)
+3. [Amending older commit messages](#3-amending-older-commit-messages)
+4. [Renaming a Git branch](#4-renaming-a-git-branch)
+5. [Stashing and Cleaning](#5-stashing-and-cleaning)
+6. [Get upstream update into your fork repo](#6-get-upstream-update-into-your-fork-repo)
 
 ## 1. Add, Commit and Push
 
@@ -112,3 +113,38 @@ git stash clear
 
 - To learn more about [git-stash](https://git-scm.com/docs/git-stash)
 - To learn more about [Stashing and Cleaning](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
+
+
+## 6. Get upstream update into your fork repo
+
+Once upon a time, I was trying to help a few of my team members to fetch the latest update from the main branch of the remote repository. Then, I figured out it would be best to document it nice and precise for future reference.
+
+```shell
+git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
+```
+
+## Let's get started
+
+On your terminal, check your local branches `git branch -l` or all available branches `git branch -a`.
+
+Now, we have to check out the branch you want to merge to, which is usually your working branch.
+
+```shell
+git checkout DESIRED_BRANCH_NAME
+```
+
+Now we merge to your current working branch from the upstream repository.
+
+> Note: This approach will not disturb your current commit history.
+
+It's important to specify the command explicitly by doing:
+
+```shell
+git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
+```
+
+Now your current working branch is up to date with the original repository, aka the upstream repository.
+
+## References
+
+- [Merging an upstream repository into your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-an-upstream-repository-into-your-fork)
