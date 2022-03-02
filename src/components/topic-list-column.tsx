@@ -78,14 +78,18 @@ const TopicListColumn = ( { queryData }: { queryData: I_Data }) => {
         firstPostOfEachTopic = posts.filter((post: Props) => post)[0];
     }
 
-    const uppercasedTitle = capitalizeFirstLetter(firstPostOfEachTopic.node.frontmatter.tag);
+    let title = "";
+    title = capitalizeFirstLetter(firstPostOfEachTopic.node.frontmatter.tag);
+
+    /* REMOVE FIRST DASH */
+    title = title.split("-").join(" ");
 
     return (
         <Topic>
 
             <TopicTag>
-                <Img src={imageUrl} alt={`${uppercasedTitle}`} />
-                {uppercasedTitle}
+                <Img src={imageUrl} alt={`${title}`} />
+                {title}
             </TopicTag>
 
             <UnorderedList>
