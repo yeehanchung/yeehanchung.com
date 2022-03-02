@@ -3,13 +3,16 @@ import React from "react";
 import styled from "styled-components";
 
 /* --- UI COMPONENTS --- */
+import { Container, Seo } from "@components/index";
 import { ReinventionBlog, SoftwareEngineeringBlog } from "@components/blog";
-import { Container, Seo } from "@components/index"; 
 
 /* --- IMAGES --- */
 import OG_image from "@images/og_image.jpeg";
 
 /* --- TYPES --- */
+/**
+ * @deprecated
+ */
 export interface I_Location {
     hash: string;
     location: string;
@@ -41,14 +44,11 @@ export const NoteListing = styled.div`
     }
 `;
 
-export default ({ location }: I_Location): React.ReactElement => {
+export default (): React.ReactElement => {
 
     return (
-        <Container location={location}>
+        <Container>
             <Seo image={OG_image} title={"Yee Han's Personal Blog"} />
-            {/**
-              * Blogs
-              */}
             <NoteListing>
                 <ReinventionBlog />
                 <SoftwareEngineeringBlog />

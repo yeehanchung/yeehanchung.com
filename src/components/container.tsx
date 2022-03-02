@@ -11,7 +11,7 @@ interface I_Props {
 }
 
 const Container = (props: React.PropsWithChildren<I_Props>): React.ReactElement => {
-    
+
     return (
         <ContainerWrapper>
 
@@ -20,7 +20,7 @@ const Container = (props: React.PropsWithChildren<I_Props>): React.ReactElement 
             {props.children}
 
             <Footer />
-            
+
         </ContainerWrapper>
     );
 };

@@ -23,20 +23,19 @@ export const NoteListing = styled.div`
     column-gap: 2rem;
     max-width: 120ch;
     margin: 4rem auto;
-    
+
     @media ${(props) => props.theme.breakpoints.mobile} {
         column-width: 15rem;
     }
     `;
 
 /* --- TYPES --- */
-import { I_Location } from "./blog";
 
-export default ({ location }: I_Location) => {
+export default () => {
 
     return (
         <>
-            <Container location={location}>
+            <Container>
                 <Seo image={yeehan_img} title={"Yee Han's Dev Blog"} />
                 <NoteListing>
                     {/* <ApiNotes /> */}

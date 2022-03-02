@@ -4,8 +4,8 @@ import React from "react";
 
 /* --- UI COMPONENTS --- */
 import {
-    Author, 
-    Container, 
+    Author,
+    Container,
     Seo
 } from "@components/index";
 import { AuthorElements } from "@design-system/index";

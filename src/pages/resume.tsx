@@ -6,12 +6,12 @@ import { graphql } from "gatsby";
 /* --- UI COMPONENTS --- */
 import {
     AuthorElements,
-    ResumeWrapper, 
+    ResumeWrapper,
     Typography
 } from "@design-system/index";
 import {
     Author,
-    Container, 
+    Container,
     Seo
 } from "@components/index";
 
@@ -25,29 +25,28 @@ const DateUpdated = styled.p`
 
 /* --- TYPES --- */
 import { Props } from "templates/SinglePost";
-import { I_Location } from "./blog";
 
-export default function ({ location, data }: { 
-    location: I_Location, data: Props 
+export default function ({ data }: {
+    data: Props
 }): React.ReactElement {
 
     const queryData = data.markdownRemark.frontmatter;
 
     return (
-        <Container location={location}>
+        <Container>
             <Seo
                 image={yeehan_img}
                 title={queryData.title}
                 author={queryData.author}
                 keywords={queryData.keywords}
             />
-            
+
             <AuthorElements.ResumeAuthorWrapper>
                 <AuthorElements.AuthorDetails>
                     <Author />
                 </AuthorElements.AuthorDetails>
             </AuthorElements.ResumeAuthorWrapper>
-                
+
             <ResumeWrapper>
                 <Typography.H2>{queryData.description}</Typography.H2>
                 <DateUpdated>
