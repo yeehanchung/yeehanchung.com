@@ -39,7 +39,6 @@ module.exports = {
 
     /* Your site config here */
     plugins: [
-        "gatsby-plugin-preact",
         {
             resolve: "gatsby-plugin-typescript",
             options: {
