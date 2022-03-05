@@ -1,10 +1,10 @@
 {
-  "name": "yeehan.me",
+  "name": "yeehanchung.com",
   "private": true,
   "description": "Yeehan's website, built with Gatsby.",
   "version": "2.0.0",
-  "author": "Yee Han <cyh0011215@gmail.com> (http://yeehan.me/)",
-  "homepage": "http://yeehan.me/",
+  "author": "Yee Han <cyh0011215@gmail.com> (http://yeehanchung.com)",
+  "homepage": "http://yeehanchung.com",
   "dependencies": {
     "@gatsbyjs/reach-router": "^1.3.6",
     "ansi-regex": "^5.0.1",
@@ -80,7 +80,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yeehanchung/yeehan-website"
+    "url": "https://github.com/yeehanchung/yeehanchung.com"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
