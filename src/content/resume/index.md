@@ -5,7 +5,7 @@ slug: resume
 date: 2021-10-16
 tag: resume
 description: Resume
-keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
+keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'chungyeehan', 'singapore', 'malaysia']
 ---
 
 ## Professional Experience
@@ -51,9 +51,9 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung']
 
 #### Apr 2018 - May 2021 @ Malaysia 🇲🇾
 
-- Bachelor of Computer Science (Hons).
-- Majored in **Software Engineering**.
+- Bachelor of Computer Science (Hons). Majored in **Software Engineering**.
 - 1st Class Honours (CGPA: 3.85/4.00).
+- Best student of my cohort over 63 students.
 - Valedictorian Finalist, selected as one of the 2 candidates from IT Faculty.
 
 <!-- Projects -->
