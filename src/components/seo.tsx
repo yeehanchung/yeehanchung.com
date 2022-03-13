@@ -6,10 +6,11 @@ import { Helmet } from "react-helmet";
 interface I_Props {
     image: string;
     title: string;
+
+    author?: string;
     description?: string;
     keywords?: string[];
     url?: string;
-    author?: string;
 }
 
 const Seo = (props: React.PropsWithChildren<I_Props>): React.ReactElement => {
@@ -19,8 +20,7 @@ const Seo = (props: React.PropsWithChildren<I_Props>): React.ReactElement => {
             query={detailsQuery}
             render={(data) => {
                 const metaTitle = props.title || data.site.siteMetadata.title;
-                const metaDescription =
-                    props.description || data.site.siteMetadata.description;
+                const metaDescription = props.description || data.site.siteMetadata.description;
                 const metaAuthor = props.author || data.site.siteMetadata.author;
                 const metaUrl = props.url || data.site.siteMetadata.url;
                 const metaImage = props.image || data.site.siteMetadata.image;
