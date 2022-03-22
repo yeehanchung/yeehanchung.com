@@ -6,7 +6,6 @@ import { Footer, Nav } from "@components/index";
 import { ContainerWrapper } from "@design-system/index";
 
 interface I_Props {
-    location?: React.ReactNode;
     children?: React.ReactNode;
 }
 
