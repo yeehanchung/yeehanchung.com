@@ -79,6 +79,7 @@ const A = styled.a`
     font-weight: 700;
     color: #ff5e62;
     margin: 0 5px;
+    text-decoration: none;
 
     &:first-child {
         margin: 0 5px 0 0;
@@ -137,6 +138,6 @@ const H2 = styled.h2<ThemedStyledProps<I_Props, HTMLHeadingElement>>`
     }
 `;
 
-export { 
-    P, A, H1, H2 
+export {
+    P, A, H1, H2
 };
