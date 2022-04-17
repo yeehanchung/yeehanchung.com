@@ -50,16 +50,10 @@ const Footer = (): React.ReactElement => {
         <FooterElements.FooterWrapper>
             <FooterElements.FooterSocialWrapper>
                 <Typography.P size="xSmall" color="dark3">
-					Built by {data.shortName}
-                    {" "}
-                    <A href="https://github.com/yeehanchung/yeehanchung.com">
-                        {"</>"}
-                    </A>
-                    {" "}
-                    <span role="img" aria-label="Copyright">
+					Built by {data.shortName} <span role="img" aria-label="Copyright">
 						&copy;
                     </span>
-                    {" "}
+					{" "}
 					2020 - {new Date().getFullYear()}. All Rights Reserved.
                 </Typography.P>
             </FooterElements.FooterSocialWrapper>
