@@ -11,12 +11,13 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 	flex-direction: column;
 	margin: 0 0 1rem 0;
 	z-index: 10;
-	max-width: 40rem;Î
+	max-width: 40rem;
 	color: #d2d2d2;
 	padding: 2rem 0 3rem;
 	margin: 0 auto 2rem;
 	font-family: var(--font-family);
 	font-size: var(--font-size-base);
+	display: block;
 
 	/* --------------- Headers: start --------------- */
 	h1,
