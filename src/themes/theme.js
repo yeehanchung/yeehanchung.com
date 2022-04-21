@@ -7,7 +7,7 @@ export default {
         main: "var(--body-bg)",
     },
     fonts: {
-        main: "Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif",
+        main: "var(--font-family)",
         code: "Monaco, Menlo, monospace",
     },
     size: {

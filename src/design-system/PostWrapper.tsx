@@ -15,10 +15,7 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 	color: #d2d2d2;
 	padding: 2rem 0 3rem;
 	margin: 0 auto 2rem;
-	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-		Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica, Arial,
-		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-	display: block;
+	font-family: var(--font-family);
 	font-size: var(--font-size-base);
 
 	/* --------------- Headers: start --------------- */
