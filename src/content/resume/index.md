@@ -14,10 +14,12 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 #### Jun 2021 - Present @ Singapore
 
-- [Eezee.sg](https://eezee.sg/about-us) is Singapore's largest B2B marketplace for industrial and business supplies.
-- Aligns with Product Managers and UI/UX designers.
-- Develops modern user-facing web applications with good architecture design.
-- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **JSX/CSS/XPATH**, **DOM manipulation**
+- [Eezee.co](https://eezee.co), Singapore's largest B2B marketplace for industrial and business supplies.
+- Working with brilliant minds.
+- Writing clean, readable and impactful codes.
+- Wearing engineering and leading hats to lead junior engineers.
+- Engineering enterprise-grade software application with state-of-the-art practices.
+- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **MongoDB**, **JSX/CSS/XPATH**, **DOM manipulation**, and more.
 
 ### Software Engineer Intern @ Fusionex International
 
