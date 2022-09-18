@@ -75,8 +75,7 @@ const Nav = (): React.ReactElement => {
                     <NavElement
                         key={url.title}
                         to={url.redirectUrl}
-                        isActiveUrl={isActiveUrl}
-                    >
+                        isActiveUrl={isActiveUrl}>
                         {url.title}
                     </NavElement>
                 );
@@ -90,18 +89,20 @@ const urls = [
         title:       "Home",
         redirectUrl: "/"
     },
-    {
-        title:       "Tech",
-        redirectUrl: "/tech"
-    },
+
+    // {
+    //     title:       "Tech",
+    //     redirectUrl: "/tech"
+    // },
     {
         title:       "Blog",
         redirectUrl: "/blog"
     },
-    {
-        title:       "Resume",
-        redirectUrl: "/resume"
-    },
+
+    // {
+    //     title:       "Resume",
+    //     redirectUrl: "/resume"
+    // },
     {
         title:       "Credits",
         redirectUrl: "/credits"
