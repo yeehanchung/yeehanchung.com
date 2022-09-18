@@ -78,40 +78,46 @@ const Author = ({ ogImage }: Props) => {
                     <p>
                         {data.occupation}
                     </p>
-                    <div>
-                        <Typography.A
-                            href={data.social.githubUrl}
-                            rel="noopener noreferrer"
-                            target=""
-                        >
-                            <img
-                                src={github.publicURL}
-                                alt="github"
-                                height="25px"
-                            />
-                        </Typography.A>
-                        <Typography.A
-                            href={data.social.linkedInUrl}
-                            rel="noopener noreferrer"
-                            target=""
-                        >
-                            <img
-                                src={linkedin.publicURL}
-                                alt="linkedIn"
-                                height="25px"
-                            />
-                        </Typography.A>
-                        <Typography.A
-                            href={data.social.twitterUrl}
-                            rel="noopener noreferrer"
-                            target=""
-                        >
-                            <img
-                                src={twitter.publicURL}
-                                alt="twitter"
-                                height="25px"
-                            />
-                        </Typography.A>
+                    <div className={styles.publicUrlRow}>
+                        <div className={styles.publicUrlCol}>
+                            <Typography.A
+                                style={{
+                                    margin: 0
+                                }}
+                                href={data.social.githubUrl}
+                                rel="noopener noreferrer"
+                                target="">
+                                <img
+                                    src={github.publicURL}
+                                    alt="github"
+                                    height="25px"
+                                />
+                            </Typography.A>
+                        </div>
+                        <div className={styles.publicUrlCol}>
+                            <Typography.A
+                                href={data.social.linkedInUrl}
+                                rel="noopener noreferrer"
+                                target="">
+                                <img
+                                    src={linkedin.publicURL}
+                                    alt="linkedIn"
+                                    height="25px"
+                                />
+                            </Typography.A>
+                        </div>
+                        <div className={styles.publicUrlCol}>
+                            <Typography.A
+                                href={data.social.twitterUrl}
+                                rel="noopener noreferrer"
+                                target="">
+                                <img
+                                    src={twitter.publicURL}
+                                    alt="twitter"
+                                    height="25px"
+                                />
+                            </Typography.A>
+                        </div>
                     </div>
                     <p>
                         <a href="mailto:yeehanchung@gmail.com">

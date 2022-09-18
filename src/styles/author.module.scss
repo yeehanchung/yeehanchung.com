@@ -40,3 +40,16 @@
 .subtitle {
     margin-top: 0.25rem;
 }
+
+.publicUrlRow {
+    display: flex;
+}
+.publicUrlCol {
+    padding: 0 6px;
+}
+.publicUrlCol:first-child {
+    padding: 0 6px 0 0;
+}
+.publicUrlCol:last-child {
+    padding: 0 0 0 6px;
+}
