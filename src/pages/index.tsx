@@ -1,5 +1,6 @@
 /* --- NODE MODULES --- */
 import { graphql, useStaticQuery } from "gatsby";
+import styled from "styled-components";
 import React from "react";
 
 /* --- UI COMPONENTS --- */
@@ -8,14 +9,25 @@ import {
     Container,
     Seo
 } from "@components/index";
-import { AuthorElements } from "@design-system/index";
+import { AuthorElements, ResumeWrapper } from "@design-system/index";
 
 /* --- IMAGES --- */
 import og_img from "@images/og_image.jpeg";
 
+/* --- STYLED COMPONENTS --- */
+const AuthorWrapper = styled.div`
+    font-family: ${(props) => props.theme.fonts.main};
+    display: flex;
+    flex-direction: column;
+    max-width: 90ch;
+    padding: 2rem 0 0;
+    margin: 0 auto 0;
+    align-items: center;
+`;
+
 const IndexPage = (): React.ReactElement => {
 
-    const data = useStaticQuery(graphql`
+    const personalData = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
@@ -27,6 +39,9 @@ const IndexPage = (): React.ReactElement => {
                     keywords
                 }
             }
+            markdownRemark(frontmatter: {slug: {eq: "featured-experience"}}) {
+            html
+        }
         }
     `);
 
@@ -34,15 +49,25 @@ const IndexPage = (): React.ReactElement => {
         <Container>
             <Seo
                 image={og_img}
-                title={data.site.siteMetadata.title}
-                author={data.site.siteMetadata.author}
-                keywords={data.site.siteMetadata.keywords}
+                title={personalData.site.siteMetadata.title}
+                author={personalData.site.siteMetadata.author}
+                keywords={personalData.site.siteMetadata.keywords}
             />
-            <AuthorElements.AuthorWrapper>
+
+            <AuthorWrapper>
                 <AuthorElements.AuthorDetails>
                     <Author ogImage={og_img} />
                 </AuthorElements.AuthorDetails>
-            </AuthorElements.AuthorWrapper>
+            </AuthorWrapper>
+
+            <ResumeWrapper.ResumeWrapperV2>
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: personalData.markdownRemark.html,
+                    }}
+                />
+            </ResumeWrapper.ResumeWrapperV2>
+
         </Container>
     );
 };
