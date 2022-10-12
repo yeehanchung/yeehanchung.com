@@ -21,14 +21,3 @@ I started building this site on the 1st day of Chinese New Year 2021, which is o
 ## Design
 
 The cool layout of the blog page of this site was inspired by [Gao Wei's dev site](https://aworkinprogress.dev/).
-
-## Typography
-
-- Font-family: `Source Sans Pro, Helvatica Neue, Helvetica, Arial, sans-serif`
-- Code: `Monaco, Menlo, monospace`
-
-## Icons
-
-- Git: [Jason Long](https://twitter.com/jasonlong) on [git-scm](http://git-scm.com/downloads/logos)
-- JavaScript: [Chris Williams](https://github.com/voodootikigod) on [GitHub](https://github.com/voodootikigod/logo.js/tree/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9#js-logo-by-the-community)
-- WordPress: [Freepik](https://www.flaticon.com/authors/freepik) on [Flaticon](https://www.flaticon.com/)
