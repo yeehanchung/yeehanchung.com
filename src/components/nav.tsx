@@ -61,11 +61,11 @@ const Nav = (): React.ReactElement => {
 
     return (
         <NavWrapper>
-            <NavElement to={"/"}>
+            {/* <NavElement to={"/"}>
                 <HomeImgWrapper>
                     <HomeImg alt="Home" src={cliSVG} />
                 </HomeImgWrapper>
-            </NavElement>
+            </NavElement> */}
 
             {urls.map(url => {
 
