@@ -4,9 +4,11 @@ import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 
 /* --- UI COMPONENTS --- */
-import { Container, Seo } from "@components/index";
+import { Seo } from "@components/index";
 import { I_Location } from "pages/blog";
 import { PostWrapper } from "@design-system/index";
+import Container from "@components/container";
+import { SiteRoutesContext, SiteRoutesProvider } from "../context/context-site-routes";
 
 /* --- IMAGES --- */
 import yeehan_img from "@images/yee-han-chung.jpeg";
@@ -80,6 +82,14 @@ export interface Props {
 	};
 }
 
+export default function SinglePostWrapper({ data, location }: { data: Props; location: I_Location; }) {
+    return (
+        <SiteRoutesProvider>
+            <SinglePost data={data} location={location} />
+        </SiteRoutesProvider>
+    );
+}
+
 const SinglePost = ({ data, location }: { data: Props; location: I_Location; }): JSX.Element => {
 
     const readingTime = data.markdownRemark.fields.readingTime.text;
@@ -87,6 +97,10 @@ const SinglePost = ({ data, location }: { data: Props; location: I_Location; }):
     const tag = data.markdownRemark.frontmatter.tag;
     const lastEdited = data.markdownRemark.frontmatter.lastEdited;
     const backToNoteUrl = location.pathname.substring(0, 5);
+
+    const siteRoutesCtx = React.useContext(SiteRoutesContext);
+    const currentRoute = location.pathname.split("/")[1];
+    siteRoutesCtx.setRoute(currentRoute);
 
     return (
         <Container>
@@ -123,8 +137,6 @@ const SinglePost = ({ data, location }: { data: Props; location: I_Location; }):
         </Container>
     );
 };
-
-export default SinglePost;
 
 export const pageQuery = graphql`
 	query SinglePostQuery($id: String!) {
