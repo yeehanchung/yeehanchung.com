@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ContainerWrapper = styled.div`
     display: block;
     height: 100%;
-    margin: 1rem;
+    margin: 24px;
 
     /* https://github.com/JimmyBeldone/gatsby-plugin-breakpoints */
 `;
