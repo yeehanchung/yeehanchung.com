@@ -12,6 +12,9 @@ import styled from "styled-components";
 import { Colors } from "@design-system/colors";
 import { NavWrapper } from "@design-system/index";
 
+/* --- CONFIG --- */
+import { AppConfig } from "../../config";
+
 /* --- STYLED COMPONENTS --- */
 const NavElement = styled((props) => {
     const { isActiveUrl, ...rest } = props;
@@ -67,14 +70,14 @@ const Nav = (): React.ReactElement => {
                 </HomeImgWrapper>
             </NavElement> */}
 
-            {urls.map(url => {
+            {AppConfig.navigationRoutes.map(url => {
 
-                const isActiveUrl = url.redirectUrl.split("/")[1] === window.location.pathname.split("/")[1];
+                const isActiveUrl = url.path.split("/")[1] === window.location.pathname.split("/")[1];
 
                 return (
                     <NavElement
                         key={url.title}
-                        to={url.redirectUrl}
+                        to={url.path}
                         isActiveUrl={isActiveUrl}>
                         {url.title}
                     </NavElement>
@@ -83,30 +86,5 @@ const Nav = (): React.ReactElement => {
         </NavWrapper>
     );
 };
-
-const urls = [
-    {
-        title:       "Home",
-        redirectUrl: "/"
-    },
-
-    // {
-    //     title:       "Tech",
-    //     redirectUrl: "/tech"
-    // },
-    {
-        title:       "Blog",
-        redirectUrl: "/blog"
-    },
-
-    // {
-    //     title:       "Resume",
-    //     redirectUrl: "/resume"
-    // },
-    {
-        title:       "Credits",
-        redirectUrl: "/credits"
-    }
-];
 
 export default Nav;
