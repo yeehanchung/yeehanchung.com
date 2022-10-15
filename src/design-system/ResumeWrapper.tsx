@@ -6,7 +6,7 @@ interface I_Props {
     margin?: number;
 }
 
-const ResumeWrapperV2 = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
+const HomePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     font-family: ${(props) => props.theme.fonts.main};
     color: #d2d2d2;
     display: flex;
@@ -285,7 +285,16 @@ const ResumeWrapperV2 = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     /* ---------------- gatsby image wrapper: end ---------------- */
 `;
 
-const ResumeWrapper = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
+/**
+ * ██╗   ██╗███████╗██████╗ ███████╗██╗ ██████╗ ███╗   ██╗     ██╗
+ * ██║   ██║██╔════╝██╔══██╗██╔════╝██║██╔═══██╗████╗  ██║    ███║
+ * ██║   ██║█████╗  ██████╔╝███████╗██║██║   ██║██╔██╗ ██║    ╚██║
+ * ╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██║██║   ██║██║╚██╗██║     ██║
+ *  ╚████╔╝ ███████╗██║  ██║███████║██║╚██████╔╝██║ ╚████║     ██║
+ *   ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝     ╚═╝
+ */
+
+const ResumePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     font-family: ${(props) => props.theme.fonts.main};
     color: #d2d2d2;
     display: flex;
@@ -563,7 +572,9 @@ const ResumeWrapper = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     /* ---------------- gatsby image wrapper: end ---------------- */
 `;
 
-export default {
-    ResumeWrapperV2,
-    ResumeWrapper
+const ResumeWrapper = {
+    HomePage,
+    ResumePage
 };
+
+export default ResumeWrapper;
