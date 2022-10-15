@@ -19,11 +19,11 @@ import { AppConfig } from "../../config";
 const NavElement = styled((props) => {
     const { isActiveUrl, ...rest } = props;
     return (
-        <Link { ...rest } />
+        <Link {...rest} />
     );
 })`
     display: flex;
-    color: ${(props) => props.isActiveUrl? Colors.sunsetTint : "black" };
+    color: ${(props) => props.isActiveUrl ? Colors.sunsetTint : "black"};
     text-decoration: ${(props) =>
         props.textDecoration ? props.textDecoration : "none"};
     font-size: 1rem;
@@ -46,7 +46,11 @@ const HomeImg = styled.img`
     display: flex;
 `;
 
-const Nav = (): React.ReactElement => {
+const NavWrapperPlaceholder = styled.div`
+    height: 70px;
+`;
+
+const Nav = (): JSX.Element => {
 
     const data = useStaticQuery(graphql`
         query {
@@ -57,7 +61,9 @@ const Nav = (): React.ReactElement => {
     `);
 
     if (typeof window === "undefined") {
-        return null as never;
+        return (
+            <NavWrapperPlaceholder />
+        );
     }
 
     const cliSVG = data.cli.publicURL;
