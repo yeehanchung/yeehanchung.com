@@ -7,17 +7,12 @@ interface Props {
 }
 
 const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
-	display: flex;
-	flex-direction: column;
-	margin: 0 0 1rem 0;
-	z-index: 10;
-	max-width: 40rem;
+	max-width: 400px;
 	color: #d2d2d2;
-	padding: 2rem 0 3rem;
-	margin: 0 auto 2rem;
+	margin-top: 32px;
+	margin: 0 auto;
 	font-family: var(--font-family);
 	font-size: var(--font-size-base);
-	display: block;
 
 	/* --------------- Headers: start --------------- */
 	h1,
@@ -45,7 +40,8 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 		line-height: 1.8rem;
 		font-weight: 700;
 		text-align: left;
-		margin: 4rem 0 2rem 0;
+		margin-top: 48px;
+		margin-bottom: 10px;
 		max-width: 30ch;
 	}
 
@@ -53,7 +49,8 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 		font-size: 1.2rem;
 		font-weight: bold;
 		line-height: 1.75rem;
-		margin: 2rem 0 1rem 0;
+		margin-top: 16px;
+		margin-bottom: 16px;
 	}
 
 	h3 {
@@ -87,7 +84,7 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 		line-height: 1.5rem;
 		font-weight: 400;
 		color: ${(props) => props.theme.colors.dark2};
-		margin: 1rem 0;
+		margin-top: 16px;
 	}
 
 	details {

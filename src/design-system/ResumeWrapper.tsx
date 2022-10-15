@@ -12,9 +12,7 @@ const HomePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     display: flex;
     flex-direction: column;
     max-width: 60ch;
-    margin: 0 auto 2rem;
-    padding-left: 10px;
-    padding-bottom: 2rem;
+    margin: 0 auto;
     z-index: 10;
 
     /* ---------------- Headers: start ---------------- */

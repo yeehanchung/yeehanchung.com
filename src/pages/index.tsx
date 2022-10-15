@@ -17,17 +17,14 @@ import og_img from "@images/og_image.jpeg";
 /* --- STYLED COMPONENTS --- */
 const AuthorWrapper = styled.div`
     font-family: ${(props) => props.theme.fonts.main};
-    display: flex;
-    flex-direction: column;
-    max-width: 90ch;
+    width: 400px;
     padding: 2rem 0 0;
     margin: 0 auto 0;
-    align-items: center;
 `;
 
-const IndexPage = (): React.ReactElement => {
+const IndexPage = (): JSX.Element => {
 
-    const personalData = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
@@ -40,8 +37,8 @@ const IndexPage = (): React.ReactElement => {
                 }
             }
             markdownRemark(frontmatter: {slug: {eq: "featured-experience"}}) {
-            html
-        }
+                html
+            }
         }
     `);
 
@@ -49,9 +46,9 @@ const IndexPage = (): React.ReactElement => {
         <Container>
             <Seo
                 image={og_img}
-                title={personalData.site.siteMetadata.title}
-                author={personalData.site.siteMetadata.author}
-                keywords={personalData.site.siteMetadata.keywords}
+                title={data.site.siteMetadata.title}
+                author={data.site.siteMetadata.author}
+                keywords={data.site.siteMetadata.keywords}
             />
 
             <AuthorWrapper>
@@ -63,7 +60,7 @@ const IndexPage = (): React.ReactElement => {
             <ResumeWrapper.HomePage>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: personalData.markdownRemark.html,
+                        __html: data.markdownRemark.html,
                     }}
                 />
             </ResumeWrapper.HomePage>

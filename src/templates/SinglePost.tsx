@@ -6,7 +6,7 @@ import styled from "styled-components";
 /* --- UI COMPONENTS --- */
 import { Container, Seo } from "@components/index";
 import { I_Location } from "pages/blog";
-import{ PostWrapper } from "@design-system/index";
+import { PostWrapper } from "@design-system/index";
 
 /* --- IMAGES --- */
 import yeehan_img from "@images/yee-han-chung.jpeg";
@@ -39,7 +39,7 @@ const StyledPostContent = styled.div`
 const BackToNotes = styled(Link)`
 	color: ${(props) => props.theme.colors.link};
 	max-width: 90ch;
-	margin: 3.5rem auto 2rem;
+	margin-top: 16px;
 	display: block;
 	text-decoration: none;
 `;
@@ -49,7 +49,7 @@ const LastEdited = styled.div`
 `;
 
 const Contents = styled.div`
-	margin-top: 50px;
+	margin-top: 25px;
 `;
 
 /* --- TYPES --- */
@@ -65,22 +65,22 @@ export interface Props {
 			slug: string;
 			tag: string;
 			title: string;
-		}
+		};
 		fields: {
 			readingTime: {
 				text: string;
-			}
-		}
+			};
+		};
 		html: string;
-    };
+	};
 	fields: {
 		readingTime: {
 			text: string;
-		}
-	}
+		};
+	};
 }
 
-const SinglePost = ({ data, location }: {data: Props; location: I_Location }) => {
+const SinglePost = ({ data, location }: { data: Props; location: I_Location; }): JSX.Element => {
 
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
