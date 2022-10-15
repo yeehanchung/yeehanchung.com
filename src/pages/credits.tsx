@@ -8,6 +8,8 @@ import {
 /* --- UI COMPONENTS --- */
 import { Container, Seo } from "@components/index";
 import { PostWrapper } from "@design-system/index";
+import { I_Props } from "pages";
+import { SiteRoutesContext, SiteRoutesProvider } from "../context/context-site-routes";
 
 /* --- STYLED COMPONENTS --- */
 const Span = styled.span`
@@ -46,7 +48,19 @@ const LastEdited = styled.p`
     margin-bottom: 0;
 `;
 
-export default (): JSX.Element => {
+export default function CreditsPageWrapper(props: I_Props): JSX.Element {
+    return (
+        <SiteRoutesProvider>
+            <CreditsPage location={props.location} />
+        </SiteRoutesProvider>
+    );
+}
+
+const CreditsPage = (props: I_Props): JSX.Element => {
+
+    const siteRoutesCtx = React.useContext(SiteRoutesContext);
+    const currentRoute = props.location.pathname.split("/")[1];
+    siteRoutesCtx.setRoute(currentRoute);
 
     const data = useStaticQuery(graphql`
         query {
