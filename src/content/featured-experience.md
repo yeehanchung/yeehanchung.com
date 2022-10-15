@@ -16,11 +16,11 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 - [Eezee.co](https://eezee.co), Singapore's largest B2B marketplace for industrial and business supplies.
 - Building both desktop and mobile user-facing marketplaces.
-- Write clean, readable and impactful codes.
+- Write clean, readable and reusable codes.
 - Drive front-end state-of-the-art practices and architecture.
 - Mentor junior engineers, and drive technical decisions.
 - Passionate about fostering a culture of learning, mentoring and sharing.
-- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **MongoDB**, **JSX/CSS/XPATH**, **DOM manipulation**, and more.
+- Tech stack: **React.js**, **TypeScript**, **Express.js**, **Node.js**, **MongoDB**
 
 ### Software Engineer Intern @ Fusionex International
 
