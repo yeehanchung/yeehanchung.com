@@ -12,7 +12,7 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 ### Software Engineer
 
-#### [Eezee](https://eezee.co) @ Singapore [Jun 21 - Present]
+#### [Eezee](https://eezee.co), Singapore [Jun 21 - Present]
 
 - Singapore's Largest B2B marketplace for industrial and business supplies.
 - Building both desktop and mobile user-facing marketplaces.
@@ -31,7 +31,7 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 ### Software Engineer Intern
 
-#### [Fusionex Group](https://www.fusionexgroup.com/) @ Malaysia [Jan 2021 - Apr 2021]
+#### [Fusionex Group](https://www.fusionexgroup.com/), Malaysia [Jan 2021 - Apr 2021]
 
 - Received a Return Offer
 - Involved in E-commerce web app development in the core team.
