@@ -10,22 +10,30 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 ## Experience
 
-### Software Engineer @ Eezee
+### Software Engineer
 
-#### Jun 2021 - Present @ Singapore
+#### [Eezee](https://eezee.co) @ Singapore [Jun 21 - Present]
 
-- [Eezee.co](https://eezee.co), Singapore's largest B2B marketplace for industrial and business supplies.
+- Singapore's Largest B2B marketplace for industrial and business supplies.
 - Building both desktop and mobile user-facing marketplaces.
 - Write clean, readable and reusable codes.
 - Drive front-end state-of-the-art practices and architecture.
 - Mentor junior engineers, and drive technical decisions.
 - Passionate about fostering a culture of learning, mentoring and sharing.
-- Tech stack: **React.js**, **TypeScript**, **Express.js**, **Node.js**, **MongoDB**
+- Tech stack: **React.js**, **TypeScript**, **Express.js**, **Node.js**, **MongoDB**, and more
 
-### Software Engineer Intern @ Fusionex International
+### A Gap Month
 
-#### Jan 2021 - Apr 2021 @ Malaysia
+#### Self-learning @ Malaysia [May 21]
 
+- Unable to travel to Singapore as planned to start working because [Singapore announces lockdown](https://www.forbes.com/sites/siladityaray/2021/05/14/singapore-announces-lockdown-like-restrictions-as-local-covid-cases-flare-up/?sh=47ea4189200c).
+- Surviving through the COVID-19 pandemic.
+
+### Software Engineer Intern
+
+#### [Fusionex Group](https://www.fusionexgroup.com/) @ Malaysia [Jan 2021 - Apr 2021]
+
+- Received a Return Offer
 - Involved in E-commerce web app development in the core team.
 - Conducted code review and documentation review.
 - Integrated API and libraries for services, and data visualization.
