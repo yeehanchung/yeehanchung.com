@@ -9,7 +9,7 @@ interface I_Props {
     children?: React.ReactNode;
 }
 
-const Container = (props: React.PropsWithChildren<I_Props>): React.ReactElement => {
+export default function Container(props: React.PropsWithChildren<I_Props>): JSX.Element {
 
     return (
         <ContainerWrapper>
@@ -23,5 +23,3 @@ const Container = (props: React.PropsWithChildren<I_Props>): React.ReactElement 
         </ContainerWrapper>
     );
 };
-
-export default Container;
