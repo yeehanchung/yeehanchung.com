@@ -11,6 +11,7 @@ import styled from "styled-components";
 /* --- UI COMPONENTS --- */
 import { Colors } from "@design-system/colors";
 import { NavWrapper } from "@design-system/index";
+import { SiteRoutesContext } from "../context/context-site-routes";
 
 /* --- CONFIG --- */
 import { AppConfig } from "../../config";
@@ -50,23 +51,9 @@ const NavWrapperPlaceholder = styled.div`
     height: 70px;
 `;
 
-const Nav = (): JSX.Element => {
+export default function Nav(): JSX.Element | null {
 
-    const data = useStaticQuery(graphql`
-        query {
-            cli: file(relativePath: {eq: "topic-svg/house.svg"}) {
-                publicURL
-            }
-        }
-    `);
-
-    if (typeof window === "undefined") {
-        return (
-            <NavWrapperPlaceholder />
-        );
-    }
-
-    const cliSVG = data.cli.publicURL;
+    const siteRoutesCtx = React.useContext(SiteRoutesContext);
 
     return (
         <NavWrapper>
@@ -76,9 +63,17 @@ const Nav = (): JSX.Element => {
                 </HomeImgWrapper>
             </NavElement> */}
 
-            {AppConfig.navigationRoutes.map(url => {
+            {AppConfig.navigationRoutes.map((url): JSX.Element => {
 
-                const isActiveUrl = url.path.split("/")[1] === window.location.pathname.split("/")[1];
+                /* Always remove first slash */
+                let currentRoute = url.path.split("/")[1];
+
+                /* If is homepage, modify it to be a slash path */
+                if (url.path.split("/")[1] === "") {
+                    currentRoute = "/";
+                }
+
+                const isActiveUrl = siteRoutesCtx.route === currentRoute;
 
                 return (
                     <NavElement
@@ -92,5 +87,3 @@ const Nav = (): JSX.Element => {
         </NavWrapper>
     );
 };
-
-export default Nav;
