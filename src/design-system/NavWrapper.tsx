@@ -2,12 +2,17 @@
 import styled from "styled-components";
 
 const NavWrapper = styled.nav`
+    & a:first-child {
+        margin-left: 0;
+    }
+    & a:last-child {
+        margin-right: 0;
+    }
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 0 0;
     margin: 0 auto;
-    max-width: 70rem;
+    padding-top: 50px;
+    width: 400px;
     text-align: center;
 
     // @media ${(props) => props.theme.breakpoints.mobile} {
