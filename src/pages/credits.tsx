@@ -1,12 +1,13 @@
 /* --- NODE MODULES --- */
 import React from "react";
 import styled from "styled-components";
-import { graphql, Link } from "gatsby";
+import {
+    graphql, Link, useStaticQuery
+} from "gatsby";
 
 /* --- UI COMPONENTS --- */
 import { Container, Seo } from "@components/index";
 import { PostWrapper } from "@design-system/index";
-import { Props } from "templates/SinglePost";
 
 /* --- STYLED COMPONENTS --- */
 const Span = styled.span`
@@ -45,12 +46,36 @@ const LastEdited = styled.p`
     margin-bottom: 0;
 `;
 
-export default ({ data }: {data: Props}) => {
+export default (): JSX.Element => {
+
+    const data = useStaticQuery(graphql`
+        query {
+            markdownRemark(frontmatter: {tag: {eq: "credits"}}) {
+                fields {
+                    readingTime {
+                        text
+                    }
+                }
+                frontmatter {
+                    author
+                    date(formatString: "MMM DD, YYYY")
+                    description
+                    keywords
+                    slug
+                    tag
+                    title
+                    excerpt
+                    lastEdited(formatString: "MMM DD, YYYY")
+                    isDraft
+                }
+                html
+            }
+        }
+    `);
 
     const readingTime = data.markdownRemark.fields.readingTime.text;
     const excerpt = data.markdownRemark.frontmatter.excerpt;
     const tag = data.markdownRemark.frontmatter.tag;
-    const lastEdited = data.markdownRemark.frontmatter.lastEdited;
 
     return (
         <Container>
@@ -61,7 +86,7 @@ export default ({ data }: {data: Props}) => {
             />
             <PostWrapper>
                 <h1>{data.markdownRemark.frontmatter.title}</h1>
-                <p style={{ marginBottom: "50px" }}>
+                <p>
                     <Span>{data.markdownRemark.frontmatter.date}</Span>
                     <Span>{readingTime}</Span>
                     <Span>{excerpt}</Span>
@@ -75,36 +100,7 @@ export default ({ data }: {data: Props}) => {
                         __html: data.markdownRemark.html,
                     }}
                 />
-                <LastEdited>
-                    Last edited: {lastEdited}
-                </LastEdited>
-                <BackToNotes to={"/"}>← Back to home</BackToNotes>
             </PostWrapper>
         </Container>
     );
 };
-
-export const creditsQuery = graphql`
-    {
-        markdownRemark(frontmatter: {tag: {eq: "credits"}}) {
-            fields {
-                readingTime {
-                    text
-                }
-            }
-            frontmatter {
-                author
-                date(formatString: "MMM DD, YYYY")
-                description
-                keywords
-                slug
-                tag
-                title
-                excerpt
-                lastEdited(formatString: "MMM DD, YYYY")
-                isDraft
-            }
-            html
-        }
-    }
-`;
