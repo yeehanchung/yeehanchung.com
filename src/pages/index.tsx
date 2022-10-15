@@ -60,13 +60,13 @@ const IndexPage = (): React.ReactElement => {
                 </AuthorElements.AuthorDetails>
             </AuthorWrapper>
 
-            <ResumeWrapper.ResumeWrapperV2>
+            <ResumeWrapper.HomePage>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: personalData.markdownRemark.html,
                     }}
                 />
-            </ResumeWrapper.ResumeWrapperV2>
+            </ResumeWrapper.HomePage>
 
         </Container>
     );

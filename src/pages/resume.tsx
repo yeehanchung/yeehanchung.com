@@ -47,7 +47,7 @@ export default function ({ data }: {
                 </AuthorElements.AuthorDetails>
             </AuthorElements.ResumeAuthorWrapper>
 
-            <ResumeWrapper>
+            <ResumeWrapper.ResumePage>
                 <Typography.H2>{queryData.description}</Typography.H2>
                 <DateUpdated>
                     <span role="img">⏳</span>
@@ -59,7 +59,7 @@ export default function ({ data }: {
                         __html: data.markdownRemark.html,
                     }}
                 />
-            </ResumeWrapper>
+            </ResumeWrapper.ResumePage>
         </Container>
     );
 }
