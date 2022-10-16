@@ -1,29 +1,37 @@
 ---
 title: Yee Han's Resume
 author: Yee Han Chung
-slug: resume
-date: 2021-10-16
+slug: about
+date: 2022-10-16
 tag: resume
-description: Resume
+description: About
 keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'chungyeehan', 'singapore', 'malaysia']
 ---
 
-## Professional Experience
+## Experience
 
-### Software Engineer @ Eezee
+### Software Engineer
 
-#### Jun 2021 - Present @ Singapore
+#### [Eezee](https://eezee.co), Singapore [Jun 21 - Present]
 
-- [Eezee.co](https://eezee.co), Singapore's largest B2B marketplace for industrial and business supplies.
-- Working with brilliant minds.
-- Writing clean, readable and impactful codes.
-- Wearing engineering and leading hats to lead junior engineers.
-- Engineering enterprise-grade software application with state-of-the-art practices.
-- Tech stack: **TypeScript**, **JavaScript**, **Node.js**, **MongoDB**, **JSX/CSS/XPATH**, **DOM manipulation**, and more.
+- Singapore's Largest B2B marketplace for industrial and business supplies.
+- Building both desktop and mobile user-facing marketplaces.
+<!-- - Write clean, readable and reusable codes.
+- Drive front-end state-of-the-art practices and architecture.
+- Mentor junior engineers, and drive technical decisions.
+- Passionate about fostering a culture of learning, mentoring and sharing. -->
+- Tech stack: **React.js**, **TypeScript**, **Express.js**, **Node.js**, **MongoDB**, and more
 
-### Software Engineer Intern @ Fusionex International
+### A Gap Month
 
-#### Jan 2021 - Apr 2021 @ Malaysia
+#### Self-learning, Malaysia [May 21]
+
+- Unable to travel to Singapore as planned to start working because [Singapore announces lockdown](https://www.forbes.com/sites/siladityaray/2021/05/14/singapore-announces-lockdown-like-restrictions-as-local-covid-cases-flare-up/?sh=47ea4189200c).
+- Surviving through the COVID-19 pandemic.
+
+### Software Engineer Intern
+
+#### [Fusionex Group](https://www.fusionexgroup.com/), Malaysia [Jan 21 - Apr 21]
 
 <details className="view-contributions">
   <summary>Received a Return Offer.</summary>
@@ -41,7 +49,7 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 - Integrated API and libraries for services, and data visualization.
 - Built RESTful services to generate developed customizable financial reports.
 - Documented data visualization manual for users, and [self-learned D3 with React.js](https://vizhub.com/cyeehan).
-- Documentation (database schema, RESTful services, and new PHP implementations).
+- Documentation (database schema, RESTful services, and new Backend implementations).
 - Created SQL queries (join, views, when-case, JSON, files, etc.) for data analysis dashboard.
 - Tech stack: **Node.js**, **PHP**, **JavaScript**, **jQuery/Ajax**, **RESTful API**, **MySQL**, **Git**, **.Net Core**, **Bootstrap**.
 
@@ -49,14 +57,16 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 ## 🎓 Education
 
-### INTI International University + Coventry University, UK
+### INTI International University & Coventry University
 
-#### Apr 2018 - May 2021 @ Malaysia 🇲🇾
+#### Malaysia [Apr 18 - May 21]
 
-- Bachelor of Computer Science (Hons). Majored in **Software Engineering**.
+- Bachelor of Computer Science (Hons). Majored in **Software Engineering**. Dual-degree.
 - 1st Class Honours (CGPA: 3.85/4.00).
 - Best student of my cohort over 63 students.
-- Valedictorian Finalist, selected as one of the 2 candidates from IT Faculty.
+- Valedictorian Finalist, selected as one of the 2 candidates from IT Fields.
+
+<!---------------- SEPARATOR ---------------->
 
 <!-- Projects -->
 
@@ -88,23 +98,25 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 - Tools: **Android Studio**, **Power Automate**, **Power BI**, **Microsoft Forms**.
 - GitHub repository: (1) [Medicine App](https://github.com/cyeehan/medicine-covid-19-health-check), (2) [Special QR Code Scanner](https://github.com/cyeehan/medicine-qr-code-scanner)
 
+<!---------------- SEPARATOR ---------------->
+
 <!-- Leadership experience -->
 
 ## 🚀 Leadership Experience
 
 <!-- 1st -->
 
-### Modern Workplace Ambassador @ Microsoft Malaysia
+### Modern Workplace Ambassador
 
-#### Apr 2019 - Present @ Malaysia 🇲🇾
+#### [Microsoft](https://www.microsoft.com/en-my), Malaysia [Apr 19 - Sep 21]
 
 <details className="details-q">
   <summary className="details-css">
-    Currently acting the web developer role to maintain our
+    Voluntarily as a web developer role to maintain
     <a
       href="https://modern-workplace-squad.netlify.app/"
       rel="noopener noreferrer">
-      educational website.
+      Office 365 educational website.
     </a>
   </summary>
   <ul>
@@ -186,9 +198,9 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 <!-- 2nd -->
 
-### Career Services Student Ambassador @ INTI International University
+### Career Services Student Ambassador
 
-#### Jul 2018 - Jan 2021 @ Malaysia 🇲🇾
+#### [INTI International University](https://newinti.edu.my/), Malaysia [Jul 18 - Jan 21]
 
 <!-- - Moderated 2 Virtual Hiring Sessions with [**Exabytes Group**](https://www.exabytes.my/about) and [**Dim Tai Fung**](https://www.dintaifung.com.my/) in 2020.
 - Interviewed 30+ undergraduate and graduate students during recruitment of new Leader Ambassadors.
@@ -261,9 +273,9 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 <!-- 3rd -->
 
-### Program Master @ INTI International University IT Club
+### Program Master
 
-#### Jan 2019 - Nov 2019 @ Malaysia 🇲🇾
+#### [INTI International University](https://newinti.edu.my/) IT Club, Malaysia [Jan 19 - Nov 19]
 
 <details className="details-q">
   <summary className="details-css">
@@ -298,28 +310,18 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
   </ul>
 </details>
 
+<!---------------- SEPARATOR ---------------->
+
 <!-- Awards and Achievements -->
 
 ## 🏅 Awards and Achievement
 
-### Published a paper as the main author (2020)
+### Published a paper as the main author (2022)
 
-<details className="details-q">
-  <summary className="details-css">
-    Title: <b>A Study of Software Quality Assurance Perspective on E-commerce System Development</b>.
-  </summary>
-  <ul>
-    <img
-      src="../../img/yeehan-icosah-2020.png"
-      alt="YeeHan's ICOSAH Certificate"
-    />
-  </ul>
-</details>
-
+- Title: [A Study of Software Quality Assurance Perspective on E-commerce System Development](http://www.jatit.org/volumes/Vol100No15/29Vol100No15.pdf)
+- Contributed 95% of the content.
 - Summarized recent studies about Scrum, Kanban, XP, and ISO/IEC 25010 for E-commerce systems.
 - Suggested good practices of Scrum software development methodology and ISO/IEC 25010 for system development.
-
-<!-- ![YeeHan's ICOSAH Certificate](../../img/yeehan-icosah-2020.png) -->
 
 ### 1st Runner Up in Coca-Cola Automation Employer Project (2020)
 
@@ -344,6 +346,8 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 </details>
 
 - Tech stack: **HTML**, **CSS**, **SQL**, **PHP**, **Bootstrap**, **phpMyAdmin**, **PhpStorm**.
+
+<!---------------- SEPARATOR ---------------->
 
 ## 📃 Certifications
 
@@ -390,11 +394,13 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
   </ul>
 </details>
 
+<!---------------- SEPARATOR ---------------->
+
 ## ✈️ Study Tours
 
 ### Nine-day Study Tour
 
-#### Jan 2019 @ Taiwan 🇹🇼
+#### Taiwan [Jan 19]
 
 <details className="details-q">
   <summary className="details-css">
@@ -451,7 +457,7 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 
 ### Cloud Expo Asia
 
-#### Oct 2018 @ Singapore 🇸🇬
+#### Singapore [Oct 18]
 
 <details className="details-q">
   <summary className="details-css">
