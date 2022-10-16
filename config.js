@@ -12,6 +12,10 @@ const AppConfig = {
         {
             title: "Credits",
             path:  "/credits"
+        },
+        {
+            title: "About",
+            path:  "/about"
         }
     ]
 };
