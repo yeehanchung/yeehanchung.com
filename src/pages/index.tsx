@@ -18,7 +18,7 @@ import og_img from "@images/og_image.jpeg";
 /* --- STYLED COMPONENTS --- */
 const AuthorWrapper = styled.div`
     font-family: ${(props) => props.theme.fonts.main};
-    padding-top: 24px;
+    padding-top: 32px;
 `;
 
 export interface I_Props {

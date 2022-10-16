@@ -7,13 +7,7 @@ interface I_Props {
 }
 
 const HomePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
-    font-family: ${(props) => props.theme.fonts.main};
-    color: #d2d2d2;
-    display: flex;
-    flex-direction: column;
-    max-width: 60ch;
-    margin: 0 auto;
-    z-index: 10;
+    padding-top: 16px;
 
     /* ---------------- Headers: start ---------------- */
     h1,

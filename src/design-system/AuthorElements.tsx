@@ -3,12 +3,6 @@ import styled from "styled-components";
 
 const AuthorWrapper = styled.div`
     font-family: ${(props) => props.theme.fonts.main};
-    display: flex;
-    flex-direction: column;
-    max-width: 90ch;
-    padding: 2rem 0 3rem;
-    margin: 0 auto 2rem;
-    align-items: center;
 `;
 
 const ResumeAuthorWrapper = styled.div`
