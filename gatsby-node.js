@@ -18,7 +18,7 @@ exports.createPages = async function ({ actions, graphql }) {
                 sort: {fields: frontmatter___date, order: DESC}
                 filter: {
                     fileAbsolutePath: {regex: "/content/"}
-                    frontmatter: {slug: {nin: ["resume", "credits"]}}
+                    frontmatter: {slug: {nin: ["about", "credits"]}}
                 }
             ) {
                 edges {
