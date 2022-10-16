@@ -4,16 +4,15 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 
 /* --- UI COMPONENTS --- */
-import {
-    AuthorElements,
-    ResumeWrapper,
-    Typography
-} from "@design-system/index";
+import { SiteRoutesContext, SiteRoutesProvider } from "../context/context-site-routes";
+import { AuthorElements, ResumeWrapper, } from "@design-system/index";
 import {
     Author,
     Container,
     Seo
 } from "@components/index";
+import { I_Props } from "pages";
+import { Props } from "templates/SinglePost";
 
 /* --- IMAGES --- */
 import yeehan_img from "@images/yee-han-chung.jpeg";
@@ -24,13 +23,22 @@ const DateUpdated = styled.p`
 `;
 
 /* --- TYPES --- */
-import { Props } from "templates/SinglePost";
 
-export default function ({ data }: {
-    data: Props
-}): React.ReactElement {
+export default function AboutPageWrapper(props: I_Props & { data: Props; }): JSX.Element {
+    return (
+        <SiteRoutesProvider>
+            <AboutPage location={props.location} data={props.data} />
+        </SiteRoutesProvider>
+    );
+}
 
-    const queryData = data.markdownRemark.frontmatter;
+const AboutPage = (props: I_Props & { data: Props; }): JSX.Element => {
+
+    const siteRoutesCtx = React.useContext(SiteRoutesContext);
+    const currentRoute = props.location.pathname.split("/")[1];
+    siteRoutesCtx.setRoute(currentRoute);
+
+    const queryData = props.data.markdownRemark.frontmatter;
 
     return (
         <Container>
@@ -41,14 +49,13 @@ export default function ({ data }: {
                 keywords={queryData.keywords}
             />
 
-            <AuthorElements.ResumeAuthorWrapper>
+            <AuthorElements.AuthorWrapper>
                 <AuthorElements.AuthorDetails>
                     <Author />
                 </AuthorElements.AuthorDetails>
-            </AuthorElements.ResumeAuthorWrapper>
+            </AuthorElements.AuthorWrapper>
 
-            <ResumeWrapper.ResumePage>
-                <Typography.H2>{queryData.description}</Typography.H2>
+            <ResumeWrapper.HomePage>
                 <DateUpdated>
                     <span role="img">⏳</span>
                     {" "}
@@ -56,17 +63,17 @@ export default function ({ data }: {
                 </DateUpdated>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: data.markdownRemark.html,
+                        __html: props.data.markdownRemark.html,
                     }}
                 />
-            </ResumeWrapper.ResumePage>
+            </ResumeWrapper.HomePage>
         </Container>
     );
-}
+};
 
 export const pageQuery = graphql`
     {
-        markdownRemark(frontmatter: {slug: {eq: "resume"}}) {
+        markdownRemark(frontmatter: {slug: {eq: "about"}}) {
             fields {
                 readingTime {
                     text
