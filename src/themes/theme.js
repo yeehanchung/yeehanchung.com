@@ -28,7 +28,7 @@ export default {
         codebg:   "#ffffff",
     },
     breakpoints: {
-        mobile: "only screen and (max-width: 50rem)",
+        mobile: "only screen and (max-width: 30rem)",
         tablet: "only screen and (max-width: 65rem)",
     },
     spacings: {

@@ -10,9 +10,7 @@ const NavWrapper = styled.nav`
     }
 
     display: flex;
-    margin: 0 auto;
     padding-top: 50px;
-    width: 400px;
     text-align: center;
 
     // @media ${(props) => props.theme.breakpoints.mobile} {
