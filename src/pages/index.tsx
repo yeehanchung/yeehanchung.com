@@ -16,10 +16,6 @@ import { SiteRoutesContext, SiteRoutesProvider } from "../context/context-site-r
 import og_img from "@images/og_image.jpeg";
 
 /* --- STYLED COMPONENTS --- */
-const AuthorWrapper = styled.div`
-    font-family: ${(props) => props.theme.fonts.main};
-    padding-top: 32px;
-`;
 
 export interface I_Props {
     location: {
@@ -68,11 +64,11 @@ const IndexPage = (props: I_Props): JSX.Element => {
                 keywords={data.site.siteMetadata.keywords}
             />
 
-            <AuthorWrapper>
+            <AuthorElements.AuthorWrapper>
                 <AuthorElements.AuthorDetails>
                     <Author ogImage={og_img} />
                 </AuthorElements.AuthorDetails>
-            </AuthorWrapper>
+            </AuthorElements.AuthorWrapper>
 
             <ResumeWrapper.HomePage>
                 <div

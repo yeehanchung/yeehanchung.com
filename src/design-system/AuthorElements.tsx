@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const AuthorWrapper = styled.div`
     font-family: ${(props) => props.theme.fonts.main};
+    padding-top: 32px;
 `;
 
 const ResumeAuthorWrapper = styled.div`

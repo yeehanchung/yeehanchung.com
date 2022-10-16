@@ -43,7 +43,7 @@ const HomePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     h3 {
         font-size: 1.1rem;
         font-weight: 700;
-        margin: 1.4rem 0 0.25rem 0;
+        margin-top: 16px;
     }
 
     h4 {
