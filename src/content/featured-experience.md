@@ -5,7 +5,7 @@ slug: featured-experience
 date: 2021-10-16
 tag: experience
 description: Experience
-keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'chungyeehan', 'singapore', 'malaysia']
+keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'chungyeehan', 'singapore', 'malaysia', software engineer]
 ---
 
 ## Experience
