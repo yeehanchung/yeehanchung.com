@@ -564,9 +564,7 @@ const ResumePage = styled.main<ThemedStyledProps<I_Props, HTMLDivElement>>`
     /* ---------------- gatsby image wrapper: end ---------------- */
 `;
 
-const ResumeWrapper = {
+export const ResumeWrapper = {
     HomePage,
     ResumePage
 };
-
-export default ResumeWrapper;

@@ -1,7 +1,7 @@
 /* --- NODE MODULES --- */
 import styled from "styled-components";
 
-const NavWrapper = styled.nav`
+export const NavWrapper = styled.nav`
     & a:first-child {
         margin-left: 0;
     }
@@ -30,5 +30,3 @@ const NavWrapper = styled.nav`
     //     grid-template-columns: 25px 100px 25px;
     // }
 `;
-
-export default NavWrapper;

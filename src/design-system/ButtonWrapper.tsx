@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 
-const ButtonWrapper = styled((props): JSX.Element => <Link {...props} />)`
+export const ButtonWrapper = styled((props): JSX.Element => <Link {...props} />)`
     color: #3fa4e1;
     cursor: pointer;
     text-decoration: none;
@@ -23,5 +23,3 @@ const ButtonWrapper = styled((props): JSX.Element => <Link {...props} />)`
         }
     }};
 `;
-
-export default ButtonWrapper;

@@ -139,5 +139,8 @@ const H2 = styled.h2<ThemedStyledProps<I_Props, HTMLHeadingElement>>`
 `;
 
 export {
-    P, A, H1, H2
+    P, 
+    A, 
+    H1, 
+    H2
 };

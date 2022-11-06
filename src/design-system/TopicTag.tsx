@@ -1,7 +1,7 @@
 /* --- NODE MODULES --- */
 import styled from "styled-components";
 
-const TopicTag = styled.h2`
+export const TopicTag = styled.h2`
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.6;
@@ -11,5 +11,3 @@ const TopicTag = styled.h2`
     align-items: center;
     margin: 0 0 0.3rem 0;
 `;
-
-export default TopicTag;

@@ -6,7 +6,7 @@ interface Props {
 	margin?: string;
 }
 
-const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
+export const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 	max-width: 400px;
 	color: #d2d2d2;
 	margin-top: 32px;
@@ -263,5 +263,3 @@ const PostWrapper = styled.div<ThemedStyledProps<Props, HTMLElement>>`
 		grid-column: 2 / span 6;
 	}
 `;
-
-export default PostWrapper;

@@ -41,4 +41,8 @@ const AuthorDetails = styled.div`
     }
 `;
 
-export { AuthorWrapper, ResumeAuthorWrapper, AuthorDetails };
+export { 
+    AuthorWrapper, 
+    ResumeAuthorWrapper, 
+    AuthorDetails 
+};
