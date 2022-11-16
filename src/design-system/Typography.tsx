@@ -15,61 +15,41 @@ const P = styled.p<ThemedStyledProps<I_Props, HTMLParagraphElement>>`
     margin: ${(props) => (props.margin ? props.margin : 0)};
     font-size: ${(props) => {
         switch (props.size) {
-        case "medium":
-            return "1.125rem";
-        case "xMedium":
-            return "0.9rem";
-        case "small":
-            return "0.9rem";
-        case "xSmall":
-            return "14px";
-        case "xxSmall":
-            return "10px";
-        default:
-            return "1.125rem";
+        case "medium": return "1.125rem";
+        case "xMedium": return "0.9rem";
+        case "small": return "0.9rem";
+        case "xSmall": return "14px";
+        case "xxSmall": return "10px";
+        default: return "1.125rem";
         }
     }};
     line-height: ${(props) => {
         switch (props.lineHeight) {
-        case "medium":
-            return "1.8rem";
-        case "small":
-            return "1.375rem";
-        case "xSmall":
-            return "1.125rem";
-        default:
-            return "1.5rem";
+        case "medium": return "1.8rem";
+        case "small": return "1.375rem";
+        case "xSmall": return "1.125rem";
+        default: return "1.5rem";
         }
     }};
     text-decoration: ${(props) =>
         props.textDecoration ? props.textDecoration : "none"};
     font-weight: ${(props) => {
         switch (props.weight) {
-        case "normal":
-            return 400;
-        case "bold":
-            return 700;
-        default:
-            return 400;
+        case "normal": return 400;
+        case "bold": return 700;
+        default: return 400;
         }
     }};
 
     color: ${(props) => {
         switch (props.color) {
-        case "dark1":
-            return props.theme.colors.dark1;
-        case "dark2":
-            return props.theme.colors.dark2;
-        case "dark3":
-            return props.theme.colors.dark3;
-        case "dark4":
-            return props.theme.colors.dark4;
-        case "light1":
-            return props.theme.colors.light1;
-        case "light2":
-            return props.theme.colors.light2;
-        default:
-            return props.theme.colors.dark1;
+        case "dark1": return props.theme.colors.dark1;
+        case "dark2": return props.theme.colors.dark2;
+        case "dark3": return props.theme.colors.dark3;
+        case "dark4": return props.theme.colors.dark4;
+        case "light1": return props.theme.colors.light1;
+        case "light2": return props.theme.colors.light2;
+        default: return props.theme.colors.dark1;
         }
     }};
 `;
@@ -115,18 +95,12 @@ const H2 = styled.h2<ThemedStyledProps<I_Props, HTMLHeadingElement>>`
     line-height: 1.875rem;
     color: ${(props) => {
         switch (props.color) {
-        case "dark1":
-            return props.theme.colors.dark1;
-        case "dark2":
-            return props.theme.colors.dark2;
-        case "dark3":
-            return props.theme.colors.dark3;
-        case "light1":
-            return props.theme.colors.light1;
-        case "light2":
-            return props.theme.colors.light2;
-        default:
-            return props.theme.colors.dark1;
+        case "dark1": return props.theme.colors.dark1;
+        case "dark2": return props.theme.colors.dark2;
+        case "dark3": return props.theme.colors.dark3;
+        case "light1": return props.theme.colors.light1;
+        case "light2": return props.theme.colors.light2;
+        default: return props.theme.colors.dark1;
         }
     }};
     font-weight: 500;
