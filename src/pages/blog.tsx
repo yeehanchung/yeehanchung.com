@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Container, Seo } from "@components/index";
 import { ReinventionBlog, SoftwareEngineeringBlog } from "@components/blog";
 import { I_Props } from "pages";
-import { SiteRoutesContext, SiteRoutesProvider } from "../context/context-site-routes";
+import { SiteRoutesContext, SiteRoutesProvider } from "@context/context-site-routes";
 
 /* --- IMAGES --- */
 import OG_image from "@images/og_image.jpeg";
