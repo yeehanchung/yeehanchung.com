@@ -2,17 +2,27 @@
     "compilerOptions": {
         "baseUrl": "src",
         "paths": {
-            "@components*": ["components*"],
-            "@design-system*": ["design-system*"],
-            "@images*": ["img*"],
-            "@utils*": ["utils*"],
-            "@context*": ["context*"]
+            "@components*": [
+                "components*"
+            ],
+            "@design-system*": [
+                "design-system*"
+            ],
+            "@images*": [
+                "img*"
+            ],
+            "@utils*": [
+                "utils*"
+            ],
+            "@context*": [
+                "context*"
+            ]
         },
         "target": "es5",
         "lib": [
-        "dom",
-        "dom.iterable",
-        "esnext"
+            "dom",
+            "dom.iterable",
+            "esnext"
         ],
         "allowJs": true,
         "skipLibCheck": true,
