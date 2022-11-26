@@ -66,7 +66,8 @@ exports.onCreateWebpackConfig = ({ actions }) => {
                 "@design-system": path.resolve(__dirname, "src/design-system"),
                 "@images":        path.resolve(__dirname, "src/img"),
                 "@styles":        path.resolve(__dirname, "src/styles"),
-                "@utils":         path.resolve(__dirname, "src/utils")
+                "@utils":         path.resolve(__dirname, "src/utils"),
+                "@context":       path.resolve(__dirname, "src/context"),
             }
         }
     });
