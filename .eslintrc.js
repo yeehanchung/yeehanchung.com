@@ -93,8 +93,8 @@ module.exports = {
             {
                 "afterBlockComment":  false,
                 "afterLineComment":   false,
-                "beforeBlockComment": true,
-                "beforeLineComment":  true
+                "beforeBlockComment": false,
+                "beforeLineComment":  false
             }
         ],
         "eol-last": [ "error", "always" ],
