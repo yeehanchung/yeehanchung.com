@@ -32,12 +32,11 @@ export default function AboutPageWrapper(props: I_Props & { data: Props; }): JSX
     );
 }
 
-const AboutPage = (props: I_Props & { data: Props; }): JSX.Element => {
-
+function AboutPage (props: I_Props & { data: Props; }): JSX.Element {
     const siteRoutesCtx = React.useContext(SiteRoutesContext);
     const currentRoute = props.location.pathname.split("/")[1];
     siteRoutesCtx.setRoute(currentRoute);
-
+    
     const queryData = props.data.markdownRemark.frontmatter;
 
     return (
