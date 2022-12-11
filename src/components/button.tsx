@@ -10,7 +10,7 @@ interface Props {
     size: React.ReactNode;
 }
 
-const Button = ({ children, href, size }: Props ) => {
+export const Button = ({ children, href, size }: Props ) => {
     
     return (
         <ButtonWrapper to={`/${href}`} size={size}>
@@ -18,5 +18,3 @@ const Button = ({ children, href, size }: Props ) => {
         </ButtonWrapper>
     );
 };
-
-export default Button;
