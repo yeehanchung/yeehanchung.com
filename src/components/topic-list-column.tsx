@@ -68,7 +68,7 @@ export interface Props {
     }
 }
 
-const TopicListColumn = ( { queryData }: { queryData: I_Data }) => {
+const TopicListColumn = ( { queryData }: { queryData: I_Data }): JSX.Element => {
 
     const posts: Props = queryData.allMarkdownRemark.edges;
     const imageUrl = queryData.image.publicURL || "";

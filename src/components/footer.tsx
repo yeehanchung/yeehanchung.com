@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { A } from "@design-system/Typography";
 import { FooterElements, Typography } from "@design-system/index";
 
-const Footer = (): React.ReactElement => {
+const Footer = (): JSX.Element => {
 
     const { site } = useStaticQuery(graphql`
 		query {
@@ -53,7 +53,7 @@ const Footer = (): React.ReactElement => {
 					Built by {data.shortName} <span role="img" aria-label="Copyright">
 						&copy;
                     </span>
-					{" "}
+                    {" "}
 					2020 - {new Date().getFullYear()}. All Rights Reserved.
                 </Typography.P>
             </FooterElements.FooterSocialWrapper>

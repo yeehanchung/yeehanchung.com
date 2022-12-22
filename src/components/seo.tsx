@@ -13,7 +13,7 @@ interface I_Props {
     url?: string;
 }
 
-const Seo = (props: React.PropsWithChildren<I_Props>): React.ReactElement => {
+const Seo = (props: React.PropsWithChildren<I_Props>): JSX.Element => {
 
     return (
         <StaticQuery

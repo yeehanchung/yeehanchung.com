@@ -10,7 +10,7 @@ interface Props {
     size: React.ReactNode;
 }
 
-export const Button = ({ children, href, size }: Props ) => {
+export const Button = ({ children, href, size }: Props ): JSX.Element => {
     
     return (
         <ButtonWrapper to={`/${href}`} size={size}>

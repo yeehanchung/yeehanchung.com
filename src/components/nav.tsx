@@ -51,7 +51,7 @@ const NavWrapperPlaceholder = styled.div`
     height: 70px;
 `;
 
-export default function Nav(): JSX.Element | null {
+export default function Nav(): JSX.Element {
 
     const siteRoutesCtx = React.useContext(SiteRoutesContext);
 

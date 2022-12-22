@@ -16,7 +16,7 @@ interface Props {
     ogImage?: string;
 }
 
-const Author = ({ ogImage }: Props) => {
+const Author = ({ ogImage }: Props): JSX.Element => {
 
     /* Data from gatsby-config.js */
     const {

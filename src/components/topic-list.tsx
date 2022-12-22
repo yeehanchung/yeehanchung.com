@@ -37,7 +37,7 @@ const TopicList = ({
     readingTime,
     lastEdited,
     isDraft
-}: Props) => {
+}: Props): JSX.Element => {
 
     const lastEditedData = lastEdited ? `Last edited: ${lastEdited}` : null;
 
