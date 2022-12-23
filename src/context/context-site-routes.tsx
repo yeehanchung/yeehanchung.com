@@ -14,7 +14,7 @@ export const SiteRoutesContext = React.createContext(defaultContextState);
 
 export function SiteRoutesProvider(props: {
     children: React.ReactNode;
-}) {
+}): JSX.Element {
     const [ route, setRoute ] = React.useState<string>("");
 
     return (
