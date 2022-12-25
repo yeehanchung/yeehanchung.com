@@ -16,7 +16,7 @@ export const HomeWrapper = styled.div`
     margin: 0 auto 2rem;
 `;
 
-const notFound = (): React.ReactElement => {
+export default function NotFoundPage(): JSX.Element {
     
     return (
         <Container>
@@ -29,8 +29,6 @@ const notFound = (): React.ReactElement => {
         </Container>
     );
 };
-
-export default notFound;
 
 /**
  * 404 Not found JPG
