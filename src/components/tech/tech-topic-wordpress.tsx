@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 /* --- UI COMPONENTS --- */
 import { TopicListColumn } from "@components/index";
 
-export const WordPressNotes = (): React.ReactElement => {
+export const WordPressNotes = (): JSX.Element => {
 
     const data = useStaticQuery(graphql`
         query {

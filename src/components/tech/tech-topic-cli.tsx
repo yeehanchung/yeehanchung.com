@@ -5,7 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 /* --- UI COMPONENTS ---  */
 import { TopicListColumn } from "@components/index";
 
-const CliNotes = (): React.ReactElement => {
+const CliNotes = (): JSX.Element => {
 
     const data = useStaticQuery(graphql`
         query {
