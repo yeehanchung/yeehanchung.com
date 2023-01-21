@@ -9,7 +9,7 @@ import { Typography } from "@design-system/index";
 import * as styles from "../styles/author.module.scss";
 
 /* --- IMAGES --- */
-import yeehan_img from "@images/yee-han-chung.jpeg";
+import yeehan_img from "@images/yee-han-chung-casual.jpg";
 
 /* --- TYPES --- */
 interface Props {
