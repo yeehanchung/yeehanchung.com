@@ -66,17 +66,17 @@ const IndexPage = (props: I_Props): JSX.Element => {
 
             <AuthorElements.AuthorWrapper>
                 <AuthorElements.AuthorDetails>
-                    <Author ogImage={og_img} />
+                    <Author />
                 </AuthorElements.AuthorDetails>
             </AuthorElements.AuthorWrapper>
 
-            <ResumeWrapper.HomePage>
+            {/* <ResumeWrapper.HomePage>
                 <div
                     dangerouslySetInnerHTML={{
                         __html: data.markdownRemark.html,
                     }}
                 />
-            </ResumeWrapper.HomePage>
+            </ResumeWrapper.HomePage> */}
 
         </Container>
     );
