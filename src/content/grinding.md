@@ -8,9 +8,9 @@ lastEdited: 2022-03-16
 isDraft: false
 ---
 
-## LeetCode
+## Profiles
 
-...updating
+- [LeetCode](https://leetcode.com/cyh1215/)
 
 ## AlgoExpert | FrontendExpert | SystemExpert
 
@@ -18,8 +18,8 @@ isDraft: false
 
 ## HackerRank
 
-- [HackerRank - React (Basic) Certificate](https://www.hackerrank.com/certificates/b04b0c6d9106)
-- [HackerRank - JavaScript (Basic) Certificate](https://www.hackerrank.com/certificates/92270c1196f4)
+- [React (Basic) Certificate](https://www.hackerrank.com/certificates/b04b0c6d9106)
+- [JavaScript (Basic) Certificate](https://www.hackerrank.com/certificates/92270c1196f4)
 
 ## Just JavaScript
 
