@@ -37,32 +37,12 @@ const NavElement = styled((props) => {
     }
 `;
 
-const HomeImgWrapper = styled.div`
-    margin: 0 1rem;
-`;
-
-const HomeImg = styled.img`
-    width: 25px;
-    height: 25px;
-    display: flex;
-`;
-
-const NavWrapperPlaceholder = styled.div`
-    height: 70px;
-`;
-
 export default function Nav(): JSX.Element {
 
     const siteRoutesCtx = React.useContext(SiteRoutesContext);
 
     return (
         <NavWrapper>
-            {/* <NavElement to={"/"}>
-                <HomeImgWrapper>
-                    <HomeImg alt="Home" src={cliSVG} />
-                </HomeImgWrapper>
-            </NavElement> */}
-
             {AppConfig.navigationRoutes.map((url): JSX.Element => {
 
                 /* Always remove first slash */
