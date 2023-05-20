@@ -22,13 +22,6 @@ keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'c
 - Passionate about fostering a culture of learning, mentoring and sharing. -->
 - Tech stack: **React.js**, **TypeScript**, **Express.js**, **Node.js**, **MongoDB**, and more
 
-### A Gap Month
-
-#### Self-learning, Malaysia [May 21]
-
-- Unable to travel to Singapore as planned to start working because [Singapore announces lockdown](https://www.forbes.com/sites/siladityaray/2021/05/14/singapore-announces-lockdown-like-restrictions-as-local-covid-cases-flare-up/?sh=47ea4189200c).
-- Surviving through the COVID-19 pandemic.
-
 ### Software Engineer Intern
 
 #### [Fusionex Group](https://www.fusionexgroup.com/), Malaysia [Jan 21 - Apr 21]
