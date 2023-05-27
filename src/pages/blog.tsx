@@ -53,7 +53,7 @@ const BlogPage = (props: I_Props): JSX.Element => {
 
     return (
         <Container>
-            <Seo image={OG_image} title={"Yee Han's Personal Blog"} />
+            <Seo image={OG_image} title={"Yeehan's Personal Blog"} />
             <NoteListing>
                 <ReinventionBlog />
                 <SoftwareEngineeringBlog />

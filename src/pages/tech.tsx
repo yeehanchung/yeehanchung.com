@@ -36,7 +36,7 @@ export default () => {
     return (
         <>
             <Container>
-                <Seo image={yeehan_img} title={"Yee Han's Dev Blog"} />
+                <Seo image={yeehan_img} title={"Yeehan's Dev Blog"} />
                 <NoteListing>
                     {/* <ApiNotes /> */}
                     <CliNotes />
