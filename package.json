@@ -3,7 +3,7 @@
   "private": true,
   "description": "Yeehan's website, built with Gatsby.",
   "version": "2.0.0",
-  "author": "Yee Han <cyh0011215@gmail.com> (http://yeehanchung.com)",
+  "author": "Yeehan <cyh0011215@gmail.com> (http://yeehanchung.com)",
   "homepage": "http://yeehanchung.com",
   "dependencies": {
     "@gatsbyjs/reach-router": "^1.3.6",

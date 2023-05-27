@@ -58,7 +58,7 @@ How to create it?
 ```php
 /**
  * Plugin Name: plugin-add-action
- * Author: Yee Han
+ * Author: Yeehan
  * Version: 1.0
  */
 ```
@@ -98,7 +98,7 @@ Notice that the plugin name reflects the name specified below.
 ```php
 /**
  * Plugin Name: plugin-add-action
- * Author: Yee Han
+ * Author: Yeehan
  * Version: 1.0
  */
 ```

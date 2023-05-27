@@ -1,11 +1,11 @@
 ---
-title: Yee Han's Resume
-author: Yee Han Chung
+title: Yeehan's Resume
+author: Yeehan Chung
 slug: about
 date: 2022-10-16
 tag: resume
 description: About
-keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'yee han', 'yee han chung', 'chungyeehan', 'singapore', 'malaysia']
+keywords: ['yeehanchung', 'yeehan', 'chungyehan', 'Yeehan', 'Yeehan chung', 'chungyeehan', 'singapore', 'malaysia']
 ---
 
 ## Experience
