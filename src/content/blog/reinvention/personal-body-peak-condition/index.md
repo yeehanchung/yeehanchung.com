@@ -9,7 +9,7 @@ lastEdited:
 isDraft: false
 ---
 
-<!-- ![Photo taken in 2017](selfie.jpeg) -->
+![Photo taken in 2017](selfie.jpeg)
 
 ## A little context
 
