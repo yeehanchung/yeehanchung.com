@@ -28,6 +28,7 @@ const Author = ({ ogImage }: Props): JSX.Element => {
                     title
                     description
                     author
+                    shortName
                     image
                     url
                     occupation
@@ -73,10 +74,10 @@ const Author = ({ ogImage }: Props): JSX.Element => {
             <div className={styles.intro}>
                 <div className={styles.subtitle}>
                     <h3 className={styles.name}>
-                        {data.author}
+                        {data.shortName}
                     </h3>
                     <p>
-                        {data.occupation}
+                        {"Code-first/Product-first Engineer"}
                     </p>
                     <div className={styles.publicUrlRow}>
                         <div className={styles.publicUrlCol}>
