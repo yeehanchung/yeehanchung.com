@@ -6,7 +6,7 @@ excerpt: 🚀
 keywords: [reinvention, annual review]
 tag: reinvention
 lastEdited:
-isDraft: false
+isDraft: true
 ---
 
 ## Drafting...
