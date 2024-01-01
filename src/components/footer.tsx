@@ -54,7 +54,7 @@ const Footer = (): JSX.Element => {
 						&copy;
                     </span>
                     {" "}
-					2020 - {new Date().getFullYear()}. All Rights Reserved.
+					2020 - 2022. All Rights Reserved.
                 </Typography.P>
             </FooterElements.FooterSocialWrapper>
         </FooterElements.FooterWrapper>
